@@ -1,0 +1,13 @@
+{
+  "name": "dc.leaflet.js",
+  "homepage": "https://github.com/monostop/dc.leaflet.js",
+  "_release": "828d9a685f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "dc-2.0.0-alpha.2",
+    "commit": "828d9a685f66c24ae6406b2d0597caba0a50eda4"
+  },
+  "_source": "https://github.com/monostop/dc.leaflet.js.git",
+  "_target": "dc-2.0.0-alpha.2",
+  "_originalSource": "https://github.com/monostop/dc.leaflet.js.git"
+}

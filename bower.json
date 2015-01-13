@@ -1,0 +1,39 @@
+{
+  "name": "picasso",
+  "version": "0.0.0",
+  "authors": [
+    "Pawel Badenski <pbadensk@thoughtworks.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.5.3",
+    "jQuery": "1",
+    "dc.js": "2",
+    "underscore": "~1.7.0",
+    "gridster": "~0.5.6",
+    "dc.leaflet.js": "https://github.com/monostop/dc.leaflet.js.git#dc-2.0.0-alpha.2",
+    "leaflet": "~0.7.3"
+  },
+  "overrides": {
+    "crossfilter": {
+      "main": "crossfilter.js"
+    },
+    "gridster": {
+      "main": "dist/jquery.gridster.js"
+    },
+    "dc.leaflet.js": {
+      "main": "dc.leaflet.js",
+      "dependencies": {
+        "dc.js": "*",
+        "leaflet": "*"
+      }
+    }
+  }
+}

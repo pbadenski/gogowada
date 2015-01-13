@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-alpha.5/dc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.gridster/0.5.6/jquery.gridster.min.css">
+    <link rel="stylesheet" href="dist/vendor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/1.0.8/css/hover-min.css">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+    <style>
+      .dc-chart g text {
+        fill: black !important;
+      }
+      div.gridster ul {
+        list-style:none;
+      }
+      div.gridster li {
+        background-color: #e9e9e9;
+      }
+      .widget-configure {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class='dc-data-count'>
+    </div>
+    <br style="clear: both" />
+    <div id="widget-configuration">
+    </div>
+    <br style="clear: both" />
+    <br style="clear: both" />
+    <div class="gridster">
+      <ul style="">
+        <li data-row="1" data-col="1" data-sizex="6" data-sizey="3"><div id="map" style="height: 400px; width: 800px"></div></li>
+      </ul>
+    </div>
+    <script src="dist/vendor.js"></script>
+    <script src="dist/app.js"></script>
+  </body>
+
+</html>
