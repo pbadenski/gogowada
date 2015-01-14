@@ -1,29 +1,11 @@
 $ ->
   chartInstances = {}
   gridster = $(".gridster > ul").gridster(
-    widget_margins: [
-      10
-      10
-    ]
-    widget_base_dimensions: [
-      140
-      140
-    ]
-    min_cols: 6
     resize:
       enabled: true
   ).data("gridster")
-  $(".gridster ul").gridster
-    widget_margins: [
-      10
-      10
-    ]
-    widget_base_dimensions: [
-      140
-      140
-    ]
 
-  dashboard = {
+  dashboard1 = {
     src: "https://data.cityofchicago.org/resource/s6ha-ppgi.json"
     charts: [
       {
@@ -40,10 +22,35 @@ $ ->
         extras:
           {
             geojson: "https://gist.githubusercontent.com/pbadenski/e03ba5cecbcd3c47f249/raw/5f1ab78195f14803edb781cfee37f05cec202308/gistfile1.txt"
+            featureKeyAccessor: (f) -> f.properties.ZIP
           }
       }
     ]
   }
+  dashboard2 = {
+    src: "https://data.cityofchicago.org/resource/xzkq-xp2w.json",
+    charts: [
+      {
+        chartType: "pieChart"
+        dimension: (d) ->
+          if (d.employee_annual_salary > 100000)
+            "Above 100k"
+          else if (d.employee_annual_salary > 80000)
+            "Between 80k and 100k"
+          else if (d.employee_annual_salary > 60000)
+            "Between 60k and 80k"
+          else if (d.employee_annual_salary > 40000)
+            "Between 40k and 60k"
+          else
+            "Below 40k"
+      }
+      {
+        chartType: "rowChart"
+        dimension: "department"
+      }
+    ]
+  }
+  dashboard = dashboard1
   createChart = (csData) ->
     chartId = "chart_" + new Date().getTime()
     gridWidget = gridster.add_widget("<li><span class='widget-configure fa fa-wrench glow'></span></li>", 1, 1)
@@ -61,8 +68,11 @@ $ ->
     dimension: (dimension) ->
       if dimension is undefined
         @_dimension
-      else
+      else if typeof dimension is "function"
         @_dimension = dimension
+        this
+      else
+        @_dimension = (d) -> d[dimension]
         this
 
     extras: (extras) ->
@@ -77,7 +87,7 @@ $ ->
       chart = dc[self.type()]("#" + self.__chartId)
       self.dcInstance = chart
       chartInstances[self.__chartId] = instance: self
-      fieldDimension = self.__csData.dimension((d) -> d[self.dimension()])
+      fieldDimension = self.__csData.dimension(self.dimension())
       fieldGroup = fieldDimension.group()
       basicInitChart = chart
         .dimension(fieldDimension)
@@ -130,7 +140,7 @@ $ ->
               .zoom(10)
               .geojson(geojson)
               .featureKeyAccessor((feature) ->
-                feature.properties.ZIP
+                self.extras().featureKeyAccessor(feature)
               )
             onSuccess(basicInitChart)
         else
@@ -150,7 +160,7 @@ $ ->
     properties = _.keys(_.sample(data, 1)[0]).sort()
     propertySelect = "<span>Property type:</span>" + "<select id='propertySelect'>" + _.map(properties, (each) -> "<option value='#{each}' selected>#{S(each).humanize()}</option>") + "</select>"
 
-    gridster.$widgets.select(".widget-configure").click (clickEvent) ->
+    gridster.$widgets.find(".widget-configure").click (clickEvent) ->
       $("#widget-configuration").html( chartSelect + propertySelect)
       chartId = $(clickEvent.target).parent().find(".dc-chart").attr("id")
       chartInstance = chartInstances[chartId].instance
