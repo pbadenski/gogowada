@@ -1,6 +1,8 @@
 $ ->
   chartInstances = {}
   gridster = $(".gridster > ul").gridster(
+    widget_margins: [10, 10]
+    widget_base_dimensions: [140, 140]
     resize:
       enabled: true
   ).data("gridster")
@@ -50,7 +52,7 @@ $ ->
       }
     ]
   }
-  dashboard = dashboard1
+  dashboard = dashboard2
   createChart = (csData) ->
     chartId = "chart_" + new Date().getTime()
     gridWidget = gridster.add_widget("<li><span class='widget-configure fa fa-wrench glow'></span></li>", 1, 1)
@@ -84,29 +86,32 @@ $ ->
 
     configure: (onSuccess = () -> null) ->
       self = this
-      chart = dc[self.type()]("#" + self.__chartId)
-      self.dcInstance = chart
       chartInstances[self.__chartId] = instance: self
+      chart = dc[self.type()]("#" + self.__chartId)
       fieldDimension = self.__csData.dimension(self.dimension())
       fieldGroup = fieldDimension.group()
-      basicInitChart = chart
+      chart
         .dimension(fieldDimension)
         .group(fieldGroup)
         .turnOnControls(true)
         .on('postRender', (chart) ->
-           gridster_cols = Math.round(self.__gridWidget.find('.dc-chart').width() / gridster.options.widget_base_dimensions[0])
-           gridster_rows = Math.round(self.__gridWidget.find('.dc-chart').height() / gridster.options.widget_base_dimensions[1])
+           gridster_cols = Math.ceil(self.__gridWidget.find('.dc-chart').width() / gridster.options.widget_base_dimensions[0])
+           gridster_rows = Math.ceil(self.__gridWidget.find('.dc-chart').height() / gridster.options.widget_base_dimensions[1])
            gridster.resize_widget self.__gridWidget, gridster_cols, gridster_rows
            self.__gridWidget.find('.dc-chart').find('.reset').click(() ->
              chart.filterAll()
              dc.redrawAll()
            )
         )
+      self.dcInstance = chart
       switch self.type()
         when "pieChart"
+          chart
+            .width(200)
+            .height(200)
           onSuccess(chart)
         when "barChart"
-          basicInitChart
+          chart
             .x(d3.scale.linear().domain([
               0
               fieldGroup.orderNatural().top(1)[0].value
@@ -119,7 +124,7 @@ $ ->
             .xAxis().tickFormat()
           onSuccess(chart)
         when "bubbleChart"
-          basicInitChart.x(d3.scale.linear().domain([
+          chart.x(d3.scale.linear().domain([
             0
             fieldGroup.orderNatural().top(1)[0].value
           ])).y(d3.scale.linear().domain([
@@ -128,23 +133,21 @@ $ ->
           ]))
           onSuccess(chart)
         when "rowChart"
-          basicInitChart
+          chart
             .height(25 * fieldGroup.size())
           onSuccess(chart)
         when "leafletChoroplethChart"
           d3.json self.extras().geojson, (geojson) ->
-            basicInitChart
+            chart
               .width(600)
               .height(400)
               .center([41.83, -87.68])
               .zoom(10)
               .geojson(geojson)
-              .featureKeyAccessor((feature) ->
-                self.extras().featureKeyAccessor(feature)
-              )
-            onSuccess(basicInitChart)
+              .featureKeyAccessor(self.extras().featureKeyAccessor)
+            onSuccess(chart)
         else
-          onSuccess(basicInitChart)
+          onSuccess(chart)
 
   d3.json dashboard.src, (data) ->
     csData = crossfilter(data)
