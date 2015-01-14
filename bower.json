@@ -19,7 +19,8 @@
     "underscore": "~1.7.0",
     "gridster": "~0.5.6",
     "dc.leaflet.js": "https://github.com/monostop/dc.leaflet.js.git#dc-2.0.0-alpha.2",
-    "leaflet": "~0.7.3"
+    "leaflet": "~0.7.3",
+    "string": "~3.0.0"
   },
   "overrides": {
     "crossfilter": {
