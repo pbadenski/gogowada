@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-alpha.5/dc.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.gridster/0.5.6/jquery.gridster.min.css">
     <link rel="stylesheet" href="dist/vendor.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/1.0.8/css/hover-min.css">
 
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -20,10 +20,12 @@
       div.gridster li {
         background-color: #e9e9e9;
       }
-      .widget-configure {
+      .widgets {
         position: absolute;
         right: 5px;
         top: 5px;
+      }
+      .widgets span {
         padding: 5px;
       }
       .leaflet-container {
@@ -33,13 +35,17 @@
     </style>
   </head>
 
-  <body>
-    <div class='dc-data-count'>
+  <body class="container" style="padding: 10px">
+    <div class="row">
+      <div class="col-xl-2">
+         <input type="text" class="form-control input-lg" value="json" id="dataUrl" style="width:100%" readonly="true"></input>
+      </div>
     </div>
     <br style="clear: both" />
-    <div id="widget-configuration">
-    </div>
+    <a id="add-graph" href="#">Add graph</a>
+    <div id="widget-configuration"></div>
     <br style="clear: both" />
+    <div class='dc-data-count'></div>
     <br style="clear: both" />
     <div class="gridster">
       <ul style="">
