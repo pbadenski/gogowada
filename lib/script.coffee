@@ -52,8 +52,10 @@ $ ->
       }
     ]
   }
-  dashboard = dashboard2
-  $("#dataUrl").val(dashboard.src)
+  dashboard3 = {}
+  dashboard = dashboard3
+  if dashboard.src
+    $("#dataUrl").val(dashboard.src)
   createChart = (csData) ->
     chartId = "chart_" + new Date().getTime()
     gridWidget = gridster.add_widget("<li><div class='widgets'><span class='widget-configure fa fa-wrench glow'></span><span class='widget-remove fa fa-remove glow'></span></div></li>", 1, 1)
@@ -171,23 +173,25 @@ $ ->
         $(clickEvent.target).parent().find(".dc-chart").children("svg").remove()
         chartInstance.dimension($(this).val()).configure((chart) -> chart.render())
 
-  d3.json dashboard.src, (data) ->
-    csData = crossfilter(data)
-    $("#add-graph")
-      .click () ->
-        createChart(csData)
-        setupWidgets(data)
-    _.each dashboard.charts, (eachSpec) ->
-      createChart(csData)
-        .type(eachSpec.chartType)
-        .dimension(eachSpec.dimension)
-        .extras(eachSpec.extras or {})
-        .configure (chart) ->
-          chart.render()
+  $("#set-json-file-button").click () ->
+    $("#set-json-file-input").attr('readonly', true)
+    dashboard.src = $("#set-json-file-input").val()
+    d3.json dashboard.src, (data) ->
+      csData = crossfilter(data)
+      $("#add-graph")
+        .click () ->
+          createChart(csData)
           setupWidgets(data)
-
-    dc.dataCount(".dc-data-count").dimension(csData).group(csData.groupAll()).html
-      some: "<strong>%filter-count</strong> selected out of <strong>%total-count</strong> records" + " | <a href='javascript:dc.filterAll(); dc.renderAll();''>Reset All</a>"
-      all: "All records selected. Please click on the graph to apply filters."
+      _.each dashboard.charts, (eachSpec) ->
+        createChart(csData)
+          .type(eachSpec.chartType)
+          .dimension(eachSpec.dimension)
+          .extras(eachSpec.extras or {})
+          .configure (chart) ->
+            chart.render()
+            setupWidgets(data)
+      dc.dataCount(".dc-data-count").dimension(csData).group(csData.groupAll()).html
+        some: "<strong>%filter-count</strong> selected out of <strong>%total-count</strong> records" + " | <a href='javascript:dc.filterAll(); dc.renderAll();''>Reset All</a>"
+        all: "All records selected. Please click on the graph to apply filters."
 
 
