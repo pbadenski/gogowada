@@ -35,8 +35,18 @@ $ ->
         $(clickEvent.target).parent().find(".dc-chart").children("svg").remove()
         chartInstance.dimension($(this).val()).configure((chart) -> chart.render())
 
+  normalize = (data) ->
+    data = _.map data, (d) ->
+      for prop, val of d
+        if `parseFloat(val) == val`
+          d[prop] = parseFloat(val)
+      d
+    console.log(data[0])
+    data
+
   initializeDashboardFromSrc = (src, onCrossFilterData = () -> null) ->
     d3.json $("#set-json-file-input").val(), (data) ->
+      data = normalize(data)
       csData = crossfilter(data)
       onCrossFilterData(csData)
       $("#add-graph")
@@ -65,6 +75,4 @@ $ ->
   $("#set-json-file-button").click () ->
     $("#set-json-file-input").attr('readonly', true)
     initializeDashboardFromSrc $("#set-json-file-input").val()
-
-
 
