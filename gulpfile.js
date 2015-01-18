@@ -1,12 +1,16 @@
 var gulp       = require('gulp'),
+    gp         = require('gulp-load-plugins')({lazy: false}),
     coffee     = require('gulp-coffee'),
     uglify     = require('gulp-uglify'),
     filter     = require('gulp-filter'),
     bowerFiles = require('main-bower-files'),
     concat     = require('gulp-concat'),
+    browserify = require('browserify'),
     sourcemaps = require('gulp-sourcemaps'),
     gutil      = require('gulp-util'),
-    watch      = require('gulp-watch');
+    watch      = require('gulp-watch'),
+    buffer     = require('vinyl-buffer'),
+    source     = require('vinyl-source-stream');
 
 gulp.task('ext-js', function() {
   gulp.src(bowerFiles())
@@ -26,10 +30,17 @@ gulp.task('ext-css', function() {
 });
 
 gulp.task('coffee', function() {
-  gulp.src("lib/*.coffee")
-    .pipe(sourcemaps.init())
-    .pipe(coffee({bare: true}).on('error', gutil.log))
-    .pipe(concat('app.js'))
+  bundler = browserify({
+    entries: ["./lib/script.coffee"],
+    debug: true,
+    extensions: [".coffee", ".js"]
+  })
+  bundler
+    .transform('coffeeify')
+    .bundle()
+    .pipe(source('app.js'))
+    .pipe(buffer())
+    .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(uglify()).on('error', gutil.log)
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist'))

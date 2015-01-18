@@ -17,7 +17,8 @@
     "gulp-util": "^3.0.2",
     "gulp-watch": "^3.0.0",
     "main-bower-files": "^2.4.1",
-    "uglify-js": "^2.4.16"
+    "uglify-js": "^2.4.16",
+    "coffeeify": "^1.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
