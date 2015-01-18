@@ -66,7 +66,7 @@ module.exports = class Chart
         chart
           .x(d3.scale.linear().domain([
             0
-            parseInt(fieldGroup.orderNatural().top(1)[0].key)
+            _.max(_.pluck(fieldGroup.all(), "key")) * 1.2
           ]))
           .group(
             fieldDimension

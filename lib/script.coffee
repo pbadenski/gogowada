@@ -14,7 +14,6 @@ $ ->
        handle: 'header'
   ).data("gridster")
 
-
   setupWidgets = (data) ->
     charts = ["pieChart", "rowChart", "barChart"]
     chartSelect = "<span>Chart type:</span><select id='chartSelect'><option selected>-- Select chart</option>" + _.map(charts, (each) ->  "<option value='#{each}'>#{S(each).humanize()}</option>") + "</select>"
