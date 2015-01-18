@@ -1,8 +1,9 @@
 module.exports = class Chart
   constructor: (@csData, @gridster, chartInstances) ->
     @chartId = "chart_" + new Date().getTime()
-    @gridWidget = gridster.add_widget("<li><header>|||</header><div class='widgets'><span class='widget-configure fa fa-wrench glow'></span><span class='widget-remove fa fa-remove glow'></span></div></li>", 1, 1)
-    @gridWidget.append "<div id='" + @chartId + "' data-chart-id='" + @chartId + "'>" + "<a class='reset' href='#' style='display: none;'>reset</a>" + "<div class='clearfix'></div>" + "</div>"
+    @gridWidget = gridster.add_widget("<li></li>", 1, 1)
+    widgets = "<div class='widgets' style='float: right'><a class='reset' href='#' style='display: none;'>reset</a><span class='widget-configure fa fa-wrench glow'></span><span class='widget-remove fa fa-remove glow'></span></div>"
+    @gridWidget.append "<div id='" + @chartId + "' data-chart-id='#{@chartId}'><header style='float: left'>|||</header>#{widgets}<div class='clearfix'></div><div class='chart-content'></div></div>"
     chartInstances[@chartId] = instance: this
   type: (type) ->
     if type is undefined
@@ -37,10 +38,11 @@ module.exports = class Chart
     self = this
     return if @type() is undefined
     return if @dimension() is undefined
-    chart = dc[@type()]("#" + @chartId)
+    chart = dc[@type()]("##{@chartId}")
     fieldDimension = @csData.dimension(@dimension().f)
     fieldGroup = fieldDimension.group()
     chart
+      .anchor("##{@chartId} .chart-content")
       .dimension(fieldDimension)
       .group(fieldGroup)
       .turnOnControls(true)
@@ -50,9 +52,6 @@ module.exports = class Chart
          gridster_cols = Math.ceil((self.gridWidget.find('.dc-chart').width() + 20) / gridster_col_width_with_margins)
          gridster_rows = Math.ceil((self.gridWidget.find('.dc-chart').height() + 20) / gridster_row_width_with_margins)
          
-         console.log self.gridWidget.find('.dc-chart')
-         console.log self.gridWidget.find('.dc-chart').width()
-         console.log self.gridWidget.find('.dc-chart').height()
          self.gridster.resize_widget self.gridWidget, gridster_cols, gridster_rows
          self.gridWidget.find('.dc-chart').find('.reset').click () ->
            chart.filterAll()
