@@ -44,7 +44,9 @@ module.exports = class Chart
     chart
       .anchor("##{@chartId} .chart-content")
       .dimension(fieldDimension)
-      .group(fieldGroup)
+      .group
+        all: () ->
+          fieldGroup.all().filter (d) -> d.value > 0
       .turnOnControls(true)
       .on "postRender", (chart) ->
          gridster_col_width_with_margins = self.gridster.options.widget_base_dimensions[0] + 2 * self.gridster.options.widget_margins[0]
@@ -86,11 +88,10 @@ module.exports = class Chart
         onSuccess(chart)
       when "rowChart"
         chart
-          .height(25 * fieldGroup.size())
+          .height () -> 25 * (chart.group().all().length + 1)
         onSuccess(chart)
       when "leafletChoroplethChart"
         d3.json @extras().geojson, (geojson) =>
-          console.log geojson
           chart
             .center([41.83, -87.68])
             .zoom(10)

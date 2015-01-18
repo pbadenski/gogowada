@@ -2,8 +2,8 @@ Chart = require "./chart"
 dashboards = require './dashboards'
 chartInstances = {}
 
-# dashboard = dashboards.chicago_employees
-dashboard = dashboards.chicago_affordable_housing
+dashboard = dashboards.chicago_employees
+# dashboard = dashboards.chicago_affordable_housing
 $ ->
   gridster = $(".gridster > ul").gridster(
     widget_margins: [10, 10]
@@ -40,7 +40,6 @@ $ ->
         if `parseFloat(val) == val`
           d[prop] = parseFloat(val)
       d
-    console.log(data[0])
     data
 
   initializeDashboardFromSrc = (src, onCrossFilterData = () -> null) ->
