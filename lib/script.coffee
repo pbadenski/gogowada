@@ -2,20 +2,20 @@ Chart = require "./chart"
 dashboards = require './dashboards'
 chartInstances = {}
 
-dashboard = dashboards.chicago_employees
-# dashboard = dashboards.chicago_affordable_housing
+# dashboard = dashboards.chicago_employees
+dashboard = dashboards.chicago_affordable_housing
 $ ->
-  gridster = $(".gridster > ul").gridster(
+  gridster = $(".gridster > ul").gridster
     widget_margins: [10, 10]
     widget_base_dimensions: [60, 60]
     resize:
       enabled: true
     draggable:
        handle: 'header'
-  ).data("gridster")
+  .data("gridster")
 
   setupWidgets = (data) ->
-    charts = ["pieChart", "rowChart", "barChart"]
+    charts = ["barChart", "pieChart", "rowChart"]
     chartSelect = "<span>Chart type:</span><select id='chartSelect'><option selected>-- Select chart</option>" + _.map(charts, (each) ->  "<option value='#{each}'>#{S(each).humanize()}</option>") + "</select>"
     properties = _.keys(_.sample(data, 1)[0]).sort()
     propertySelect = "<span>Property:</span><select id='propertySelect'><option selected>-- Select property</option>" + _.map(properties, (each) -> "<option value='#{each}'>#{S(each).humanize()}</option>") + "</select>"

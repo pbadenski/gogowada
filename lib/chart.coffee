@@ -23,10 +23,7 @@ module.exports = class Chart
       this
 
   dimensionName: () ->
-    if @_dimension is undefined
-      ""
-    else
-      @_dimension.name
+    @dimension?.name
 
   extras: (extras) ->
     if extras is undefined
@@ -34,8 +31,8 @@ module.exports = class Chart
     else
       @_extras = extras
       this
+
   configure: (onSuccess = () -> null) ->
-    self = this
     return if @type() is undefined
     return if @dimension() is undefined
     chart = dc[@type()]("##{@chartId}")
@@ -48,14 +45,14 @@ module.exports = class Chart
         all: () ->
           fieldGroup.all().filter (d) -> d.value > 0
       .turnOnControls(true)
-      .on "postRender", (chart) ->
-         gridster_col_width_with_margins = self.gridster.options.widget_base_dimensions[0] + 2 * self.gridster.options.widget_margins[0]
-         gridster_row_width_with_margins = self.gridster.options.widget_base_dimensions[1] + 2 * self.gridster.options.widget_margins[1]
-         gridster_cols = Math.ceil((self.gridWidget.find('.dc-chart').width() + 20) / gridster_col_width_with_margins)
-         gridster_rows = Math.ceil((self.gridWidget.find('.dc-chart').height() + 20) / gridster_row_width_with_margins)
+      .on "postRender", (chart) =>
+         gridster_col_width_with_margins = @gridster.options.widget_base_dimensions[0] + 2 * @gridster.options.widget_margins[0]
+         gridster_row_width_with_margins = @gridster.options.widget_base_dimensions[1] + 2 * @gridster.options.widget_margins[1]
+         gridster_cols = Math.ceil((@gridWidget.find('.dc-chart').width() + 20) / gridster_col_width_with_margins)
+         gridster_rows = Math.ceil((@gridWidget.find('.dc-chart').height() + 20) / gridster_row_width_with_margins)
          
-         self.gridster.resize_widget self.gridWidget, gridster_cols, gridster_rows
-         self.gridWidget.find('.dc-chart').find('.reset').click () ->
+         @gridster.resize_widget @gridWidget, gridster_cols, gridster_rows
+         @gridWidget.find('.dc-chart').find('.reset').click () ->
            chart.filterAll()
            dc.redrawAll()
     switch @type()
