@@ -4,6 +4,7 @@ chartInstances = {}
 
 # dashboard = dashboards.chicago_employees
 dashboard = dashboards.chicago_affordable_housing
+# dashboard = null
 $ ->
   gridster = $(".gridster > ul").gridster
     widget_margins: [10, 10]
@@ -42,7 +43,7 @@ $ ->
       d
     data
 
-  initializeDashboardFromSrc = (src, onCrossFilterData = () -> null) ->
+  initializeDashboardFromSrc = (src, onCrossFilterData = _.noop) ->
     d3.json $("#set-json-file-input").val(), (data) ->
       data = normalize(data)
       csData = crossfilter(data)

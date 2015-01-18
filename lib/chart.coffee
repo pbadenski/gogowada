@@ -3,7 +3,7 @@ module.exports = class Chart
     @chartId = "chart_" + new Date().getTime()
     @gridWidget = gridster.add_widget("<li></li>", 1, 1)
     widgets = "<div class='widgets' style='float: right'><a class='reset' href='#' style='display: none;'>reset</a><span class='widget-configure fa fa-wrench glow'></span><span class='widget-remove fa fa-remove glow'></span></div>"
-    @gridWidget.append "<div id='" + @chartId + "' data-chart-id='#{@chartId}'><header style='float: left'>|||</header>#{widgets}<div class='clearfix'></div><div class='chart-content'></div></div>"
+    @gridWidget.append "<div id='" + @chartId + "' data-chart-id='#{@chartId}'><header style='float: left'>|||</header>#{widgets}<strong class='chart-title'>&nbsp;</strong><div class='clearfix'></div><div class='chart-content'></div></div>"
     chartInstances[@chartId] = instance: this
   type: (type) ->
     if type is undefined
@@ -23,7 +23,7 @@ module.exports = class Chart
       this
 
   dimensionName: () ->
-    @dimension?.name
+    @_dimension?.name
 
   extras: (extras) ->
     if extras is undefined
@@ -36,6 +36,7 @@ module.exports = class Chart
     return if @type() is undefined
     return if @dimension() is undefined
     chart = dc[@type()]("##{@chartId}")
+    $("##{@chartId} .chart-title").html("&nbsp;#{S(@dimension().name).humanize()}")
     fieldDimension = @csData.dimension(@dimension().f)
     fieldGroup = fieldDimension.group()
     chart
@@ -46,10 +47,14 @@ module.exports = class Chart
           fieldGroup.all().filter (d) -> d.value > 0
       .turnOnControls(true)
       .on "postRender", (chart) =>
-         gridster_col_width_with_margins = @gridster.options.widget_base_dimensions[0] + 2 * @gridster.options.widget_margins[0]
-         gridster_row_width_with_margins = @gridster.options.widget_base_dimensions[1] + 2 * @gridster.options.widget_margins[1]
+         [gridster_widget_width, gridster_widget_height] = @gridster.options.widget_base_dimensions
+         [gridster_margin_width, gridster_margin_height] = @gridster.options.widget_margins
+
+         gridster_col_width_with_margins  = gridster_widget_width + 2 * gridster_margin_width
          gridster_cols = Math.ceil((@gridWidget.find('.dc-chart').width() + 20) / gridster_col_width_with_margins)
-         gridster_rows = Math.ceil((@gridWidget.find('.dc-chart').height() + 20) / gridster_row_width_with_margins)
+
+         gridster_row_height_with_margins = gridster_widget_height + 2 * gridster_margin_height
+         gridster_rows = Math.ceil((@gridWidget.find('.dc-chart').height() + 20) / gridster_row_height_with_margins)
          
          @gridster.resize_widget @gridWidget, gridster_cols, gridster_rows
          @gridWidget.find('.dc-chart').find('.reset').click () ->
