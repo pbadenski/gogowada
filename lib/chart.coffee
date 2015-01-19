@@ -77,7 +77,7 @@ module.exports = class Chart
             .group()
             .reduceCount(@dimension().f))
           .centerBar(true)
-          .xAxis().tickFormat()
+          .xAxis().tickFormat(d3.format("s"))
         onSuccess(chart)
       when "bubbleChart"
         chart.x(d3.scale.linear().domain([
