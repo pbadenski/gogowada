@@ -21,21 +21,27 @@ module.exports =
       }
     ]
   chicago_employees:
-    src: "https://data.cityofchicago.org/resource/xzkq-xp2w.json",
+    src: "https://data.cityofchicago.org/resource/xzkq-xp2w.json?$limit=50000",
+    derivedProperties: [
+      {
+        name: "employee_salary_range"
+        f: (d) ->
+            if (d.employee_annual_salary > 100000)
+              "Above 100k"
+            else if (d.employee_annual_salary > 80000)
+              "Between 80k and 100k"
+            else if (d.employee_annual_salary > 60000)
+              "Between 60k and 80k"
+            else if (d.employee_annual_salary > 40000)
+              "Between 40k and 60k"
+            else
+              "Below 40k"
+      }
+    ]
     charts: [
       {
         chartType: "pieChart"
-        dimension: (d) ->
-          if (d.employee_annual_salary > 100000)
-            "Above 100k"
-          else if (d.employee_annual_salary > 80000)
-            "Between 80k and 100k"
-          else if (d.employee_annual_salary > 60000)
-            "Between 60k and 80k"
-          else if (d.employee_annual_salary > 40000)
-            "Between 40k and 60k"
-          else
-            "Below 40k"
+        dimension: "employee_salary_range"
       }
       {
         chartType: "rowChart"
