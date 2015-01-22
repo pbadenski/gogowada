@@ -87,4 +87,5 @@ $ ->
     $("#set-json-file-input").attr('readonly', true)
     d3.json $("#set-json-file-input").val(), (data) ->
       new Dashboard(data)
+      $("#json-data-selector").show()
 

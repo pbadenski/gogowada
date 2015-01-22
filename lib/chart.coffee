@@ -38,7 +38,41 @@ module.exports = class Chart
     chart = dc[@type()]("##{@chartId}")
     $("##{@chartId} .chart-title").html("&nbsp;#{S(@dimension().name).humanize()}")
     fieldDimension = @csData.dimension(@dimension().f)
-    fieldGroup = fieldDimension.group()
+    dimensionElement = @dimension().f(fieldDimension.top(1)[0])
+    if _.isArray dimensionElement
+      reduceAdd = (p, v) =>
+        @dimension().f(v).forEach (val, idx) ->
+          p[val] = (p[val] or 0) + 1
+        p
+      reduceRemove = (p, v) =>
+        @dimension().f(v).forEach (val, idx) ->
+          p[val] = (p[val] or 0) - 1
+        p
+      reduceInitial = () -> {}
+      fieldGroup = fieldDimension.groupAll().reduce(reduceAdd, reduceRemove, reduceInitial).value()
+      fieldGroup.all = ->
+        newObject = []
+        for key of this
+          if @hasOwnProperty(key) and key isnt "all"
+            newObject.push
+              key: key
+              value: this[key]
+
+        newObject
+      chart.filterHandler (dimension, filters) ->
+        dimension.filter null
+        if filters.length is 0
+          dimension.filter null
+        else
+          dimension.filterFunction (d) ->
+            i = 0
+            while i < d.length
+              return true  if filters.indexOf(d[i]) >= 0
+              i++
+            false
+        filters
+    else
+      fieldGroup = fieldDimension.group()
     chart
       .anchor("##{@chartId} .chart-content")
       .dimension(fieldDimension)

@@ -40,12 +40,19 @@
   <body class="container" style="padding: 10px">
     <div class="row">
       <div class="input-group">
-        <input id="set-json-file-input" type="text" class="form-control" id="dataUrl" placeholder="Link to your JSON file..."></input>
+        <input id="set-json-file-input" type="text" class="form-control" placeholder="Link to your JSON file..."></input>
         <span class="input-group-btn">
           <button id="set-json-file-button" class="btn btn-default" type="button">Go!</button>
         </span>
-      </div><!-- /input-group -->
-      <div class="col-xl-2">
+      </div>
+    </div>
+    <br style="clear: both"/>
+    <div id="json-data-selector" class="row" style="display: none;">
+      <div class="input-group">
+        <input id="json-data-selector-input" type="text" class="form-control" placeholder="Selector for data array inside JSON file..."></input>
+        <span class="input-group-btn">
+          <button id="json-data-selector-button" class="btn btn-default" type="button">Set</button>
+        </span>
       </div>
     </div>
     <div class="row">
