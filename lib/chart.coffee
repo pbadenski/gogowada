@@ -32,6 +32,7 @@ chartDefinitions = [
           .group()
           .reduceCount(dimension.f))
         .centerBar(true)
+        .elasticY(true)
         .xAxis().tickFormat(d3.format("s"))
       onSuccess(chart)
   }
