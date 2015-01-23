@@ -16,22 +16,18 @@ $ ->
   .data("gridster")
 
   createGraphConfigurationComponents = (data, dimensionLookup) ->
+    createSelect = (attribute, options) ->
+      "<span>#{S(attribute).capitalize()}:</span><select id='#{S(attribute).camelize()}Select'><option selected>-- Select #{attribute}</option>" +
+      _.map(options, (each) ->  "<option value='#{each}'>#{S(each).humanize()}</option>") +
+      "</select>"
+
     charts = ["barChart", "pieChart", "rowChart", "donutChart", "lineChart"]
-    chartSelect = "<span>Chart type:</span><select id='chartSelect'><option selected>-- Select chart</option>" + _.map(charts, (each) ->  "<option value='#{each}'>#{S(each).humanize()}</option>") + "</select>"
     properties = _.keys(_.sample(data, 1)[0]).sort()
-    propertySelect =
-      "<span>Property:</span><select id='propertySelect'><option selected>-- Select property</option>" +
-      _.map(properties.concat(dimensionLookup.list), (each) -> "<option value='#{each}'>#{S(each).humanize()}</option>") +
-      "</select>"
-    groupByPropertySelect =
-      "<span>Group by property:</span><select id='groupByPropertySelect'><option selected>-- Select group by property</option>" +
-      _.map(properties, (each) -> "<option value='#{each}'>#{S(each).humanize()}</option>") +
-      "</select>"
-    groupByFunctionSelect =
-      "<span>Group by function:</span><select id='groupByFunctionSelect'><option selected>-- Select group by function</option>" +
-      _.map(["count", "avg", "sum"], (each) -> "<option value='#{each}'>#{S(each).humanize()}</option>") +
-      "</select>"
-    $(chartSelect + propertySelect + groupByFunctionSelect + groupByPropertySelect)
+
+    $(createSelect("chart type", charts) +
+      createSelect("property", properties.concat(dimensionLookup.list)) +
+      createSelect("group by function", ["count", "avg", "sum"]) +
+      createSelect("group by property", properties))
 
   setupGraphConfigurationUI = (components, dimensionLookup) ->
     $(".widget-remove").click (clickEvent) ->
@@ -43,22 +39,26 @@ $ ->
       $("#widget-configuration").html(components)
       chartId = $(clickEvent.target).closest("li").find("div[data-chart-id]").attr("data-chart-id")
       chartInstance = chartInstances[chartId].instance
-      $(components).filter("#chartSelect").children("option[value='#{chartInstance.type()}']").prop("selected", true)
-      $(components).filter("#chartSelect").change (changeEvent) ->
-        $(clickEvent.target).parent().find(".dc-chart").children("svg").remove()
-        chartInstance.type($(this).val()).configure((chart) -> chart.render())
-      $(components).filter("#propertySelect").children("option[value='#{chartInstance.dimensionName()}']").prop("selected", true)
-      $(components).filter("#propertySelect").change (changeEvent) ->
-        $(clickEvent.target).parent().find(".dc-chart").children("svg").remove()
-        chartInstance.dimension(dimensionLookup.get $(this).val()).configure((chart) -> chart.render())
-      $(components).filter("#groupByPropertySelect").children("option[value='#{chartInstance.groupByProperty()}']").prop("selected", true)
-      $(components).filter("#groupByPropertySelect").change (changeEvent) ->
-        $(clickEvent.target).parent().find(".dc-chart").children("svg").remove()
-        chartInstance.groupByProperty($(this).val()).configure((chart) -> chart.render())
-      $(components).filter("#groupByFunctionSelect").children("option[value='#{chartInstance.groupByFunction()}']").prop("selected", true)
-      $(components).filter("#groupByFunctionSelect").change (changeEvent) ->
-        $(clickEvent.target).parent().find(".dc-chart").children("svg").remove()
-        chartInstance.groupByFunction($(this).val()).configure((chart) -> chart.render())
+
+      markSelected = (attributeSelect, accessor) ->
+        $(components).filter("##{attributeSelect}Select").children("option[value='#{chartInstance[accessor]()}']").prop("selected", true)
+
+      updateChartOnChange = (attributeSelect, accessor, valueExtractor = (v) -> v) ->
+        $(components).filter("##{attributeSelect}Select").change (changeEvent) ->
+          $(clickEvent.target).parent().find(".dc-chart").children("svg").remove()
+          chartInstance[accessor](valueExtractor($(this).val())).configure((chart) -> chart.render())
+
+      markSelected "chartType", "type"
+      updateChartOnChange "chartType", "type"
+
+      markSelected "property", "dimensionName"
+      updateChartOnChange "property", "dimension", (v) -> dimensionLookup.get v
+
+      markSelected "groupByProperty", "groupByProperty"
+      updateChartOnChange "groupByProperty", "groupByProperty"
+
+      markSelected "groupByFunction", "groupByFunction"
+      updateChartOnChange "groupByFunction", "groupByFunction"
 
   normalize = (data) ->
     data = _.map data, (d) ->
