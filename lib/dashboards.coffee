@@ -3,15 +3,15 @@ module.exports =
     src: "https://data.cityofchicago.org/resource/s6ha-ppgi.json"
     charts: [
       {
-        chartType: "pieChart"
+        chartType: "pie"
         dimension: "property_type"
       }
       {
-        chartType: "rowChart"
+        chartType: "row"
         dimension: "zip_code"
       }
       {
-        chartType: "leafletChoroplethChart"
+        chartType: "choropleth"
         dimension: "zip_code"
         extras:
           {
@@ -40,11 +40,11 @@ module.exports =
     ]
     charts: [
       {
-        chartType: "pieChart"
+        chartType: "pie"
         dimension: "employee_salary_range"
       }
       {
-        chartType: "rowChart"
+        chartType: "row"
         dimension: "department"
       }
     ]

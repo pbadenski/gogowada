@@ -1,6 +1,6 @@
 chartDefinitions = [
   {
-    name: "pieChart"
+    name: "pie"
     type: "pieChart"
     customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
       chart
@@ -9,7 +9,7 @@ chartDefinitions = [
       onSuccess(chart)
   }
   {
-    name: "donutChart"
+    name: "donut"
     type: "pieChart"
     customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
       chart
@@ -19,7 +19,7 @@ chartDefinitions = [
       onSuccess(chart)
   }
   {
-    name: "barChart"
+    name: "bar"
     type: "barChart"
     customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
       chart
@@ -33,7 +33,7 @@ chartDefinitions = [
       onSuccess(chart)
   }
   {
-    name: "bubbleChart"
+    name: "bubble"
     type: "bubbleChart"
     customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
       chart.x(d3.scale.linear().domain([
@@ -46,7 +46,7 @@ chartDefinitions = [
       onSuccess(chart)
   }
   {
-    name: "lineChart"
+    name: "line"
     type: "lineChart"
     customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
       chart
@@ -55,15 +55,14 @@ chartDefinitions = [
           0
           _.max(_.pluck(fieldGroup.all(), "key")) * 1.2
         ]))
-        .group(
-          fieldDimension
-          .group()
-          .reduceCount(dimension.f))
+      chart
         .xAxis().tickFormat(d3.format("s"))
+      chart
+        .yAxis().tickFormat(d3.format("s"))
       onSuccess(chart)
   }
   {
-    name: "rowChart"
+    name: "row"
     type: "rowChart"
     customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
       chart
@@ -72,7 +71,7 @@ chartDefinitions = [
       onSuccess(chart)
   }
   {
-    name: "leafletChoroplethChart"
+    name: "choropleth"
     type: "leafletChoroplethChart"
     customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess, extras) ->
       d3.json extras.geojson, (geojson) =>
@@ -182,18 +181,18 @@ module.exports = class Chart
         (p, v) ->
           ++p.count
           p.sum += if attr then (v[attr] or 0) else 0
-          p.avg = p.sum / p.count
+          p.average = p.sum / p.count
           p
       reduceRemoveAvg = (attr) ->
         (p, v) ->
           --p.count
           p.sum -= if attr then (v[attr] or 0) else 0
-          p.avg = p.sum / p.count
+          p.average = p.sum / p.count
           p
       reduceInitAvg = ->
         count: 0
         sum: 0
-        avg: 0
+        average: 0
       fieldGroup = fieldDimension.group().reduce(reduceAddAvg(@groupByProperty()), reduceRemoveAvg(@groupByProperty()), reduceInitAvg)
     chart
       .root(d3.select "##{@chartId} .chart-content")

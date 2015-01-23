@@ -16,18 +16,22 @@ $ ->
   .data("gridster")
 
   createGraphConfigurationComponents = (data, dimensionLookup) ->
-    createSelect = (attribute, options) ->
-      "<span>#{S(attribute).capitalize()}:</span><select id='#{S(attribute).camelize()}Select'><option selected>-- Select #{attribute}</option>" +
-      _.map(options, (each) ->  "<option value='#{each}'>#{S(each).humanize()}</option>") +
+    createSelect = (desc, attribute, options, optionDisplay = (opt) -> opt) ->
+      "<span>#{desc}</span><select id='#{S(attribute).camelize()}Select' class='form-control' style='width: 200px; display: inline'><option selected>-- Select #{attribute}</option>" +
+      _.map(options, (each) ->  "<option value='#{each}'>#{optionDisplay(S(each).humanize().toLowerCase())}</option>") +
       "</select>"
 
-    charts = ["barChart", "pieChart", "rowChart", "donutChart", "lineChart"]
+    charts = ["bar", "pie", "row", "donut", "line"].sort()
     properties = _.keys(_.sample(data, 1)[0]).sort()
 
-    $(createSelect("chart type", charts) +
-      createSelect("property", properties.concat(dimensionLookup.list)) +
-      createSelect("group by function", ["count", "avg", "sum"]) +
-      createSelect("group by property", properties))
+    $(
+      "<select id='chartTypeSelect' class='form-control' style='width: 100px; display: inline'><option selected>-- Select chart</option>" +
+      _.map(charts, (each) ->  "<option value='#{each}'>#{S(each).humanize()}</option>") +
+      "</select><span>&nbsp;chart</span>" +
+      createSelect("&nbsp;of&nbsp;", "property", properties.concat(dimensionLookup.list), pluralize) +
+      createSelect("&nbsp;grouped by&nbsp;", "group by function", ["count", "average", "sum"]) +
+      createSelect(" of ", "group by property", properties, pluralize)
+    )
 
   setupGraphConfigurationUI = (components, dimensionLookup) ->
     $(".widget-remove").click (clickEvent) ->
@@ -54,11 +58,14 @@ $ ->
       markSelected "property", "dimensionName"
       updateChartOnChange "property", "dimension", (v) -> dimensionLookup.get v
 
-      markSelected "groupByProperty", "groupByProperty"
-      updateChartOnChange "groupByProperty", "groupByProperty"
-
       markSelected "groupByFunction", "groupByFunction"
       updateChartOnChange "groupByFunction", "groupByFunction"
+
+      markSelected "groupByProperty", "groupByProperty"
+      if chartInstance.groupByFunction() is "count" and chartInstance.groupByProperty() is undefined
+        markSelected "groupByProperty", "dimensionName"
+      updateChartOnChange "groupByProperty", "groupByProperty"
+
 
   normalize = (data) ->
     data = _.map data, (d) ->
