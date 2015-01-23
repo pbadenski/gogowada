@@ -1,3 +1,91 @@
+chartDefinitions = [
+  {
+    name: "pieChart"
+    type: "pieChart"
+    customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
+      chart
+        .width(200)
+        .height(200)
+      onSuccess(chart)
+  }
+  {
+    name: "donutChart"
+    type: "pieChart"
+    customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
+      chart
+        .width(200)
+        .height(200)
+        .innerRadius(40)
+      onSuccess(chart)
+  }
+  {
+    name: "barChart"
+    type: "barChart"
+    customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
+      chart
+        .x(d3.scale.linear().domain([
+          0
+          _.max(_.pluck(fieldGroup.all(), "key")) * 1.2
+        ]))
+        .group(
+          fieldDimension
+          .group()
+          .reduceCount(dimension.f))
+        .centerBar(true)
+        .xAxis().tickFormat(d3.format("s"))
+      onSuccess(chart)
+  }
+  {
+    name: "bubbleChart"
+    type: "bubbleChart"
+    customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
+      chart.x(d3.scale.linear().domain([
+        0
+        fieldGroup.orderNatural().top(1)[0].value
+      ])).y(d3.scale.linear().domain([
+        0
+        fieldGroup.orderNatural().top(1)[0].value
+      ]))
+      onSuccess(chart)
+  }
+  {
+    name: "lineChart"
+    type: "lineChart"
+    customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
+      chart
+        .width(1000)
+        .x(d3.scale.linear().domain([
+          0
+          _.max(_.pluck(fieldGroup.all(), "key")) * 1.2
+        ]))
+        .group(
+          fieldDimension
+          .group()
+          .reduceCount(dimension.f))
+        .xAxis().tickFormat(d3.format("s"))
+      onSuccess(chart)
+  }
+  {
+    name: "rowChart"
+    type: "rowChart"
+    customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
+      chart
+        .height () -> 25 * (chart.group().all().length + 1)
+      onSuccess(chart)
+  }
+  {
+    name: "leafletChoroplethChart"
+    type: "leafletChoroplethChart"
+    customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess, extras) ->
+      d3.json extras.geojson, (geojson) =>
+        chart
+          .center([41.83, -87.68])
+          .zoom(10)
+          .geojson(geojson)
+          .featureKeyAccessor(extras.featureKeyAccessor)
+        onSuccess(chart)
+  }
+]
 module.exports = class Chart
   constructor: (@csData, @gridster, chartInstances) ->
     @chartId = "chart_" + new Date().getTime()
@@ -32,10 +120,15 @@ module.exports = class Chart
       @_extras = extras
       this
 
+  cleanupOnDelete: () ->
+    dc.chartRegistry.deregister(@dcInstance) if @dcInstance
+
   configure: (onSuccess = () -> null) ->
     return if @type() is undefined
     return if @dimension() is undefined
-    chart = dc[@type()]("##{@chartId}")
+    chartDefinition = _.findWhere(chartDefinitions, {name: @type()})
+    chart = dc[chartDefinition.type]("##{@chartId}")
+    @dcInstance = chart
     $("##{@chartId} .chart-title").html("&nbsp;#{S(@dimension().name).humanize()}")
     fieldDimension = @csData.dimension(@dimension().f)
     dimensionElement = @dimension().f(fieldDimension.top(1)[0])
@@ -94,45 +187,4 @@ module.exports = class Chart
          @gridWidget.find('.dc-chart').find('.reset').click () ->
            chart.filterAll()
            dc.redrawAll()
-    switch @type()
-      when "pieChart"
-        chart
-          .width(200)
-          .height(200)
-        onSuccess(chart)
-      when "barChart"
-        chart
-          .x(d3.scale.linear().domain([
-            0
-            _.max(_.pluck(fieldGroup.all(), "key")) * 1.2
-          ]))
-          .group(
-            fieldDimension
-            .group()
-            .reduceCount(@dimension().f))
-          .centerBar(true)
-          .xAxis().tickFormat(d3.format("s"))
-        onSuccess(chart)
-      when "bubbleChart"
-        chart.x(d3.scale.linear().domain([
-          0
-          fieldGroup.orderNatural().top(1)[0].value
-        ])).y(d3.scale.linear().domain([
-          0
-          fieldGroup.orderNatural().top(1)[0].value
-        ]))
-        onSuccess(chart)
-      when "rowChart"
-        chart
-          .height () -> 25 * (chart.group().all().length + 1)
-        onSuccess(chart)
-      when "leafletChoroplethChart"
-        d3.json @extras().geojson, (geojson) =>
-          chart
-            .center([41.83, -87.68])
-            .zoom(10)
-            .geojson(geojson)
-            .featureKeyAccessor(@extras().featureKeyAccessor)
-          onSuccess(chart)
-      else
-        onSuccess(chart)
+     chartDefinition.customize(chart, @dimension(), fieldDimension, fieldGroup, onSuccess, @extras())

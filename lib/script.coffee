@@ -16,7 +16,7 @@ $ ->
   .data("gridster")
 
   createGraphConfigurationComponents = (data, dimensionLookup) ->
-    charts = ["barChart", "pieChart", "rowChart"]
+    charts = ["barChart", "pieChart", "rowChart", "donutChart", "lineChart"]
     chartSelect = "<span>Chart type:</span><select id='chartSelect'><option selected>-- Select chart</option>" + _.map(charts, (each) ->  "<option value='#{each}'>#{S(each).humanize()}</option>") + "</select>"
     properties = _.keys(_.sample(data, 1)[0]).sort()
     propertySelect =
@@ -27,6 +27,9 @@ $ ->
 
   setupGraphConfigurationUI = (components, dimensionLookup) ->
     $(".widget-remove").click (clickEvent) ->
+      chartId = $(clickEvent.target).closest("li").find("div[data-chart-id]").attr("data-chart-id")
+      chartInstance = chartInstances[chartId].instance
+      chartInstance.cleanupOnDelete()
       gridster.remove_widget($(clickEvent.target).closest("li"))
     $(".widget-configure").click (clickEvent) ->
       $("#widget-configuration").html(components)
