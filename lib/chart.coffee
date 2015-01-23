@@ -121,12 +121,13 @@ module.exports = class Chart
       this
 
   cleanupOnDelete: () ->
-    dc.chartRegistry.deregister(@dcInstance) if @dcInstance
+    dc.deregisterChart(@dcInstance) if @dcInstance
 
   configure: (onSuccess = () -> null) ->
     return if @type() is undefined
     return if @dimension() is undefined
     chartDefinition = _.findWhere(chartDefinitions, {name: @type()})
+    dc.deregisterChart @dcInstance if @dcInstance
     chart = dc[chartDefinition.type]("##{@chartId}")
     @dcInstance = chart
     $("##{@chartId} .chart-title").html("&nbsp;#{S(@dimension().name).humanize()}")
@@ -167,7 +168,7 @@ module.exports = class Chart
     else
       fieldGroup = fieldDimension.group()
     chart
-      .anchor("##{@chartId} .chart-content")
+      .root(d3.select "##{@chartId} .chart-content")
       .dimension(fieldDimension)
       .group
         all: () ->
