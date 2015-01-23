@@ -27,10 +27,6 @@ chartDefinitions = [
           0
           _.max(_.pluck(fieldGroup.all(), "key")) * 1.2
         ]))
-        .group(
-          fieldDimension
-          .group()
-          .reduceCount(dimension.f))
         .centerBar(true)
         .elasticY(true)
         .xAxis().tickFormat(d3.format("s"))
@@ -102,6 +98,20 @@ module.exports = class Chart
       @_type = type
       this
 
+  groupByProperty: (groupByProperty) ->
+    if groupByProperty is undefined
+      @_groupByProperty
+    else
+      @_groupByProperty = groupByProperty
+      this
+
+  groupByFunction: (groupByFunction) ->
+    if groupByFunction is undefined
+      @_groupByFunction
+    else
+      @_groupByFunction = groupByFunction
+      this
+
   dimension: (dimension) ->
     if dimension is undefined
       @_dimension
@@ -168,13 +178,29 @@ module.exports = class Chart
             false
         filters
     else
-      fieldGroup = fieldDimension.group()
+      reduceAddAvg = (attr) ->
+        (p, v) ->
+          ++p.count
+          p.sum += if attr then v[attr] else 0
+          p.avg = p.sum / p.count
+          p
+      reduceRemoveAvg = (attr) ->
+        (p, v) ->
+          --p.count
+          p.sum -= if attr then v[attr] else 0
+          p.avg = p.sum / p.count
+          p
+      reduceInitAvg = ->
+        count: 0
+        sum: 0
+        avg: 0
+      fieldGroup = fieldDimension.group().reduce(reduceAddAvg(@groupByProperty()), reduceRemoveAvg(@groupByProperty()), reduceInitAvg)
     chart
       .root(d3.select "##{@chartId} .chart-content")
       .dimension(fieldDimension)
       .group
         all: () ->
-          fieldGroup.all().filter (d) -> d.value > 0
+          fieldGroup.all().filter (d) -> d.value.count > 0
       .turnOnControls(true)
       .on "postRender", (chart) =>
          [gridster_widget_width, gridster_widget_height] = @gridster.options.widget_base_dimensions
@@ -190,4 +216,5 @@ module.exports = class Chart
          @gridWidget.find('.dc-chart').find('.reset').click () ->
            chart.filterAll()
            dc.redrawAll()
+       .valueAccessor((d) => d.value[@groupByFunction()])
      chartDefinition.customize(chart, @dimension(), fieldDimension, fieldGroup, onSuccess, @extras())

@@ -23,7 +23,15 @@ $ ->
       "<span>Property:</span><select id='propertySelect'><option selected>-- Select property</option>" +
       _.map(properties.concat(dimensionLookup.list), (each) -> "<option value='#{each}'>#{S(each).humanize()}</option>") +
       "</select>"
-    $(chartSelect + propertySelect)
+    groupByPropertySelect =
+      "<span>Group by property:</span><select id='groupByPropertySelect'><option selected>-- Select group by property</option>" +
+      _.map(properties, (each) -> "<option value='#{each}'>#{S(each).humanize()}</option>") +
+      "</select>"
+    groupByFunctionSelect =
+      "<span>Group by function:</span><select id='groupByFunctionSelect'><option selected>-- Select group by function</option>" +
+      _.map(["count", "avg", "sum"], (each) -> "<option value='#{each}'>#{S(each).humanize()}</option>") +
+      "</select>"
+    $(chartSelect + propertySelect + groupByFunctionSelect + groupByPropertySelect)
 
   setupGraphConfigurationUI = (components, dimensionLookup) ->
     $(".widget-remove").click (clickEvent) ->
@@ -43,6 +51,14 @@ $ ->
       $(components).filter("#propertySelect").change (changeEvent) ->
         $(clickEvent.target).parent().find(".dc-chart").children("svg").remove()
         chartInstance.dimension(dimensionLookup.get $(this).val()).configure((chart) -> chart.render())
+      $(components).filter("#groupByPropertySelect").children("option[value='#{chartInstance.groupByProperty()}']").prop("selected", true)
+      $(components).filter("#groupByPropertySelect").change (changeEvent) ->
+        $(clickEvent.target).parent().find(".dc-chart").children("svg").remove()
+        chartInstance.groupByProperty($(this).val()).configure((chart) -> chart.render())
+      $(components).filter("#groupByFunctionSelect").children("option[value='#{chartInstance.groupByFunction()}']").prop("selected", true)
+      $(components).filter("#groupByFunctionSelect").change (changeEvent) ->
+        $(clickEvent.target).parent().find(".dc-chart").children("svg").remove()
+        chartInstance.groupByFunction($(this).val()).configure((chart) -> chart.render())
 
   normalize = (data) ->
     data = _.map data, (d) ->
@@ -59,6 +75,7 @@ $ ->
       $("#add-graph")
         .click () =>
           new Chart(@csData, gridster, chartInstances)
+              .groupByFunction "count"
           setupGraphConfigurationUI(createGraphConfigurationComponents(data, dimensionLookup), dimensionLookup)
       dc.dataCount(".dc-data-count").dimension(@csData).group(@csData.groupAll()).html
         some: "<strong>%filter-count</strong> selected out of <strong>%total-count</strong> records" + " | <a href='javascript:dc.filterAll(); dc.renderAll();''>Reset All</a>"
@@ -79,6 +96,7 @@ $ ->
             new Chart(csData, gridster, chartInstances)
               .type(eachSpec.chartType)
               .dimension(dimensionLookup.get eachSpec.dimension)
+              .groupByFunction "count"
               .extras(eachSpec.extras or {})
               .configure (chart) ->
                 chart.render()
