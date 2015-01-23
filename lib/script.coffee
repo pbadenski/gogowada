@@ -39,7 +39,13 @@ $ ->
       chartInstance = chartInstances[chartId].instance
       chartInstance.cleanupOnDelete()
       gridster.remove_widget($(clickEvent.target).closest("li"))
+    $(".gridster").click (e) ->
+      if not $(e.target).closest('li.gs-w').length
+        $(".widget-selected").removeClass("widget-selected")
+        $("#widget-configuration").empty()
     $(".widget-configure").click (clickEvent) ->
+      $(".widget-selected").removeClass("widget-selected")
+      $(clickEvent.target).closest("li").addClass("widget-selected")
       $("#widget-configuration").html(components)
       chartId = $(clickEvent.target).closest("li").find("div[data-chart-id]").attr("data-chart-id")
       chartInstance = chartInstances[chartId].instance

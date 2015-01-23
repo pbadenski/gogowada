@@ -88,7 +88,7 @@ module.exports = class Chart
     @chartId = "chart_" + new Date().getTime()
     @gridWidget = gridster.add_widget("<li></li>", 1, 1)
     widgets = "<div class='widgets' style='float: right'><a class='reset' href='#' style='display: none;'>reset</a><span class='widget-configure fa fa-wrench glow'></span><span class='widget-remove fa fa-remove glow'></span></div>"
-    @gridWidget.append "<div id='" + @chartId + "' data-chart-id='#{@chartId}'><header style='float: left'>|||</header>#{widgets}<strong class='chart-title'>&nbsp;</strong><div class='clearfix'></div><div class='chart-content'></div></div>"
+    @gridWidget.append "<div id='" + @chartId + "' data-chart-id='#{@chartId}'><header class='widget-drag-handle fa fa-navicon'></header>#{widgets}<strong class='chart-title'>&nbsp;</strong><div class='clearfix'></div><div class='chart-content'></div></div>"
     chartInstances[@chartId] = instance: this
   type: (type) ->
     if type is undefined
