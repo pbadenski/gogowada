@@ -72,6 +72,7 @@ chartDefinitions = [
     customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
       chart
         .height () -> 25 * (chart.group().all().length + 1)
+        .xAxis().tickFormat(d3.format("s"))
       onSuccess(chart)
   }
   {
