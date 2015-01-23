@@ -181,13 +181,13 @@ module.exports = class Chart
       reduceAddAvg = (attr) ->
         (p, v) ->
           ++p.count
-          p.sum += if attr then v[attr] else 0
+          p.sum += if attr then (v[attr] or 0) else 0
           p.avg = p.sum / p.count
           p
       reduceRemoveAvg = (attr) ->
         (p, v) ->
           --p.count
-          p.sum -= if attr then v[attr] else 0
+          p.sum -= if attr then (v[attr] or 0) else 0
           p.avg = p.sum / p.count
           p
       reduceInitAvg = ->
