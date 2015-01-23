@@ -16,17 +16,26 @@ gulp.task('ext-js', function() {
   gulp.src(bowerFiles())
     .pipe(filter("**/*.js"))
     .pipe(sourcemaps.init())
+    .pipe(sourcemaps.write())
     .pipe(concat('vendor.js'))
     .pipe(uglify()).on('error', gutil.log)
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist'))
 });
 
 gulp.task('ext-css', function() {
+  console.log(bowerFiles())
   gulp.src(bowerFiles())
     .pipe(filter("**/*.css"))
+    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.write())
     .pipe(concat('vendor.css'))
     .pipe(gulp.dest('dist'))
+});
+
+gulp.task('icons', function() { 
+  gulp.src(bowerFiles())
+    .pipe(filter("**/*.{eot,svg,ttf,woff,woff2}"))
+    .pipe(gulp.dest('./fonts')); 
 });
 
 gulp.task('coffee', function() {
@@ -49,12 +58,12 @@ gulp.task('coffee', function() {
 gulp.task('watch', function() {
   gulp.watch("bower_components/**/*.js", ['ext-js']);
 
-  gulp.watch("bower_components/**/*.css", ['css'] );
+  gulp.watch("bower_components/**/*.css", ['ext-css'] );
 
   gulp.watch("lib/**/*.coffee", ['coffee'] );
 
 });
 
 gulp.task('default',
-  ['ext-js', 'coffee', 'ext-css', 'watch']
+  ['ext-js', 'coffee', 'ext-css', 'icons', 'watch']
 );

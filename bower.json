@@ -21,14 +21,20 @@
     "dc.leaflet.js": "https://github.com/monostop/dc.leaflet.js.git#dc-2.0.0-alpha.2",
     "leaflet": "~0.7.3",
     "string": "~3.0.0",
-    "pluralize": "~1.1.1"
+    "pluralize": "~1.1.1",
+    "bootstrap": "~3.3.2",
+    "font-awesome": "~4.3.0",
+    "Hover": "~1.0.8"
   },
   "overrides": {
     "crossfilter": {
       "main": "crossfilter.js"
     },
     "gridster": {
-      "main": "dist/jquery.gridster.js"
+      "main": [
+        "dist/jquery.gridster.js",
+        "dist/jquery.gridster.css"
+      ]
     },
     "dc.leaflet.js": {
       "main": "dc.leaflet.js",
