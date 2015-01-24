@@ -81,7 +81,8 @@ $ ->
           if _.contains(["line", "bar"], $(this).val())
             for k, v of self.metadata
               if v isnt "number"
-                $("#propertySelect option[value='#{k}']").addClass("hidden")
+                $("#propertySelect option[value='#{k}']").addClass("hidden").prop("selected", false)
+          $("#propertySelect option.hidden[selected]").prop('selected', false)
 
         $("#groupByFunctionSelect").change ->
           $("#groupByPropertySelect").removeClass("hidden")
@@ -89,7 +90,7 @@ $ ->
           if _.contains(["average", "sum"], $(this).val())
             for k, v of self.metadata
               if v isnt "number"
-                $("#groupByPropertySelect option[value='#{k}']").addClass("hidden")
+                $("#groupByPropertySelect option[value='#{k}']").addClass("hidden").prop("selected", false)
 
         markSelected "chartType", "type"
         updateChartOnChange "chartType", "type"
@@ -140,9 +141,11 @@ $ ->
         .loadCharts dashboard.charts
     $("#set-json-file-input").val(dashboard.src)
     $("#set-json-file-button, #set-json-file-input").attr('disabled', true)
+    $("#add-graph").removeClass('hidden')
 
   $("#set-json-file-button").click () ->
-    $("#set-json-file-input").attr('readonly', true)
+    $("#set-json-file-button, #set-json-file-input").attr('disabled', true)
+    $("#add-graph").removeClass('hidden')
     d3.json $("#set-json-file-input").val(), (data) ->
       new Dashboard(data)
       $("#json-data-selector").show()

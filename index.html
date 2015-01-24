@@ -41,7 +41,7 @@
   <body class="container" style="padding: 10px">
     <div class="row">
       <div class="input-group">
-        <input id="set-json-file-input" type="text" class="form-control" placeholder="Link to your JSON file..."></input>
+        <input id="set-json-file-input" type="text" class="form-control" placeholder="Link to your JSON file..." autofocus></input>
         <span class="input-group-btn">
           <button id="set-json-file-button" class="btn btn-default" type="button">Go!</button>
         </span>
@@ -57,7 +57,7 @@
       </div>
     </div>
     <div class="row">
-      <a id="add-graph" href="#">Add graph</a>
+      <a id="add-graph" href="#" class="hidden">Add graph</a>
     </div>
     <div class="row">
       <div id="widget-configuration"></div>
@@ -73,6 +73,14 @@
     </div>
     <script src="dist/vendor.js"></script>
     <script src="dist/app.js"></script>
+    <script>
+      $('#set-json-file-input').keypress(function (e) {
+        if (e.which == 13) {
+          $('#set-json-file-button').click();
+          return false;
+        }
+      });
+    </script>
   </body>
 
 </html>
