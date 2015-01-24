@@ -114,9 +114,6 @@ module.exports = class Chart
   dimension: (dimension) ->
     if dimension is undefined
       @_dimension
-    else if typeof dimension is "object"
-      @_dimension = dimension
-      this
     else
       @_dimension = {name: dimension, f: (d) -> d[dimension]}
       this
