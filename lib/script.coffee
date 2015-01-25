@@ -15,40 +15,41 @@ $ ->
        handle: 'header'
   .data("gridster")
 
-  createGraphConfigurationComponents = (data) ->
-    createSelect = (desc, attribute, options, optionDisplay = (opt) -> opt) ->
-      "<span>#{desc}</span><select id='#{S(attribute).camelize()}Select' class='form-control' style='width: 200px; display: inline'><option selected>-- Select #{attribute}</option>" +
-      _.map(options, (each) ->  "<option value='#{each}'>#{optionDisplay(S(each).humanize().toLowerCase())}</option>") +
-      "</select>"
-
-    charts = ["bar", "pie", "row", "donut", "line"].sort()
-    properties = _.keys(_.sample(data, 1)[0]).sort()
-
-    $(
-      "<select id='chartTypeSelect' class='form-control' style='width: 100px; display: inline'><option selected>-- Select chart</option>" +
-      _.map(charts, (each) ->  "<option value='#{each}'>#{S(each).humanize()}</option>") +
-      "</select><span>&nbsp;chart</span>" +
-      createSelect("&nbsp;of&nbsp;", "property", properties, pluralize) +
-      createSelect("&nbsp;grouped by&nbsp;", "group by function", ["count", "average", "sum"]) +
-      createSelect(" of ", "group by property", properties, pluralize)
-    )
 
 
   class Dashboard
     constructor: (@data) ->
-      data = @normalize(data)
-      @metadata = @createMetadata(data)
-      @csData = crossfilter(data)
+      @data = @normalize(data)
+      @metadata = @createMetadata(@data)
+      @csData = crossfilter(@data)
       $("#add-graph")
         .click () =>
           chart = new Chart(@csData, gridster, chartInstances)
               .groupByFunction "count"
-          @setupGraphConfigurationUI(createGraphConfigurationComponents(data))
+          @setupGraphConfigurationUI(@createGraphConfigurationComponents(@data))
           $("##{chart.chartId} .widget-configure").click()
       dc.dataCount(".dc-data-count").dimension(@csData).group(@csData.groupAll()).html
         some: "<strong>%filter-count</strong> selected out of <strong>%total-count</strong> records" + " | <a href='javascript:dc.filterAll(); dc.renderAll();''>Reset All</a>"
         all: "All records selected. Please click on the graph to apply filters."
       .render()
+
+    createGraphConfigurationComponents: (data) ->
+      createSelect = (desc, attribute, options, optionDisplay = (opt) -> opt) ->
+        "<span>#{desc}</span><select id='#{S(attribute).camelize()}Select' class='form-control' style='width: 200px; display: inline'><option selected>-- Select #{attribute}</option>" +
+        _.map(options, (each) ->  "<option value='#{each}'>#{optionDisplay(S(each).humanize().toLowerCase())}</option>") +
+        "</select>"
+
+      charts = ["bar", "pie", "row", "donut", "line"].sort()
+      properties = _.keys(_.sample(data, 1)[0]).sort()
+
+      $(
+        "<select id='chartTypeSelect' class='form-control' style='width: 100px; display: inline'><option selected>-- Select chart</option>" +
+        _.map(charts, (each) ->  "<option value='#{each}'>#{S(each).humanize()}</option>") +
+        "</select><span>&nbsp;chart</span>" +
+        createSelect("&nbsp;of&nbsp;", "property", properties, pluralize) +
+        createSelect("&nbsp;grouped by&nbsp;", "group by function", ["count", "average", "sum"]) +
+        createSelect(" of ", "group by property", properties, pluralize)
+      )
 
     setupGraphConfigurationUI: (components) ->
       self = this
@@ -108,7 +109,7 @@ $ ->
 
 
     loadCharts: (charts) ->
-      graphConfigurationComponents = createGraphConfigurationComponents @data
+      graphConfigurationComponents = @createGraphConfigurationComponents @data
       _.map dashboard.charts, (eachSpec) =>
         new Chart(@csData, gridster, chartInstances)
           .type(eachSpec.chartType)

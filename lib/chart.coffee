@@ -115,7 +115,9 @@ module.exports = class Chart
     if dimension is undefined
       @_dimension
     else
-      @_dimension = {name: dimension, f: (d) -> d[dimension]}
+      @_dimension =
+        name: dimension
+        f: (d) -> d[dimension]
       this
 
   dimensionName: () ->
