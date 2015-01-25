@@ -65,6 +65,7 @@ $ ->
       $(".widget-configure").click (clickEvent) ->
         markSelected = (attributeSelect, accessor) ->
           $(components).filter("##{attributeSelect}Select").children("option[value='#{chartInstance[accessor]()}']").prop("selected", true)
+          $(components).filter("##{attributeSelect}Select").change()
 
         updateChartOnChange = (attributeSelect, accessor) ->
           $(components).filter("##{attributeSelect}Select").change (changeEvent) ->
