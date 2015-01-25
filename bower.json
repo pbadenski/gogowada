@@ -14,7 +14,7 @@
   ],
   "dependencies": {
     "d3": "~3.5.3",
-    "jQuery": "1",
+    "jquery": "2",
     "dc.js": "2",
     "underscore": "~1.7.0",
     "gridster": "~0.5.6",
@@ -24,7 +24,8 @@
     "pluralize": "~1.1.1",
     "bootstrap": "~3.3.2",
     "font-awesome": "~4.3.0",
-    "Hover": "~1.0.8"
+    "Hover": "~1.0.8",
+    "momentjs": "~2.9.0"
   },
   "overrides": {
     "crossfilter": {

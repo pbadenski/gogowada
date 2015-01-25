@@ -1,6 +1,6 @@
 {
   "name": "dcjs",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.4",
   "main": [
     "dc.js",
     "dc.css"
@@ -21,11 +21,11 @@
     "crossfilter": "1.x"
   },
   "homepage": "https://github.com/NickQiZhu/dc.js",
-  "_release": "2.0.0-beta.1",
+  "_release": "2.0.0-beta.4",
   "_resolution": {
     "type": "version",
-    "tag": "2.0.0-beta.1",
-    "commit": "7422a2d700b571130eea323dd75d83f6e1b8e4fa"
+    "tag": "2.0.0-beta.4",
+    "commit": "d41c5df3ad19560563981e8031c0e21430aa3fef"
   },
   "_source": "git://github.com/NickQiZhu/dc.js.git",
   "_target": "2",

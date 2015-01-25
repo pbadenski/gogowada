@@ -38,6 +38,5 @@
   },
   "_source": "git://github.com/jprichardson/string.js.git",
   "_target": "~3.0.0",
-  "_originalSource": "string",
-  "_direct": true
+  "_originalSource": "string"
 }

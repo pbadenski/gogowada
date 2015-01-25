@@ -82,7 +82,7 @@ $ ->
           $("#propertySelect option[value]").removeClass("hidden")
           if _.contains(["line", "bar"], $(this).val())
             for k, v of self.metadata
-              if v isnt "number"
+              if not _.contains ["number", "date"], v
                 $("#propertySelect option[value='#{k}']").addClass("hidden").prop("selected", false)
           $("#propertySelect option.hidden[selected]").prop('selected', false)
 
@@ -91,7 +91,7 @@ $ ->
           $("#groupByPropertySelect option[value]").removeClass("hidden")
           if _.contains(["average", "sum"], $(this).val())
             for k, v of self.metadata
-              if v isnt "number"
+              if not _.contains ["number"], v
                 $("#groupByPropertySelect option[value='#{k}']").addClass("hidden").prop("selected", false)
 
         markSelected "chartType", "type"
@@ -124,13 +124,19 @@ $ ->
     normalize: (data) ->
       data = _.map data, (d) ->
         for prop, val of d
-          if `parseFloat(val) == val`
+          dateValue = moment(val, ["YYYY-MM-DD", "YYYY-MM-DDThh:mm:ss"], true)
+          if dateValue.isValid()
+            d[prop] = dateValue.toDate()
+          else if `parseFloat(val) == val`
             d[prop] = parseFloat(val)
+
         d
       data
 
     createMetadata: (data) ->
-      _.object([k, typeof(v)] for k, v of data[0])
+      _.object(
+        [k, if _.isDate(v) then "date" else typeof(v)] for k, v of data[0]
+      )
 
 
   if dashboard

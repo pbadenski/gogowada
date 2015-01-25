@@ -49,14 +49,25 @@ chartDefinitions = [
     name: "line"
     type: "lineChart"
     customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
-      chart
-        .width(1000)
-        .x(d3.scale.linear().domain([
+      sampleElement = _.min(_.pluck(fieldGroup.all(), "key"))
+      date =
+        scale: d3.time.scale().domain([
+          _.min(_.pluck(fieldGroup.all(), "key")),
+          _.max(_.pluck(fieldGroup.all(), "key"))
+      ])
+        tickFormat: d3.time.format "%Y-%m-%d"
+      number =
+        scale: d3.scale.linear().domain([
           0
           _.max(_.pluck(fieldGroup.all(), "key")) * 1.2
-        ]))
+        ])
+        tickFormat: d3.format "s"
+      typeOfDimension = if _.isDate sampleElement then date else number
       chart
-        .xAxis().tickFormat(d3.format("s"))
+        .width(1000)
+        .x(typeOfDimension.scale)
+      chart
+        .xAxis().tickFormat(typeOfDimension.tickFormat)
       chart
         .yAxis().tickFormat(d3.format("s"))
       onSuccess(chart)

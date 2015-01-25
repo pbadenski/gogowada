@@ -1,5 +1,5 @@
 /*!
- *  dc 2.0.0-beta.1
+ *  dc 2.0.0-beta.4
  *  http://dc-js.github.io/dc.js/
  *  Copyright 2012 Nick Zhu and other contributors
  *
@@ -20,7 +20,7 @@
 'use strict';
 
 /**
-#### Version 2.0.0-beta.1
+#### Version 2.0.0-beta.4
 The entire dc.js library is scoped under the **dc** name space. It does not introduce anything else
 into the global name space.
 #### Function Chaining
@@ -41,7 +41,7 @@ that are chainable d3 objects.)
 /*jshint -W062*/
 /*jshint -W079*/
 var dc = {
-    version: '2.0.0-beta.1',
+    version: '2.0.0-beta.4',
     constants: {
         CHART_CLASS: 'dc-chart',
         DEBUG_GROUP_CLASS: 'debug',
@@ -502,6 +502,18 @@ dc.logger.debug = function (msg) {
     return dc.logger;
 };
 
+dc.logger.deprecate = function (fn, msg) {
+    // Allow logging of deprecation
+    var warned = false;
+    function deprecated() {
+        if (!warned) {
+            dc.logger.warn(msg);
+            warned = true;
+        }
+        return fn.apply(this, arguments);
+    }
+    return deprecated;
+};
 dc.events = {
     current: null
 };
@@ -683,7 +695,6 @@ dc.baseMixin = function (_chart) {
 
     var _filterPrinter = dc.printers.filters;
 
-    var _renderlets = [];
     var _mandatoryAttributes = ['dimension', 'group'];
 
     var _chartGroup = dc.constants.DEFAULT_CHART_GROUP;
@@ -694,7 +705,8 @@ dc.baseMixin = function (_chart) {
         'preRedraw',
         'postRedraw',
         'filtered',
-        'zoomed');
+        'zoomed',
+        'renderlet');
 
     var _legend;
 
@@ -1113,13 +1125,13 @@ dc.baseMixin = function (_chart) {
         if (_chart.transitionDuration() > 0 && _svg) {
             _svg.transition().duration(_chart.transitionDuration())
                 .each('end', function () {
-                    runAllRenderlets();
+                    _listeners['renderlet'](_chart);
                     if (event) {
                         _listeners[event](_chart);
                     }
                 });
         } else {
-            runAllRenderlets();
+            _listeners['renderlet'](_chart);
             if (event) {
                 _listeners[event](_chart);
             }
@@ -1617,6 +1629,9 @@ dc.baseMixin = function (_chart) {
     right after the chart finishes its own drawing routine, giving you a way to modify the svg
     elements. Renderlet functions take the chart instance as the only input parameter and you can
     use the dc API or use raw d3 to achieve pretty much any effect.
+
+    @Deprecated - Use [Listeners](#Listeners) with a 'renderlet' prefix
+    Generates a random key for the renderlet, which makes it hard for removal.
     ```js
     // renderlet function
     chart.renderlet(function(chart){
@@ -1628,16 +1643,10 @@ dc.baseMixin = function (_chart) {
     ```
 
     **/
-    _chart.renderlet = function (_) {
-        _renderlets.push(_);
+    _chart.renderlet = dc.logger.deprecate(function (_) {
+        _chart.on('renderlet.' + dc.utils.uniqueId(), _);
         return _chart;
-    };
-
-    function runAllRenderlets() {
-        for (var i = 0; i < _renderlets.length; ++i) {
-            _renderlets[i](_chart);
-        }
-    }
+    }, 'chart.renderlet has been deprecated.  Please use chart.on("renderlet.<renderletKey>", renderletFunction)');
 
     /**
     #### .chartGroup([group])
@@ -1717,6 +1726,10 @@ dc.baseMixin = function (_chart) {
     /**
     ## Listeners
     All dc chart instance supports the following listeners.
+
+    #### .on('renderlet', function(chart, filter){...})
+    This listener function will be invoked after transitions after redraw and render. Replaces the
+    deprecated `.renderlet()` method.
 
     #### .on('preRender', function(chart){...})
     This listener function will be invoked before chart rendering.
@@ -4240,7 +4253,7 @@ dc.barChart = function (parent, chartGroup) {
         }
 
         if (_chart.isOrdinal()) {
-            bars.on('click', onClick);
+            bars.on('click', _chart.onClick);
         }
 
         dc.transition(bars, _chart.transitionDuration())
@@ -4337,9 +4350,9 @@ dc.barChart = function (parent, chartGroup) {
         return _chart;
     };
 
-    function onClick(d) {
-        _chart.onClick(d.data);
-    }
+    dc.override(_chart, 'onClick', function (d) {
+        _chart._onClick(d.data);
+    });
 
     /**
     #### .barPadding([padding])
@@ -7826,6 +7839,47 @@ dc.heatMap = function (parent, chartGroup) {
     _chart._mandatoryAttributes(['group']);
     _chart.title(_chart.colorAccessor());
 
+    var _colsLabel = function (d) {
+        return d;
+    };
+    var _rowsLabel = function (d) {
+        return d;
+    };
+
+   /**
+    #### .colsLabel([labelFunction])
+    Set or get the column label function. The chart class uses this function to render
+    column labels on the X axis. It is passed the column name.
+    ```js
+    // the default label function just returns the name
+    chart.colsLabel(function(d) { return d; });
+    ```
+    **/
+    _chart.colsLabel = function (_) {
+        if (!arguments.length) {
+            return _colsLabel;
+        }
+        _colsLabel = _;
+        return _chart;
+    };
+
+   /**
+    #### .rowsLabel([labelFunction])
+    Set or get the row label function. The chart class uses this function to render
+    row labels on the Y axis. It is passed the row name.
+    ```js
+    // the default label function just returns the name
+    chart.rowsLabel(function(d) { return d; });
+    ```
+    **/
+    _chart.rowsLabel = function (_) {
+        if (!arguments.length) {
+            return _rowsLabel;
+        }
+        _rowsLabel = _;
+        return _chart;
+    };
+
     var _xAxisOnClick = function (d) { filterAxis(0, d); };
     var _yAxisOnClick = function (d) { filterAxis(1, d); };
     var _boxOnClick = function (d) {
@@ -7968,9 +8022,9 @@ dc.heatMap = function (parent, chartGroup) {
               .attr('y', _chart.effectiveHeight())
               .attr('dy', 12)
               .on('click', _chart.xAxisOnClick())
-              .text(function (d) { return d; });
+              .text(_chart.colsLabel());
         dc.transition(gColsText, _chart.transitionDuration())
-               .text(function (d) { return d; })
+               .text(_chart.colsLabel())
                .attr('x', function (d) { return cols(d) + boxWidth / 2; });
         gColsText.exit().remove();
         var gRows = _chartBody.selectAll('g.rows');
@@ -7984,9 +8038,9 @@ dc.heatMap = function (parent, chartGroup) {
               .attr('x', 0)
               .attr('dx', -2)
               .on('click', _chart.yAxisOnClick())
-              .text(function (d) { return d; });
+              .text(_chart.rowsLabel());
         dc.transition(gRowsText, _chart.transitionDuration())
-              .text(function (d) { return d; })
+              .text(_chart.rowsLabel())
               .attr('y', function (d) { return rows(d) + boxHeight / 2; });
         gRowsText.exit().remove();
 
