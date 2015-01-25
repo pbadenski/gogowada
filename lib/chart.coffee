@@ -24,7 +24,7 @@ chartDefinitions = [
     customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
       chart
         .x(d3.scale.linear().domain([
-          0
+          _.min(_.pluck(fieldGroup.all(), "key")) * 0.8,
           _.max(_.pluck(fieldGroup.all(), "key")) * 1.2
         ]))
         .centerBar(true)
@@ -45,7 +45,7 @@ chartDefinitions = [
         tickFormat: d3.time.format "%Y-%m-%d"
       number =
         scale: d3.scale.linear().domain([
-          0
+          _.min(_.pluck(fieldGroup.all(), "key")) * 0.8,
           _.max(_.pluck(fieldGroup.all(), "key")) * 1.2
         ])
         tickFormat: d3.format "s"
