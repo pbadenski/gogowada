@@ -15,10 +15,10 @@ var gulp       = require('gulp'),
 gulp.task('ext-js', function() {
   gulp.src(bowerFiles())
     .pipe(filter("**/*.js"))
-    .pipe(sourcemaps.init())
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(concat('vendor.js'))
     .pipe(uglify()).on('error', gutil.log)
+    .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest('dist'))
 });
 
