@@ -33,19 +33,6 @@ chartDefinitions = [
       onSuccess(chart)
   }
   {
-    name: "bubble"
-    type: "bubbleChart"
-    customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
-      chart.x(d3.scale.linear().domain([
-        0
-        fieldGroup.orderNatural().top(1)[0].value
-      ])).y(d3.scale.linear().domain([
-        0
-        fieldGroup.orderNatural().top(1)[0].value
-      ]))
-      onSuccess(chart)
-  }
-  {
     name: "line"
     type: "lineChart"
     customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
