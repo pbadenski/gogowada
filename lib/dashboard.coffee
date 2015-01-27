@@ -1,18 +1,27 @@
 GraphConfiguration = require "./graph_configuration"
 Chart = require "./chart"
 
-chartInstances = {}
+removeWidgetHandler = (target, chartInstances, gridster) ->
+  chartId = $(target).closest("li").find("div[data-chart-id]").attr("data-chart-id")
+  chartInstance = chartInstances[chartId].instance
+  chartInstance.cleanupOnDelete()
+  gridster.remove_widget($(target).closest("li"))
+
 module.exports = class Dashboard
+  @chartInstances: {}
+
   constructor: (@data, @gridster) ->
     @data = @normalize(data)
     @csData = crossfilter(@data)
     @graphConfiguration = new GraphConfiguration @data
     $("#add-graph")
       .click () =>
-        chart = new Chart(@csData, gridster, chartInstances)
+        chart = new Chart(@csData, gridster, Dashboard.chartInstances)
             .groupByFunction "count"
-        @graphConfiguration.setupGraphConfigurationUI(chartInstances, gridster)
-        $("##{chart.chartId} .widget-configure").click()
+        $(".widget-remove").click (clickEvent) ->
+          removeWidgetHandler(clickEvent.target, Dashboard.chartInstances, gridster)
+        @graphConfiguration.setupUI(Dashboard.chartInstances, gridster)
+        $("##{chart.chartId} .graph-configure").click()
     dc.dataCount(".dc-data-count").dimension(@csData).group(@csData.groupAll()).html
       some: "<strong>%filter-count</strong> selected out of <strong>%total-count</strong> records" + " | <a href='javascript:dc.filterAll(); dc.renderAll();''>Reset All</a>"
       all: "All records selected. Please click on the graph to apply filters."
@@ -20,14 +29,16 @@ module.exports = class Dashboard
 
   loadCharts: (charts) ->
     _.map charts, (eachSpec) =>
-      new Chart(@csData, @gridster, chartInstances)
+      new Chart(@csData, @gridster, Dashboard.chartInstances)
         .type(eachSpec.chartType)
         .dimension(eachSpec.dimension)
         .groupByFunction "count"
         .extras(eachSpec.extras or {})
         .configure (chart) =>
           chart.render()
-          @graphConfiguration.setupGraphConfigurationUI(chartInstances, @gridster)
+          @graphConfiguration.setupUI(Dashboard.chartInstances, @gridster)
+          $(".widget-remove").click (clickEvent) =>
+            removeWidgetHandler(clickEvent.target, Dashboard.chartInstances, @gridster)
 
   normalize: (data) ->
     data = _.map data, (d) ->

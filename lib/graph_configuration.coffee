@@ -23,21 +23,17 @@ module.exports = class GraphConfiguration
       [k, if _.isDate(v) then "date" else typeof(v)] for k, v of data[0]
     )
 
-  setupGraphConfigurationUI: (chartInstances, gridster) ->
+  setupUI: (chartInstances, gridster) ->
     self = this
-    $(".widget-remove").click (clickEvent) ->
-      chartId = $(clickEvent.target).closest("li").find("div[data-chart-id]").attr("data-chart-id")
-      chartInstance = chartInstances[chartId].instance
-      chartInstance.cleanupOnDelete()
-      gridster.remove_widget($(clickEvent.target).closest("li"))
     $(".gridster").click (e) ->
       if not $(e.target).closest('li.gs-w').length
         $(".widget-selected").removeClass("widget-selected")
-        $("#widget-configuration").empty()
-    $(".widget-configure").click (clickEvent) ->
+        $("#graph-configuration").empty()
+    $(".graph-configure").click (clickEvent) ->
       markSelected = (attributeSelect, accessor) ->
-        $(self.components).filter("##{attributeSelect}Select").children("option[value='#{chartInstance[accessor]()}']").prop("selected", true)
-        $(self.components).filter("##{attributeSelect}Select").change()
+        selectElement = $(self.components).filter("##{attributeSelect}Select")
+        selectElement.children("option[value='#{chartInstance[accessor]()}']").prop("selected", true)
+        selectElement.change()
 
       updateChartOnChange = (attributeSelect, accessor) ->
         $(self.components).filter("##{attributeSelect}Select").change (changeEvent) ->
@@ -46,7 +42,7 @@ module.exports = class GraphConfiguration
 
       $(".widget-selected").removeClass("widget-selected")
       $(clickEvent.target).closest("li").addClass("widget-selected")
-      $("#widget-configuration").html(self.components)
+      $("#graph-configuration").html(self.components)
       chartId = $(clickEvent.target).closest("li").find("div[data-chart-id]").attr("data-chart-id")
       chartInstance = chartInstances[chartId].instance
 

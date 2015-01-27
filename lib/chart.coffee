@@ -85,7 +85,7 @@ module.exports = class Chart
   constructor: (@csData, @gridster, chartInstances) ->
     @chartId = "chart_" + new Date().getTime()
     @gridWidget = gridster.add_widget("<li></li>", 4, 4)
-    widgets = "<div class='widgets' style='float: right'><a class='reset' href='#' style='display: none;'>reset</a><span class='widget-configure fa fa-wrench glow'></span><span class='widget-remove fa fa-remove glow'></span></div>"
+    widgets = "<div class='widgets' style='float: right'><a class='reset' href='#' style='display: none;'>reset</a><span class='graph-configure fa fa-wrench glow'></span><span class='widget-remove fa fa-remove glow'></span></div>"
     @gridWidget.append "<div id='" + @chartId + "' data-chart-id='#{@chartId}'><header class='widget-drag-handle fa fa-navicon'></header>#{widgets}<strong class='chart-title'>&nbsp;</strong><div class='clearfix'></div><div class='chart-content'></div></div>"
     chartInstances[@chartId] = instance: this
   type: (type) ->
@@ -130,6 +130,21 @@ module.exports = class Chart
 
   cleanupOnDelete: () ->
     dc.deregisterChart(@dcInstance) if @dcInstance
+
+  resizeGridsterWidgetToFitChart: () ->
+    [gridster_widget_width, gridster_widget_height] = @gridster.options.widget_base_dimensions
+    [gridster_margin_width, gridster_margin_height] = @gridster.options.widget_margins
+
+    gridster_col_width_with_margins  = gridster_widget_width + 2 * gridster_margin_width
+    gridster_cols = Math.ceil((@gridWidget.find('.dc-chart').width() + 20) / gridster_col_width_with_margins)
+
+    gridster_row_height_with_margins = gridster_widget_height + 2 * gridster_margin_height
+    gridster_rows = Math.ceil((@gridWidget.find('.dc-chart').height() + 20) / gridster_row_height_with_margins)
+
+    @gridster.resize_widget @gridWidget, gridster_cols, gridster_rows
+    @gridWidget.find('.dc-chart').find('.reset').click () ->
+      chart.filterAll()
+      dc.redrawAll()
 
   configure: (onSuccess = () -> null) ->
     return if @type() is undefined
@@ -198,23 +213,10 @@ module.exports = class Chart
         all: () ->
           fieldGroup.all().filter (d) ->
             if _.isArray d.key
-              (_.isArray(d.key) and !_.contains(d.key, undefined))
+              not _.contains(d.key, undefined)
             else
-              (d.key?) and (d.value.count > 0)
+              d.key? and (d.value.count > 0)
       .turnOnControls(true)
-      .on "postRender", (chart) =>
-         [gridster_widget_width, gridster_widget_height] = @gridster.options.widget_base_dimensions
-         [gridster_margin_width, gridster_margin_height] = @gridster.options.widget_margins
-
-         gridster_col_width_with_margins  = gridster_widget_width + 2 * gridster_margin_width
-         gridster_cols = Math.ceil((@gridWidget.find('.dc-chart').width() + 20) / gridster_col_width_with_margins)
-
-         gridster_row_height_with_margins = gridster_widget_height + 2 * gridster_margin_height
-         gridster_rows = Math.ceil((@gridWidget.find('.dc-chart').height() + 20) / gridster_row_height_with_margins)
-         
-         @gridster.resize_widget @gridWidget, gridster_cols, gridster_rows
-         @gridWidget.find('.dc-chart').find('.reset').click () ->
-           chart.filterAll()
-           dc.redrawAll()
-       .valueAccessor((d) => d.value[@groupByFunction()])
+      .on "postRender", (chart) => @resizeGridsterWidgetToFitChart()
+      .valueAccessor((d) => d.value[@groupByFunction()])
      chartDefinition.customize(chart, @dimension(), fieldDimension, fieldGroup, onSuccess, @extras())
