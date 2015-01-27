@@ -1,92 +1,10 @@
-chartDefinitions = [
-  {
-    name: "pie"
-    type: "pieChart"
-    customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
-      chart
-        .width(200)
-        .height(200)
-      onSuccess(chart)
-  }
-  {
-    name: "donut"
-    type: "pieChart"
-    customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
-      chart
-        .width(200)
-        .height(200)
-        .innerRadius(40)
-      onSuccess(chart)
-  }
-  {
-    name: "bar"
-    type: "barChart"
-    customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
-      chart
-        .x(d3.scale.linear().domain([
-          _.min(_.pluck(fieldGroup.all(), "key")) * 0.8,
-          _.max(_.pluck(fieldGroup.all(), "key")) * 1.2
-        ]))
-        .centerBar(true)
-        .elasticY(true)
-        .xAxis().tickFormat(d3.format("s"))
-      onSuccess(chart)
-  }
-  {
-    name: "line"
-    type: "lineChart"
-    customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
-      sampleElement = _.min(_.pluck(fieldGroup.all(), "key"))
-      date =
-        scale: d3.time.scale().domain([
-          _.min(_.pluck(fieldGroup.all(), "key")),
-          _.max(_.pluck(fieldGroup.all(), "key"))
-      ])
-        tickFormat: d3.time.format "%Y-%m-%d"
-      number =
-        scale: d3.scale.linear().domain([
-          _.min(_.pluck(fieldGroup.all(), "key")) * 0.8,
-          _.max(_.pluck(fieldGroup.all(), "key")) * 1.2
-        ])
-        tickFormat: d3.format "s"
-      typeOfDimension = if _.isDate sampleElement then date else number
-      chart
-        .width(1000)
-        .x(typeOfDimension.scale)
-      chart
-        .xAxis().tickFormat(typeOfDimension.tickFormat)
-      chart
-        .yAxis().tickFormat(d3.format("s"))
-      onSuccess(chart)
-  }
-  {
-    name: "row"
-    type: "rowChart"
-    customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess) ->
-      chart
-        .height () -> 25 * (chart.group().all().length + 1)
-        .xAxis().tickFormat(d3.format("s"))
-      onSuccess(chart)
-  }
-  {
-    name: "choropleth"
-    type: "leafletChoroplethChart"
-    customize: (chart, dimension, fieldDimension, fieldGroup, onSuccess, extras) ->
-      d3.json extras.geojson, (geojson) =>
-        chart
-          .center([41.83, -87.68])
-          .zoom(10)
-          .geojson(geojson)
-          .featureKeyAccessor(extras.featureKeyAccessor)
-        onSuccess(chart)
-  }
-]
+ChartDefinitions = require './chart_definitions'
 module.exports = class Chart
   constructor: (@csData, @gridster, chartInstances) ->
     @chartId = "chart_" + new Date().getTime()
     @gridWidget = gridster.add_widget("<li></li>", 4, 4)
     widgets = "<div class='widgets' style='float: right'><a class='reset' href='#' style='display: none;'>reset</a><span class='graph-configure fa fa-wrench glow'></span><span class='widget-remove fa fa-remove glow'></span></div>"
-    @gridWidget.append "<div id='" + @chartId + "' data-chart-id='#{@chartId}'><header class='widget-drag-handle fa fa-navicon'></header>#{widgets}<strong class='chart-title'>&nbsp;</strong><div class='clearfix'></div><div class='chart-content'></div></div>"
+    @gridWidget.append "<div id='#{@chartId}' data-chart-id='#{@chartId}'><header class='widget-drag-handle fa fa-navicon'></header>#{widgets}<strong class='chart-title'>&nbsp;</strong><div class='clearfix'></div><div class='chart-content'></div></div>"
     chartInstances[@chartId] = instance: this
   type: (type) ->
     if type is undefined
@@ -146,66 +64,37 @@ module.exports = class Chart
       chart.filterAll()
       dc.redrawAll()
 
+  createReducers: () ->
+    reduceAdd = (attr) ->
+      (p, v) ->
+        ++p.count
+        p.sum += if attr then (v[attr] or 0) else 0
+        p.average = p.sum / p.count
+        p
+    reduceRemove = (attr) ->
+      (p, v) ->
+        --p.count
+        p.sum -= if attr then (v[attr] or 0) else 0
+        p.average = p.sum / p.count
+        p
+    reduceInit = ->
+      count: 0
+      sum: 0
+      average: 0
+    [reduceAdd, reduceRemove, reduceInit]
+
   configure: (onSuccess = () -> null) ->
     return if @type() is undefined
     return if @dimension() is undefined
-    chartDefinition = _.findWhere(chartDefinitions, {name: @type()})
     dc.deregisterChart @dcInstance if @dcInstance
+
+    chartDefinition = ChartDefinitions[@type()]
     chart = dc[chartDefinition.type]("##{@chartId}")
     @dcInstance = chart
-    $("##{@chartId} .chart-title").html("&nbsp;#{S(@dimension().name).humanize()}")
-    fieldDimension = @csData.dimension(@dimension().f)
-    dimensionElement = @dimension().f(fieldDimension.top(1)[0])
-    if _.isArray dimensionElement
-      reduceAdd = (p, v) =>
-        @dimension().f(v).forEach (val, idx) ->
-          p[val] = (p[val] or 0) + 1
-        p
-      reduceRemove = (p, v) =>
-        @dimension().f(v).forEach (val, idx) ->
-          p[val] = (p[val] or 0) - 1
-        p
-      reduceInitial = () -> {}
-      fieldGroup = fieldDimension.groupAll().reduce(reduceAdd, reduceRemove, reduceInitial).value()
-      fieldGroup.all = ->
-        newObject = []
-        for key of this
-          if @hasOwnProperty(key) and key isnt "all"
-            newObject.push
-              key: key
-              value: this[key]
 
-        newObject
-      chart.filterHandler (dimension, filters) ->
-        dimension.filter null
-        if filters.length is 0
-          dimension.filter null
-        else
-          dimension.filterFunction (d) ->
-            i = 0
-            while i < d.length
-              return true  if filters.indexOf(d[i]) >= 0
-              i++
-            false
-        filters
-    else
-      reduceAddAvg = (attr) ->
-        (p, v) ->
-          ++p.count
-          p.sum += if attr then (v[attr] or 0) else 0
-          p.average = p.sum / p.count
-          p
-      reduceRemoveAvg = (attr) ->
-        (p, v) ->
-          --p.count
-          p.sum -= if attr then (v[attr] or 0) else 0
-          p.average = p.sum / p.count
-          p
-      reduceInitAvg = ->
-        count: 0
-        sum: 0
-        average: 0
-      fieldGroup = fieldDimension.group().reduce(reduceAddAvg(@groupByProperty()), reduceRemoveAvg(@groupByProperty()), reduceInitAvg)
+    fieldDimension = @csData.dimension(@dimension().f)
+    [reduceAdd, reduceRemove, reduceInit] = @createReducers()
+    fieldGroup = fieldDimension.group().reduce(reduceAdd(@groupByProperty()), reduceRemove(@groupByProperty()), reduceInit)
     chart
       .root(d3.select "##{@chartId} .chart-content")
       .dimension(fieldDimension)
@@ -219,4 +108,5 @@ module.exports = class Chart
       .turnOnControls(true)
       .on "postRender", (chart) => @resizeGridsterWidgetToFitChart()
       .valueAccessor((d) => d.value[@groupByFunction()])
-     chartDefinition.customize(chart, @dimension(), fieldDimension, fieldGroup, onSuccess, @extras())
+    $("##{@chartId} .chart-title").html("&nbsp;#{S(@dimension().name).humanize()}")
+    chartDefinition.customize(chart, fieldGroup, onSuccess, @extras())
