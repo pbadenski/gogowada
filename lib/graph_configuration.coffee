@@ -1,3 +1,4 @@
+ChartDefinitions = require './chart_definitions'
 module.exports = class GraphConfiguration
   constructor: (data) ->
     @metadata = @createMetadata(data)
@@ -6,7 +7,7 @@ module.exports = class GraphConfiguration
       _.map(options, (each) ->  "<option value='#{each}'>#{optionDisplay(S(each).humanize().toLowerCase())}</option>") +
       "</select>"
 
-    charts = ["bar", "pie", "row", "donut", "line"].sort()
+    charts = _.reject(_.keys(ChartDefinitions), (d) -> _.contains(["choropleth"], d)).sort()
     properties = _.keys(_.sample(data, 1)[0]).sort()
 
     @components = $(
