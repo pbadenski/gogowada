@@ -25,7 +25,8 @@
     "bootstrap": "~3.3.2",
     "font-awesome": "~4.3.0",
     "Hover": "~1.0.8",
-    "momentjs": "~2.9.0"
+    "momentjs": "~2.9.0",
+    "leaflet.markercluster": "~0.4.0"
   },
   "overrides": {
     "crossfilter": {
@@ -35,6 +36,12 @@
       "main": [
         "dist/jquery.gridster.js",
         "dist/jquery.gridster.css"
+      ]
+    },
+    "leaflet.markercluster": {
+      "main": [
+        "dist/leaflet.markercluster.js",
+        "dist/MarkerCluster.Default.css"
       ]
     },
     "dc.leaflet.js": {

@@ -196,7 +196,11 @@ module.exports = class Chart
       .dimension(fieldDimension)
       .group
         all: () ->
-          fieldGroup.all().filter (d) -> d.value.count > 0
+          fieldGroup.all().filter (d) ->
+            if _.isArray d.key
+              (_.isArray(d.key) and !_.contains(d.key, undefined))
+            else
+              (d.key?) and (d.value.count > 0)
       .turnOnControls(true)
       .on "postRender", (chart) =>
          [gridster_widget_width, gridster_widget_height] = @gridster.options.widget_base_dimensions
