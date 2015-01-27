@@ -33,6 +33,7 @@ module.exports = class GraphConfiguration
     $(".graph-configure").click (clickEvent) ->
       markSelected = (attributeSelect, accessor) ->
         selectElement = $(self.components).filter("##{attributeSelect}Select")
+        selectElement.children("option").prop("selected", false)
         selectElement.children("option[value='#{chartInstance[accessor]()}']").prop("selected", true)
         selectElement.change()
 

@@ -6,6 +6,7 @@ removeWidgetHandler = (target, chartInstances, gridster) ->
   chartInstance = chartInstances[chartId].instance
   chartInstance.cleanupOnDelete()
   gridster.remove_widget($(target).closest("li"))
+  $("#graph-configuration").empty()
 
 module.exports = class Dashboard
   @chartInstances: {}
