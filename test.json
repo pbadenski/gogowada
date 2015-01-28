@@ -1,0 +1,5002 @@
+[ {
+  "phone_number" : "773-205-7862",
+  "zip_code" : "60630",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7397474866",
+    "latitude" : "41.9682242321",
+    "human_address" : "{\"address\":\"4444 W. Lawrence Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Mayfair Commons",
+  "management_company" : "Metroplex, Inc.",
+  "x_coordinate" : "1145674.7538177613",
+  "units" : "97",
+  "property_type" : "Senior",
+  "address" : "4444 W. Lawrence Ave.",
+  "y_coordinate" : "1931569.979044555",
+  "longitude" : "-87.7397474866",
+  "community_area" : "Albany Park",
+  "latitude" : "41.9682242321",
+  "community_area_number" : "14"
+}
+, {
+  "phone_number" : "773-509-9333",
+  "zip_code" : "60618",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6985441744",
+    "latitude" : "41.9613586525",
+    "human_address" : "{\"address\":\"2800 W. Montrose Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of Ravenswood Manor",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1156898.5139453819",
+  "units" : "80",
+  "property_type" : "Senior",
+  "address" : "2800 W. Montrose Ave.",
+  "y_coordinate" : "1929148.4609726223",
+  "longitude" : "-87.6985441744",
+  "community_area" : "Albany Park",
+  "latitude" : "41.9613586525",
+  "community_area_number" : "14"
+}
+, {
+  "phone_number" : "773-463-3004",
+  "zip_code" : "60625",
+  "property_name" : "Darul Amaan Senior Living",
+  "management_company" : "East Lake Management & Development Corp.",
+  "units" : "56",
+  "property_type" : "Senior",
+  "address" : "4814-58 N. Kedzie Ave.",
+  "community_area" : "Albany Park",
+  "community_area_number" : "14"
+}
+, {
+  "phone_number" : "773-471-7777",
+  "zip_code" : "60652",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6932733372",
+    "latitude" : "41.7497264566",
+    "human_address" : "{\"address\":\"2815 W. 79th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Wrightwood Senior Apartments",
+  "management_company" : "Ludwig and Company",
+  "x_coordinate" : "1158906.9337661215",
+  "units" : "85",
+  "property_type" : "Senior",
+  "address" : "2815 W. 79th St.",
+  "y_coordinate" : "1852040.9542699235",
+  "longitude" : "-87.6932733372",
+  "community_area" : "Ashburn ",
+  "latitude" : "41.7497264566",
+  "community_area_number" : "70"
+}
+, {
+  "phone_number" : "773-651-9234",
+  "zip_code" : "60620",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6378199128",
+    "latitude" : "41.740186358",
+    "human_address" : "{\"address\":\"8440 S. Parnell Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Stone Terrace",
+  "management_company" : "East Lake Management & Development Corp.",
+  "x_coordinate" : "1174067.0161528846",
+  "units" : "56",
+  "property_type" : "Multifamily",
+  "address" : "8440 S. Parnell Ave.",
+  "y_coordinate" : "1848682.073813996",
+  "longitude" : "-87.6378199128",
+  "community_area" : "Auburn Gresham",
+  "latitude" : "41.740186358",
+  "community_area_number" : "71"
+}
+, {
+  "phone_number" : "773-994-7850",
+  "zip_code" : "60620",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6547267546",
+    "latitude" : "41.7505934139",
+    "human_address" : "{\"address\":\"1222 W. 79th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "St. Sabina Elder Village Apartments",
+  "management_company" : "Catholic Charities Housing Devp.",
+  "x_coordinate" : "1169422.9298314867",
+  "units" : "80",
+  "property_type" : "Senior HUD 202",
+  "address" : "1222 W. 79th St.",
+  "y_coordinate" : "1852437.4683081156",
+  "longitude" : "-87.6547267546",
+  "community_area" : "Auburn Gresham",
+  "latitude" : "41.7505934139",
+  "community_area_number" : "71"
+}
+, {
+  "phone_number" : "773-723-0333",
+  "zip_code" : "60620",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6509223206",
+    "latitude" : "41.7506486193",
+    "human_address" : "{\"address\":\"1050 W. 79th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of Auburn-Gresham",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1170460.9005370243",
+  "units" : "85",
+  "property_type" : "Senior",
+  "address" : "1050 W. 79th St.",
+  "y_coordinate" : "1852465.7954619504",
+  "longitude" : "-87.6509223206",
+  "community_area" : "Auburn Gresham",
+  "latitude" : "41.7506486193",
+  "community_area_number" : "71"
+}
+, {
+  "phone_number" : "773-651-6400",
+  "zip_code" : "60620",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6438256988",
+    "latitude" : "41.7482223777",
+    "human_address" : "{\"address\":\"8019-55 S. Halsted St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Naomi & Sylvester Smith Senior Living Ctr.",
+  "management_company" : "HSR Property Services, LLC",
+  "x_coordinate" : "1172404.4659361218",
+  "units" : "59",
+  "property_type" : "Senior HUD 202",
+  "address" : "8019-55 S. Halsted St.",
+  "y_coordinate" : "1851597.1338227245",
+  "longitude" : "-87.6438256988",
+  "community_area" : "Auburn Gresham",
+  "latitude" : "41.7482223777",
+  "community_area_number" : "71"
+}
+, {
+  "phone_number" : "773-238-0850",
+  "zip_code" : "60620",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6641427166",
+    "latitude" : "41.7358851523",
+    "human_address" : "{\"address\":\"1626 W. 87th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Auburn Commons",
+  "management_company" : "Urban Property Advisors, LLC",
+  "x_coordinate" : "1166895.2399723816",
+  "units" : "72",
+  "property_type" : "Senior",
+  "address" : "1626 W. 87th St.",
+  "y_coordinate" : "1847057.795509487",
+  "longitude" : "-87.6641427166",
+  "community_area" : "Auburn Gresham",
+  "latitude" : "41.7358851523",
+  "community_area_number" : "71"
+}
+, {
+  "phone_number" : "773-568-1020",
+  "zip_code" : "60644",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7632486365",
+    "latitude" : "41.8905193977",
+    "human_address" : "{\"address\":\"557 N. Pine Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Pine Central",
+  "management_company" : "NHS Redevelopment Corp.",
+  "x_coordinate" : "1139471.8964290908",
+  "units" : "78",
+  "property_type" : "Multifamily",
+  "address" : "557 N. Pine Ave.",
+  "y_coordinate" : "1903210.8349472568",
+  "longitude" : "-87.7632486365",
+  "community_area" : "Austin",
+  "latitude" : "41.8905193977",
+  "community_area_number" : "25"
+}
+, {
+  "phone_number" : "773-378-0333",
+  "zip_code" : "60644",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7698395847",
+    "latitude" : "41.8867327472",
+    "human_address" : "{\"address\":\"335 N. Menard Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of Austin",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1137686.376645474",
+  "units" : "84",
+  "property_type" : "Senior",
+  "address" : "335 N. Menard Ave.",
+  "y_coordinate" : "1901819.130569767",
+  "longitude" : "-87.7698395847",
+  "community_area" : "Austin",
+  "latitude" : "41.8867327472",
+  "community_area_number" : "25"
+}
+, {
+  "phone_number" : "773-227-1366",
+  "zip_code" : "60647",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7139831909",
+    "latitude" : "41.9139416392",
+    "human_address" : "{\"address\":\"1816 N. St. Louis Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Madison Renaissance Apts.",
+  "management_company" : "Related Management Co. LP",
+  "x_coordinate" : "1152824.2609262054",
+  "units" : "30",
+  "property_type" : "Multifamily",
+  "address" : "1816 N. St. Louis Ave.",
+  "y_coordinate" : "1911838.8695456833",
+  "longitude" : "-87.7139831909",
+  "community_area" : "Austin",
+  "latitude" : "41.9139416392",
+  "community_area_number" : "22"
+}
+, {
+  "phone_number" : "773-572-5272",
+  "zip_code" : "60644",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7701332901",
+    "latitude" : "41.8867274207",
+    "human_address" : "{\"address\":\"334 N. Menard Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Menard Apartments",
+  "management_company" : "The Thresholds",
+  "x_coordinate" : "1137606.4146619358",
+  "units" : "57",
+  "property_type" : "Supportive Housing",
+  "address" : "334 N. Menard Ave.",
+  "y_coordinate" : "1901816.6645631457",
+  "longitude" : "-87.7701332901",
+  "community_area" : "Austin",
+  "latitude" : "41.8867274207",
+  "community_area_number" : "25"
+}
+, {
+  "phone_number" : "773-261-1550",
+  "zip_code" : "60644",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7649480305",
+    "latitude" : "41.8784946733",
+    "human_address" : "{\"address\":\"126 S. Central Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Rebecca Walker Complex",
+  "management_company" : "Affordable Property Management Specialist",
+  "x_coordinate" : "1139038.207738362",
+  "units" : "40",
+  "property_type" : "Multifamily",
+  "address" : "126 S. Central Ave.",
+  "y_coordinate" : "1898825.9744650354",
+  "longitude" : "-87.7649480305",
+  "community_area" : "Austin",
+  "latitude" : "41.8784946733",
+  "community_area_number" : "25"
+}
+, {
+  "phone_number" : "773-261-1550",
+  "zip_code" : "60644",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7646186402",
+    "latitude" : "41.8775981392",
+    "human_address" : "{\"address\":\"223-9 S. Central Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Rebecca Walker Complex",
+  "management_company" : "Affordable Property Management Specialist",
+  "x_coordinate" : "1139130.0755862487",
+  "units" : "12",
+  "property_type" : "Multifamily",
+  "address" : "223-9 S. Central Ave.",
+  "y_coordinate" : "1898499.8733970954",
+  "longitude" : "-87.7646186402",
+  "community_area" : "Austin",
+  "latitude" : "41.8775981392",
+  "community_area_number" : "25"
+}
+, {
+  "phone_number" : "773-261-1550",
+  "zip_code" : "60644",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7642368505",
+    "latitude" : "41.8773374951",
+    "human_address" : "{\"address\":\"5565-71 W. Quincy Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Rebecca Walker Complex",
+  "management_company" : "Affordable Property Management Specialist",
+  "x_coordinate" : "1139234.679867539",
+  "units" : "12",
+  "property_type" : "Multifamily",
+  "address" : "5565-71 W. Quincy Ave.",
+  "y_coordinate" : "1898405.584397663",
+  "longitude" : "-87.7642368505",
+  "community_area" : "Austin",
+  "latitude" : "41.8773374951",
+  "community_area_number" : "25"
+}
+, {
+  "phone_number" : "773-287-1592",
+  "zip_code" : "60644",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7549712034",
+    "latitude" : "41.873765121",
+    "human_address" : "{\"address\":\"504 S. Laramie Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Congress Commons LLC",
+  "management_company" : "Congress Commons LLC",
+  "x_coordinate" : "1141766.8175998074",
+  "units" : "161",
+  "property_type" : "Multifamily",
+  "address" : "504 S. Laramie Ave.",
+  "y_coordinate" : "1897120.6862710943",
+  "longitude" : "-87.7549712034",
+  "community_area" : "Austin",
+  "latitude" : "41.873765121",
+  "community_area_number" : "25"
+}
+, {
+  "phone_number" : "773-287-2972",
+  "zip_code" : "60644",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7413139552",
+    "latitude" : "41.8758617765",
+    "human_address" : "{\"address\":\"4623 W. Gladys Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Enola A. Dew Senior Apartments",
+  "management_company" : "Prairie Management & Development, Inc.",
+  "x_coordinate" : "1145481.1114175122",
+  "units" : "60",
+  "property_type" : "Senior HUD 202",
+  "address" : "4623 W. Gladys Ave.",
+  "y_coordinate" : "1897910.062111502",
+  "longitude" : "-87.7413139552",
+  "community_area" : "Austin",
+  "latitude" : "41.8758617765",
+  "community_area_number" : "25"
+}
+, {
+  "phone_number" : "773-626-5320",
+  "zip_code" : "60644",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7421678378",
+    "latitude" : "41.875166755",
+    "human_address" : "{\"address\":\"4650 W. Van Buren St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Elois McCoy Village Apartments",
+  "management_company" : "Prairie Management & Development, Inc.",
+  "x_coordinate" : "1145250.3076783537",
+  "units" : "60",
+  "property_type" : "Senior HUD 202",
+  "address" : "4650 W. Van Buren St.",
+  "y_coordinate" : "1897655.194765888",
+  "longitude" : "-87.7421678378",
+  "community_area" : "Austin",
+  "latitude" : "41.875166755",
+  "community_area_number" : "25"
+}
+, {
+  "phone_number" : "773-610-7696",
+  "zip_code" : "60651",
+  "property_name" : "Home for New Moms",
+  "management_company" : "New Moms, Inc.",
+  "units" : "40",
+  "property_type" : "Supportive/Teenage Moms",
+  "address" : "5327 W. Chicago Ave.",
+  "community_area" : "Austin",
+  "community_area_number" : "25"
+}
+, {
+  "phone_number" : "773-933-9000",
+  "zip_code" : "60619",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5954564009",
+    "latitude" : "41.7533208609",
+    "human_address" : "{\"address\":\"1200 E. 78th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Montclare Senior Residences of Avalon Park",
+  "management_company" : "Montclare Senior Residences",
+  "x_coordinate" : "1185587.7421578558",
+  "units" : "102",
+  "property_type" : "Senior",
+  "address" : "1200 E. 78th St.",
+  "y_coordinate" : "1853564.4589579385",
+  "longitude" : "-87.5954564009",
+  "community_area" : "Avalon Park",
+  "latitude" : "41.7533208609",
+  "community_area_number" : "45"
+}
+, {
+  "phone_number" : "708-867-3799",
+  "zip_code" : "60634",
+  "property_name" : "TBD",
+  "management_company" : "Zitella Development ",
+  "units" : "3",
+  "property_type" : "ARO",
+  "address" : "2917-39 N. Central Ave.",
+  "community_area" : "Belmont Cragin",
+  "community_area_number" : "19"
+}
+, {
+  "phone_number" : "773-237-1333",
+  "zip_code" : "60639",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7774775508",
+    "latitude" : "41.9207910105",
+    "human_address" : "{\"address\":\"6045 W. Grand Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of Belmont-Cragin",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1135526.173557574",
+  "units" : "86",
+  "property_type" : "Senior",
+  "address" : "6045 W. Grand Ave.",
+  "y_coordinate" : "1914216.3828398387",
+  "longitude" : "-87.7774775508",
+  "community_area" : "Belmont Cragin",
+  "latitude" : "41.9207910105",
+  "community_area_number" : "19"
+}
+, {
+  "phone_number" : "773-252-0333",
+  "zip_code" : "60639",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7463885389",
+    "latitude" : "41.9301265688",
+    "human_address" : "{\"address\":\"2715 N. Cicero Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of Kelvyn Park",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1143963.794996609",
+  "units" : "85",
+  "property_type" : "Senior",
+  "address" : "2715 N. Cicero Ave.",
+  "y_coordinate" : "1917674.6468974263",
+  "longitude" : "-87.7463885389",
+  "community_area" : "Belmont Cragin",
+  "latitude" : "41.9301265688",
+  "community_area_number" : "19"
+}
+, {
+  "phone_number" : "773-385-9080",
+  "zip_code" : "60639",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7524724894",
+    "latitude" : "41.916960542",
+    "human_address" : "{\"address\":\"5038 W. Armitage Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Crystal Courts/Anixter Center",
+  "management_company" : "Lester and Rosalie Anixter Center",
+  "x_coordinate" : "1142340.781111415",
+  "units" : "17",
+  "property_type" : "Senior",
+  "address" : "5038 W. Armitage Ave.",
+  "y_coordinate" : "1912865.6593521584",
+  "longitude" : "-87.7524724894",
+  "community_area" : "Belmont Cragin",
+  "latitude" : "41.916960542",
+  "community_area_number" : "19"
+}
+, {
+  "phone_number" : "312-326-0333",
+  "zip_code" : "60608",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6462472701",
+    "latitude" : "41.8427291512",
+    "human_address" : "{\"address\":\"2825 S. Halsted St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of Bridgeport",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1171468.4089095024",
+  "units" : "85",
+  "property_type" : "Senior",
+  "address" : "2825 S. Halsted St.",
+  "y_coordinate" : "1886029.5277608237",
+  "longitude" : "-87.6462472701",
+  "community_area" : "Bridgeport",
+  "latitude" : "41.8427291512",
+  "community_area_number" : "60"
+}
+, {
+  "phone_number" : "773-873-0708",
+  "zip_code" : "60619",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6003199107",
+    "latitude" : "41.7457569581",
+    "human_address" : "{\"address\":\"8200 S. Ellis Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Karibuni Place",
+  "management_company" : "Heartland Housing",
+  "x_coordinate" : "1184284.1534667031",
+  "units" : "72",
+  "property_type" : "Supportive Housing",
+  "address" : "8200 S. Ellis Ave.",
+  "y_coordinate" : "1850796.8943722805",
+  "longitude" : "-87.6003199107",
+  "community_area" : "Chatham",
+  "latitude" : "41.7457569581",
+  "community_area_number" : "44"
+}
+, {
+  "phone_number" : "773-488-1333",
+  "zip_code" : "60619",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6051761606",
+    "latitude" : "41.743873821",
+    "human_address" : "{\"address\":\"8300 S. Cottage Grove Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of Chatham",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1182964.715820796",
+  "units" : "90",
+  "property_type" : "Senior",
+  "address" : "8300 S. Cottage Grove Ave.",
+  "y_coordinate" : "1850099.4442601332",
+  "longitude" : "-87.6051761606",
+  "community_area" : "Chatham",
+  "latitude" : "41.743873821",
+  "community_area_number" : "44"
+}
+, {
+  "phone_number" : "773-925-0815",
+  "zip_code" : "60629",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7038754099",
+    "latitude" : "41.7781448626",
+    "human_address" : "{\"address\":\"3214 W. 63rd Place\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Lawn Terrace Independent  Living Apartments",
+  "management_company" : "Greater Southwest Dev. Corp.",
+  "x_coordinate" : "1155938.0920476676",
+  "units" : "102",
+  "property_type" : "Senior",
+  "address" : "3214 W. 63rd Place",
+  "y_coordinate" : "1862375.0314674582",
+  "longitude" : "-87.7038754099",
+  "community_area" : "Chicago Lawn",
+  "latitude" : "41.7781448626",
+  "community_area_number" : "66"
+}
+, {
+  "phone_number" : "773-432-8420",
+  "zip_code" : "60629",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6881061075",
+    "latitude" : "41.7581541131",
+    "human_address" : "{\"address\":\"7430 S. Rockwell St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of Marquette Village",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1160293.921943526",
+  "units" : "93",
+  "property_type" : "Senior",
+  "address" : "7430 S. Rockwell St.",
+  "y_coordinate" : "1855122.4462694346",
+  "longitude" : "-87.6881061075",
+  "community_area" : "Chicago Lawn",
+  "latitude" : "41.7581541131",
+  "community_area_number" : "66"
+}
+, {
+  "phone_number" : "773-925-0730",
+  "zip_code" : "60629",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6896794864",
+    "latitude" : "41.7792809902",
+    "human_address" : "{\"address\":\"2626 W. 63rd St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Churchview Manor Independent Living",
+  "management_company" : "Greater Southwest Dev. Corp.",
+  "x_coordinate" : "1159807.027511733",
+  "units" : "60",
+  "property_type" : "Senior",
+  "address" : "2626 W. 63rd St.",
+  "y_coordinate" : "1862817.6897337392",
+  "longitude" : "-87.6896794864",
+  "community_area" : "Chicago Lawn",
+  "latitude" : "41.7792809902",
+  "community_area_number" : "66"
+}
+, {
+  "phone_number" : "773-471-4444",
+  "zip_code" : "60629",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6896794864",
+    "latitude" : "41.7792809902",
+    "human_address" : "{\"address\":\"2626 W. 63rd St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Churchview Supportive Assisted Living",
+  "management_company" : "Greater Southwest Dev. Corp.",
+  "x_coordinate" : "1159807.027511733",
+  "units" : "86",
+  "property_type" : "Senior",
+  "address" : "2626 W. 63rd St.",
+  "y_coordinate" : "1862817.6897337392",
+  "longitude" : "-87.6896794864",
+  "community_area" : "Chicago Lawn",
+  "latitude" : "41.7792809902",
+  "community_area_number" : "66"
+}
+, {
+  "phone_number" : "773-548-8792",
+  "zip_code" : "60609",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6262712265",
+    "latitude" : "41.8242011421",
+    "human_address" : "{\"address\":\"3845 S. State St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Park Boulevard IA",
+  "management_company" : "Urban Property Advisors, LLC",
+  "x_coordinate" : "1176967.1197216897",
+  "units" : "80",
+  "property_type" : "Multifamily",
+  "address" : "3845 S. State St.",
+  "y_coordinate" : "1879322.1676457142",
+  "longitude" : "-87.6262712265",
+  "community_area" : "Douglas",
+  "latitude" : "41.8242011421",
+  "community_area_number" : "35"
+}
+, {
+  "phone_number" : "773-548-8792",
+  "zip_code" : "60609",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6271656778",
+    "latitude" : "41.8290621083",
+    "human_address" : "{\"address\":\"17 W. 36th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Park Boulevard IIA",
+  "management_company" : "Urban Property Advisors, LLC",
+  "x_coordinate" : "1176708.7667284424",
+  "units" : "36",
+  "property_type" : "Multifamily",
+  "address" : "17 W. 36th St.",
+  "y_coordinate" : "1881091.478702779",
+  "longitude" : "-87.6271656778",
+  "community_area" : "Douglas",
+  "latitude" : "41.8290621083",
+  "community_area_number" : "35"
+}
+, {
+  "phone_number" : "773-548-8792",
+  "zip_code" : "60609",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6266629487",
+    "latitude" : "41.8290175865",
+    "human_address" : "{\"address\":\"3604 S. State St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Park Boulevard IIA",
+  "management_company" : "Urban Property Advisors, LLC",
+  "x_coordinate" : "1176845.9146180158",
+  "units" : "6",
+  "property_type" : "Multifamily",
+  "address" : "3604 S. State St.",
+  "y_coordinate" : "1881076.3818232405",
+  "longitude" : "-87.6266629487",
+  "community_area" : "Douglas",
+  "latitude" : "41.8290175865",
+  "community_area_number" : "35"
+}
+, {
+  "phone_number" : "773-548-8792",
+  "zip_code" : "60609",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6266551179",
+    "latitude" : "41.8287362552",
+    "human_address" : "{\"address\":\"3612 S. State St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Park Boulevard IIA",
+  "management_company" : "Urban Property Advisors, LLC",
+  "x_coordinate" : "1176848.8921292",
+  "units" : "6",
+  "property_type" : "Multifamily",
+  "address" : "3612 S. State St.",
+  "y_coordinate" : "1880973.883357372",
+  "longitude" : "-87.6266551179",
+  "community_area" : "Douglas",
+  "latitude" : "41.8287362552",
+  "community_area_number" : "35"
+}
+, {
+  "phone_number" : "773-548-8792",
+  "zip_code" : "60609",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6266357171",
+    "latitude" : "41.8279253109",
+    "human_address" : "{\"address\":\"3640 S. State St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Park Boulevard IIA",
+  "management_company" : "Urban Property Advisors, LLC",
+  "x_coordinate" : "1176856.6105213976",
+  "units" : "80",
+  "property_type" : "Multifamily",
+  "address" : "3640 S. State St.",
+  "y_coordinate" : "1880678.421982759",
+  "longitude" : "-87.6266357171",
+  "community_area" : "Douglas",
+  "latitude" : "41.8279253109",
+  "community_area_number" : "35"
+}
+, {
+  "phone_number" : "773-548-8792",
+  "zip_code" : "60609",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6267901762",
+    "latitude" : "41.8307821806",
+    "human_address" : "{\"address\":\"3506 S. State St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Park Boulevard IB",
+  "management_company" : "Urban Property Advisors, LLC",
+  "x_coordinate" : "1176805.9513533777",
+  "units" : "54",
+  "property_type" : "Multifamily",
+  "address" : "3506 S. State St.",
+  "y_coordinate" : "1881719.1078143609",
+  "longitude" : "-87.6267901762",
+  "community_area" : "Douglas",
+  "latitude" : "41.8307821806",
+  "community_area_number" : "35"
+}
+, {
+  "phone_number" : "773-548-8792",
+  "zip_code" : "60609",
+  "property_name" : "Park Boulevard IIB",
+  "management_company" : "Urban Property Advisors, LLC",
+  "units" : "12",
+  "property_type" : "Multifamily",
+  "address" : "3633 S. State St.",
+  "community_area" : "Douglas",
+  "community_area_number" : "35"
+}
+, {
+  "phone_number" : "773-548-8792",
+  "zip_code" : "60609",
+  "property_name" : "Park Boulevard IIB",
+  "management_company" : "Urban Property Advisors, LLC",
+  "units" : "12",
+  "property_type" : "Multifamily",
+  "address" : "10 W. 37th St.",
+  "community_area" : "Douglas ",
+  "community_area_number" : "35"
+}
+, {
+  "phone_number" : "773-548-8792",
+  "zip_code" : "60609",
+  "property_name" : "Park Boulevard IIB",
+  "management_company" : "Urban Property Advisors, LLC",
+  "units" : "12",
+  "property_type" : "Mutifamily",
+  "address" : "15 W. 37th St.",
+  "community_area" : "Douglas ",
+  "community_area_number" : "35"
+}
+, {
+  "phone_number" : "773-548-8792",
+  "zip_code" : "60609",
+  "property_name" : "Park Boulevard IIB",
+  "management_company" : "Urban Property Advisors, LLC",
+  "units" : "72",
+  "property_type" : "Multifamily",
+  "address" : "3700 S. Dearborn St.",
+  "community_area" : "Douglas",
+  "community_area_number" : "35"
+}
+, {
+  "phone_number" : "312-674-9210",
+  "zip_code" : "60616",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.617816391",
+    "latitude" : "41.8456529118",
+    "human_address" : "{\"address\":\"2600 S. King Dr.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "South Park Plaza",
+  "management_company" : "Woodlawn Comm. Dev. Corp.",
+  "x_coordinate" : "1179206.472330668",
+  "units" : "134",
+  "property_type" : "Multifamily",
+  "address" : "2600 S. King Dr.",
+  "y_coordinate" : "1887158.1958682442",
+  "longitude" : "-87.617816391",
+  "community_area" : "Douglas",
+  "latitude" : "41.8456529118",
+  "community_area_number" : "35"
+}
+, {
+  "phone_number" : "773-420-4100",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6171784181",
+    "latitude" : "41.8255559976",
+    "human_address" : "{\"address\":\"3800 S. King Dr.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Pioneer Gardens Supportive Living",
+  "management_company" : "Pioneer Gardens Senior Housing",
+  "x_coordinate" : "1179441.3581913854",
+  "units" : "120",
+  "property_type" : "Senior",
+  "address" : "3800 S. King Dr.",
+  "y_coordinate" : "1879836.3986584914",
+  "longitude" : "-87.6171784181",
+  "community_area" : "Douglas",
+  "latitude" : "41.8255559976",
+  "community_area_number" : "35"
+}
+, {
+  "phone_number" : "773-536-0463",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6175174282",
+    "latitude" : "41.8257532207",
+    "human_address" : "{\"address\":\"340 E. 38th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Pioneer Village Apartments",
+  "management_company" : "Pioneer Affordable Housing Preservation",
+  "x_coordinate" : "1179348.3600891535",
+  "units" : "152",
+  "property_type" : "Senior",
+  "address" : "340 E. 38th St.",
+  "y_coordinate" : "1879907.4959198073",
+  "longitude" : "-87.6175174282",
+  "community_area" : "Douglas",
+  "latitude" : "41.8257532207",
+  "community_area_number" : "35"
+}
+, {
+  "phone_number" : "773-202-3388",
+  "zip_code" : "60634",
+  "property_name" : "Autumn Green at Wright Campus",
+  "management_company" : "Senior Lifestyle Corp.",
+  "units" : "129",
+  "property_type" : "Senior",
+  "address" : "4239 N. Oak Park Ave.",
+  "community_area" : "Dunning",
+  "community_area_number" : "17"
+}
+, {
+  "phone_number" : "773-638-1818",
+  "zip_code" : "60624",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7975440334",
+    "latitude" : "41.9576922115",
+    "human_address" : "{\"address\":\"3333 W. Maypole Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Ike Sims Village",
+  "management_company" : "Village Green Management Co.",
+  "x_coordinate" : "1129981.0183291987",
+  "units" : "200",
+  "property_type" : "Multifamily",
+  "address" : "3333 W. Maypole Ave.",
+  "y_coordinate" : "1927628.4836435749",
+  "longitude" : "-87.7975440334",
+  "community_area" : "East Garfield Park",
+  "latitude" : "41.9576922115",
+  "community_area_number" : "27"
+}
+, {
+  "phone_number" : "312-859-0577",
+  "zip_code" : "60624",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7100399091",
+    "latitude" : "41.8834651917",
+    "human_address" : "{\"address\":\"15 S. Homan Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Switching Station Lofts ",
+  "management_company" : "Holsten Management Corp.",
+  "x_coordinate" : "1153978.228846477",
+  "units" : "24",
+  "property_type" : "Multifamily/Artists",
+  "address" : "15 S. Homan Ave.",
+  "y_coordinate" : "1900741.035115148",
+  "longitude" : "-87.7100399091",
+  "community_area" : "East Garfield Park",
+  "latitude" : "41.8834651917",
+  "community_area_number" : "27"
+}
+, {
+  "phone_number" : "773-722-2900",
+  "zip_code" : "60612",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7108427298",
+    "latitude" : "41.8804138115",
+    "human_address" : "{\"address\":\"2800 W. Fulton St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Heritage Woods of Chicago",
+  "management_company" : "BMA Management Ltd.",
+  "x_coordinate" : "1153767.678032582",
+  "units" : "113",
+  "property_type" : "Senior",
+  "address" : "2800 W. Fulton St.",
+  "y_coordinate" : "1899627.5293921034",
+  "longitude" : "-87.7108427298",
+  "community_area" : "East Garfield Park",
+  "latitude" : "41.8804138115",
+  "community_area_number" : "27"
+}
+, {
+  "phone_number" : "773-722-7320",
+  "zip_code" : "60624",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6970630483",
+    "latitude" : "41.8775358858",
+    "human_address" : "{\"address\":\"750 S. Homan Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Homan Square Apartments Phase I",
+  "management_company" : "Realty & Mortgage Co.",
+  "x_coordinate" : "1157527.9754137222",
+  "units" : "50",
+  "property_type" : "Multifamily",
+  "address" : "750 S. Homan Ave.",
+  "y_coordinate" : "1898606.336367213",
+  "longitude" : "-87.6970630483",
+  "community_area" : "East Garfield Park",
+  "latitude" : "41.8775358858",
+  "community_area_number" : "27"
+}
+, {
+  "phone_number" : "773-722-7320",
+  "zip_code" : "60624",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7108484249",
+    "latitude" : "41.8711971734",
+    "human_address" : "{\"address\":\"908 S. Central Park Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Homan Square Apartments Phase IV ",
+  "management_company" : "Realty & Mortgage Co.",
+  "x_coordinate" : "1153790.484760921",
+  "units" : "108",
+  "property_type" : "Multifamily",
+  "address" : "908 S. Central Park Ave.",
+  "y_coordinate" : "1896268.990949446",
+  "longitude" : "-87.7108484249",
+  "community_area" : "East Garfield Park",
+  "latitude" : "41.8711971734",
+  "community_area_number" : "27"
+}
+, {
+  "phone_number" : "773-722-7320",
+  "zip_code" : "60624",
+  "property_name" : "Homan Square Apartments Phase V",
+  "management_company" : "Realty & Mortgage Co.",
+  "units" : "42",
+  "property_type" : "Multifamily",
+  "address" : "3607 W. Polk St.",
+  "community_area" : "East Garfield Park",
+  "community_area_number" : "27"
+}
+, {
+  "phone_number" : "773-722-7320",
+  "zip_code" : "60624",
+  "property_name" : "Homan Square Apartments Phase VI ",
+  "management_company" : "Realty & Mortgage Co.",
+  "units" : "52",
+  "property_type" : "Multifamily",
+  "address" : "3609 W. Arthington St.",
+  "community_area" : "East Garfield Park",
+  "community_area_number" : "27"
+}
+, {
+  "phone_number" : "773-638-6490",
+  "zip_code" : "60612",
+  "property_name" : "Deborah's Place III",
+  "management_company" : "Deborah's Place ",
+  "units" : "90",
+  "property_type" : "Supportive Housing",
+  "address" : "2822 W. Jackson Blvd.",
+  "community_area" : "East Garfield Park",
+  "community_area_number" : "27"
+}
+, {
+  "phone_number" : "773-826-3300",
+  "zip_code" : "60624",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7159079717",
+    "latitude" : "41.8707255523",
+    "human_address" : "{\"address\":\"3300 W. Maypole Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "East Park Apartments",
+  "management_company" : "The Habitat Co.",
+  "x_coordinate" : "1152413.6927732248",
+  "units" : "152",
+  "property_type" : "Supportive Housing",
+  "address" : "3300 W. Maypole Ave.",
+  "y_coordinate" : "1896087.1805657751",
+  "longitude" : "-87.7159079717",
+  "community_area" : "East Garfield Park",
+  "latitude" : "41.8707255523",
+  "community_area_number" : "27"
+}
+, {
+  "phone_number" : "773-538-3800",
+  "zip_code" : "60624",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7089025002",
+    "latitude" : "41.8836980221",
+    "human_address" : "{\"address\":\"705-23 S. Independence Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Liberty Square Apartments",
+  "management_company" : "Bonheur Realty Services Corp.",
+  "x_coordinate" : "1154287.3392122313",
+  "units" : "66",
+  "property_type" : "Multifamily",
+  "address" : "705-23 S. Independence Ave.",
+  "y_coordinate" : "1900828.1298343563",
+  "longitude" : "-87.7089025002",
+  "community_area" : "East Garfield Park",
+  "latitude" : "41.8836980221",
+  "community_area_number" : "27"
+}
+, {
+  "phone_number" : "773-477-7070 ext. 16",
+  "zip_code" : "60660",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7195859945",
+    "latitude" : "41.8724413776",
+    "human_address" : "{\"address\":\"6214 N. Winthrop Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Winthrop Apartments",
+  "management_company" : "Hunter Properties",
+  "x_coordinate" : "1151407.4614220564",
+  "units" : "108",
+  "property_type" : "Multifamily",
+  "address" : "6214 N. Winthrop Ave.",
+  "y_coordinate" : "1896705.2397940052",
+  "longitude" : "-87.7195859945",
+  "community_area" : "Edgewater",
+  "latitude" : "41.8724413776",
+  "community_area_number" : "77"
+}
+, {
+  "phone_number" : "773-728-2600",
+  "zip_code" : "60660",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7173510087",
+    "latitude" : "41.870711741",
+    "human_address" : "{\"address\":\"5700 N. Sheridan Road\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Hollywood House Apartments",
+  "management_company" : "Heartland Housing",
+  "x_coordinate" : "1152020.6976382213",
+  "units" : "93",
+  "property_type" : "Senior",
+  "address" : "5700 N. Sheridan Road",
+  "y_coordinate" : "1896079.3240627667",
+  "longitude" : "-87.7173510087",
+  "community_area" : "Edgewater",
+  "latitude" : "41.870711741",
+  "community_area_number" : "77"
+}
+, {
+  "phone_number" : "773-275-7820",
+  "zip_code" : "60660",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6585160357",
+    "latitude" : "41.9950154576",
+    "human_address" : "{\"address\":\"5650 N. Kenmore Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Pomeroy Apartments",
+  "management_company" : "Habitat Company",
+  "x_coordinate" : "1167688.7086010627",
+  "units" : "198",
+  "property_type" : "Senior",
+  "address" : "5650 N. Kenmore Ave.",
+  "y_coordinate" : "1941496.3681431552",
+  "longitude" : "-87.6585160357",
+  "community_area" : "Edgewater",
+  "latitude" : "41.9950154576",
+  "community_area_number" : "77"
+}
+, {
+  "phone_number" : "773-334-5407",
+  "zip_code" : "60660",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6553885441",
+    "latitude" : "41.9856410954",
+    "human_address" : "{\"address\":\"1062 W. Bryn Mawr Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Bell Shore Apartments",
+  "management_company" : "Holsten Management Corp.",
+  "x_coordinate" : "1168565.9159576842",
+  "units" : "105",
+  "property_type" : "Multifamily",
+  "address" : "1062 W. Bryn Mawr Ave.",
+  "y_coordinate" : "1938087.0102101795",
+  "longitude" : "-87.6553885441",
+  "community_area" : "Edgewater",
+  "latitude" : "41.9856410954",
+  "community_area_number" : "77"
+}
+, {
+  "phone_number" : "773-224-7669",
+  "zip_code" : "60621",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.656808677",
+    "latitude" : "41.9851867755",
+    "human_address" : "{\"address\":\"6565 S. Yale Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Yale Building",
+  "management_company" : "Yale Building LLP",
+  "x_coordinate" : "1168181.1238168452",
+  "units" : "140",
+  "property_type" : "Senior",
+  "address" : "6565 S. Yale Ave.",
+  "y_coordinate" : "1937918.400495236",
+  "longitude" : "-87.656808677",
+  "community_area" : "Englewood",
+  "latitude" : "41.9851867755",
+  "community_area_number" : "68"
+}
+, {
+  "phone_number" : "773-994-4546",
+  "zip_code" : "60621",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6577038394",
+    "latitude" : "41.9837729037",
+    "human_address" : "{\"address\":\"301 W. Marquette Road\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Antioch Homes II",
+  "management_company" : "Universal Management Service, Inc.",
+  "x_coordinate" : "1167941.8132828113",
+  "units" : "69",
+  "property_type" : "Multifamily",
+  "address" : "301 W. Marquette Road",
+  "y_coordinate" : "1937401.2566281443",
+  "longitude" : "-87.6577038394",
+  "community_area" : "Englewood",
+  "latitude" : "41.9837729037",
+  "community_area_number" : "68"
+}
+, {
+  "phone_number" : "773-994-3690",
+  "zip_code" : "60621",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6315301982",
+    "latitude" : "41.7746676247",
+    "human_address" : "{\"address\":\"624 W. 61st St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Victoria Jennings Residences",
+  "management_company" : "HSR Property Services, LLC",
+  "x_coordinate" : "1175681.0917438765",
+  "units" : "57",
+  "property_type" : "People with Disabilities",
+  "address" : "624 W. 61st St.",
+  "y_coordinate" : "1861260.6910332246",
+  "longitude" : "-87.6315301982",
+  "community_area" : "Englewood",
+  "latitude" : "41.7746676247",
+  "community_area_number" : "68"
+}
+, {
+  "phone_number" : "773-572-5272",
+  "zip_code" : "60621",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6324193182",
+    "latitude" : "41.7725637689",
+    "human_address" : "{\"address\":\"500 W. Englewood Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Rowan Trees Apartments",
+  "management_company" : "The Thresholds",
+  "x_coordinate" : "1175444.812850503",
+  "units" : "167",
+  "property_type" : "Supportive Housing",
+  "address" : "500 W. Englewood Ave.",
+  "y_coordinate" : "1860492.0838049254",
+  "longitude" : "-87.6324193182",
+  "community_area" : "Englewood",
+  "latitude" : "41.7725637689",
+  "community_area_number" : "68"
+}
+, {
+  "phone_number" : "773-994-3199",
+  "zip_code" : "60621",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6271720535",
+    "latitude" : "41.7675160252",
+    "human_address" : "{\"address\":\"901 W. 63rd Street\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Englewood Apartments",
+  "management_company" : "Mercy Housing",
+  "x_coordinate" : "1176891.268251813",
+  "units" : "45",
+  "property_type" : "Supportive Housing",
+  "address" : "901 W. 63rd Street",
+  "y_coordinate" : "1858664.4336695173",
+  "longitude" : "-87.6271720535",
+  "community_area" : "Englewood",
+  "latitude" : "41.7675160252",
+  "community_area_number" : "68"
+}
+, {
+  "phone_number" : "773-488-7205",
+  "zip_code" : "60621",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.637617817",
+    "latitude" : "41.7809093636",
+    "human_address" : "{\"address\":\"5628-30 S. Halsted Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Branch of Hope Apartments",
+  "management_company" : "Evergreen Real Estate LLC",
+  "x_coordinate" : "1174002.159513655",
+  "units" : "99",
+  "property_type" : "Supportive Housing",
+  "address" : "5628-30 S. Halsted Ave.",
+  "y_coordinate" : "1863521.643252472",
+  "longitude" : "-87.637617817",
+  "community_area" : "Englewood",
+  "latitude" : "41.7809093636",
+  "community_area_number" : "68"
+}
+, {
+  "phone_number" : "773-874-3610",
+  "zip_code" : "60621",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6472689598",
+    "latitude" : "41.7795999913",
+    "human_address" : "{\"address\":\"60th/Halsted\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Hope Manor II Apartments",
+  "management_company" : "Voluinteers of America Illinois",
+  "x_coordinate" : "1171373.6614958383",
+  "units" : "73",
+  "property_type" : "Supportive/Veterans",
+  "address" : "60th/Halsted",
+  "y_coordinate" : "1863023.3677886287",
+  "longitude" : "-87.6472689598",
+  "community_area" : "Englewood",
+  "latitude" : "41.7795999913",
+  "community_area_number" : "68"
+}
+, {
+  "phone_number" : "773-924-5980",
+  "zip_code" : "60609",
+  "property_name" : "Fellowship Manor",
+  "management_company" : "East Lake Management Group, Inc.",
+  "units" : "100",
+  "property_type" : "Senior",
+  "address" : "5041 S. Princeton Ave.",
+  "community_area" : "Fuller Park",
+  "community_area_number" : "37"
+}
+, {
+  "phone_number" : "773-434-4333",
+  "zip_code" : "60629",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6452332087",
+    "latitude" : "41.7916278176",
+    "human_address" : "{\"address\":\"3244 W. 59th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of Gage Park",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1171893.838747747",
+  "units" : "59",
+  "property_type" : "Senior",
+  "address" : "3244 W. 59th St.",
+  "y_coordinate" : "1867410.6620249962",
+  "longitude" : "-87.6452332087",
+  "community_area" : "Gage Park",
+  "latitude" : "41.7916278176",
+  "community_area_number" : "63"
+}
+, {
+  "phone_number" : "773-229-1533",
+  "zip_code" : "60638",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6330525826",
+    "latitude" : "41.8024131184",
+    "human_address" : "{\"address\":\"5839 S. Harlem Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of Garfield Ridge",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1175183.4790044015",
+  "units" : "87",
+  "property_type" : "Senior",
+  "address" : "5839 S. Harlem Ave.",
+  "y_coordinate" : "1871367.582271373",
+  "longitude" : "-87.6330525826",
+  "community_area" : "Garfield Ridge",
+  "latitude" : "41.8024131184",
+  "community_area_number" : "56"
+}
+, {
+  "phone_number" : "773-268-5326",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.705136175",
+    "latitude" : "41.786328045",
+    "human_address" : "{\"address\":\"44th/Indiana\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Indiana Manor Town Homes",
+  "management_company" : "Indiana Manor Townhomes",
+  "x_coordinate" : "1155572.425115435",
+  "units" : "87",
+  "property_type" : "Multifamily",
+  "address" : "44th/Indiana",
+  "y_coordinate" : "1865354.4067786196",
+  "longitude" : "-87.705136175",
+  "community_area" : "Grand Boulevard",
+  "latitude" : "41.786328045",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-538-3800",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.8010979955",
+    "latitude" : "41.7853541249",
+    "human_address" : "{\"address\":\"41st St. - 44th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Hearts United Phase I - The Langston",
+  "management_company" : "Bonheur Realty Services Corp.",
+  "x_coordinate" : "1129403.7448869708",
+  "units" : "65",
+  "property_type" : "Multifamily",
+  "address" : "41st St. - 44th St. ",
+  "y_coordinate" : "1864822.9118978602",
+  "longitude" : "-87.8010979955",
+  "community_area" : "Grand Boulevard",
+  "latitude" : "41.7853541249",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-538-3800",
+  "zip_code" : "60653",
+  "property_name" : "Hearts United Phase II - The Quincy",
+  "management_company" : "Bonheur Realty Services Corp.",
+  "units" : "116",
+  "property_type" : "Multifamily",
+  "address" : "E. Evans - W. Vincennes",
+  "community_area" : "Grand Boulevard",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-975-7234",
+  "zip_code" : "60614",
+  "property_name" : "Progressive Square",
+  "management_company" : "CMHDC/Progressive NFP/Kass Management",
+  "units" : "107",
+  "property_type" : "Multifamily",
+  "address" : "4752 S. Wabash Ave.",
+  "community_area" : "Grand Boulevard",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-268-4642",
+  "zip_code" : "60653",
+  "property_name" : "Park Boulevard Tower/Grand Renaissance Apts.",
+  "management_company" : "East Lake Management Group, Inc.",
+  "units" : "24",
+  "property_type" : "Senior",
+  "address" : "4257 S. King Dr.",
+  "community_area" : "Grand Boulevard",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-924-7700",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6245595889",
+    "latitude" : "41.8076990345",
+    "human_address" : "{\"address\":\"4420-24 S. Michigan Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Geneva Gables",
+  "management_company" : "Tri-Mart Management Co. ",
+  "x_coordinate" : "1177483.2463556484",
+  "units" : "65",
+  "property_type" : "Multifamily",
+  "address" : "4420-24 S. Michigan Ave.",
+  "y_coordinate" : "1873312.722072644",
+  "longitude" : "-87.6245595889",
+  "community_area" : "Grand Boulevard",
+  "latitude" : "41.8076990345",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-924-2100",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6166489475",
+    "latitude" : "41.8167496439",
+    "human_address" : "{\"address\":\"400 E. 41st St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Paul G. Stewart Phase V",
+  "management_company" : "Paul G. Stewart Assoc.",
+  "x_coordinate" : "1179612.435611574",
+  "units" : "20",
+  "property_type" : "Multifamily",
+  "address" : "400 E. 41st St.",
+  "y_coordinate" : "1876628.6050863636",
+  "longitude" : "-87.6166489475",
+  "community_area" : "Grand Boulevard",
+  "latitude" : "41.8167496439",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-924-1107",
+  "zip_code" : "60615",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6231122243",
+    "latitude" : "41.8140608614",
+    "human_address" : "{\"address\":\"5000 S. Indiana Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Washington Park SRO",
+  "management_company" : "East Lake Management Group, Inc.",
+  "x_coordinate" : "1177858.6856956813",
+  "units" : "96",
+  "property_type" : "Supportive Housing",
+  "address" : "5000 S. Indiana Ave.",
+  "y_coordinate" : "1875634.1971797955",
+  "longitude" : "-87.6231122243",
+  "community_area" : "Grand Boulevard",
+  "latitude" : "41.8140608614",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-924-9171",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6165141095",
+    "latitude" : "41.8203495003",
+    "human_address" : "{\"address\":\"4500 S. Wabash Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Margaret Ford Manor Independent Living",
+  "management_company" : "HSR Property Services, LLC",
+  "x_coordinate" : "1179638.2483418202",
+  "units" : "63",
+  "property_type" : "Senior HUD 202",
+  "address" : "4500 S. Wabash Ave.",
+  "y_coordinate" : "1877940.683099849",
+  "longitude" : "-87.6165141095",
+  "community_area" : "Grand Boulevard",
+  "latitude" : "41.8203495003",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-548-9211",
+  "zip_code" : "60615",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6212170565",
+    "latitude" : "41.8037545212",
+    "human_address" : "{\"address\":\"4907 S. St. Lawrence Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Cornerstone/Evans Langley",
+  "management_company" : "Metroplex, Inc.",
+  "x_coordinate" : "1178406.436772831",
+  "units" : "60",
+  "property_type" : "Senior",
+  "address" : "4907 S. St. Lawrence Ave.",
+  "y_coordinate" : "1871882.895572396",
+  "longitude" : "-87.6212170565",
+  "community_area" : "Grand Boulevard",
+  "latitude" : "41.8037545212",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-548-8800",
+  "zip_code" : "60609",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6247071273",
+    "latitude" : "41.8129796596",
+    "human_address" : "{\"address\":\"4034 S. State St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Legends South - Hansberry Square",
+  "management_company" : "Interstate Realty Management Co.",
+  "x_coordinate" : "1177427.156074382",
+  "units" : "45",
+  "property_type" : "Multifamily",
+  "address" : "4034 S. State St.",
+  "y_coordinate" : "1875236.6231905173",
+  "longitude" : "-87.6247071273",
+  "community_area" : "Grand Boulevard",
+  "latitude" : "41.8129796596",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-285-9500",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6112184342",
+    "latitude" : "41.805563433",
+    "human_address" : "{\"address\":\"116 E. 43rd St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Legends South - Mahalia Place",
+  "management_company" : "Interstate Realty Management Co.",
+  "x_coordinate" : "1181127.0103401996",
+  "units" : "181",
+  "property_type" : "Multifamily",
+  "address" : "116 E. 43rd St.",
+  "y_coordinate" : "1872564.798405132",
+  "longitude" : "-87.6112184342",
+  "community_area" : "Grand Boulevard",
+  "latitude" : "41.805563433",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-268-0202",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6265256539",
+    "latitude" : "41.8209108342",
+    "human_address" : "{\"address\":\"223 E. 41st St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Legends South - Coleman Place",
+  "management_company" : "Interstate Realty Management Co.",
+  "x_coordinate" : "1176907.6358102283",
+  "units" : "110",
+  "property_type" : "Multifamily",
+  "address" : "223 E. 41st St.",
+  "y_coordinate" : "1878122.6231740906",
+  "longitude" : "-87.6265256539",
+  "community_area" : "Grand Boulevard",
+  "latitude" : "41.8209108342",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-624-7676",
+  "zip_code" : "60609",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6222647175",
+    "latitude" : "41.816662565",
+    "human_address" : "{\"address\":\"4448 S. State St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Legends South - Savoy Square",
+  "management_company" : "Interstate Realty Management Co.",
+  "x_coordinate" : "1178081.8752660828",
+  "units" : "118",
+  "property_type" : "Multifamily",
+  "address" : "4448 S. State St.",
+  "y_coordinate" : "1876584.156148254",
+  "longitude" : "-87.6222647175",
+  "community_area" : "Grand Boulevard",
+  "latitude" : "41.816662565",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-924-2100",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6263367998",
+    "latitude" : "41.8131949278",
+    "human_address" : "{\"address\":\"400 E. 41st St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Bronzeville Family Apartments",
+  "management_company" : "Peoples Co-Op Management Service",
+  "x_coordinate" : "1176982.246436822",
+  "units" : "60",
+  "property_type" : "Multifamily",
+  "address" : "400 E. 41st St.",
+  "y_coordinate" : "1875311.406647018",
+  "longitude" : "-87.6263367998",
+  "community_area" : "Grand Boulevard",
+  "latitude" : "41.8131949278",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-324-1745",
+  "zip_code" : "60653",
+  "property_name" : "Bronzeville Artists Lofts",
+  "management_company" : "Revere Properties",
+  "units" : "16",
+  "property_type" : "Artist Live/Work Space",
+  "address" : "436 E. 47th St.",
+  "community_area" : "Grand Boulevard",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-924-2100",
+  "zip_code" : "60653",
+  "property_name" : "Bronzeville Senior Apartments",
+  "management_company" : "Peoples Co-Op Management Service",
+  "units" : "97",
+  "property_type" : "Senior",
+  "address" : "460 E. 41st St.",
+  "community_area" : "Grand Boulevard",
+  "community_area_number" : "38"
+}
+, {
+  "phone_number" : "773-994-4830",
+  "zip_code" : "60621",
+  "property_name" : "Englewood Gardens",
+  "management_company" : "East Lake Management Group, Inc.",
+  "units" : "24",
+  "property_type" : "Multifamily",
+  "address" : "6956 S. Vincennes Ave.",
+  "community_area" : "Greater Grand Crossing",
+  "community_area_number" : "69"
+}
+, {
+  "phone_number" : "773-324-2270",
+  "zip_code" : "60619",
+  "property_name" : "Dorchester Art + Housing Collaborative",
+  "management_company" : "Leasing & Management Co. Inc.",
+  "units" : "32",
+  "property_type" : "Artist Housing",
+  "address" : "1450 E. 70th St.",
+  "community_area" : "Greater Grand Crossing",
+  "community_area_number" : "69"
+}
+, {
+  "phone_number" : "773-646-1333 ext. 1",
+  "zip_code" : "60633",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6410928975",
+    "latitude" : "41.7835589092",
+    "human_address" : "{\"address\":\"13550 S. Avenue O\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of Hegewisch",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1173046.574629759",
+  "units" : "116",
+  "property_type" : "Senior",
+  "address" : "13550 S. Avenue O",
+  "y_coordinate" : "1864479.4697238435",
+  "longitude" : "-87.6410928975",
+  "community_area" : "Hegewisch",
+  "latitude" : "41.7835589092",
+  "community_area_number" : "55"
+}
+, {
+  "phone_number" : "773-265-0983",
+  "zip_code" : "60612",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6094366505",
+    "latitude" : "41.8168782136",
+    "human_address" : "{\"address\":\"642 N. Kedzie Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Sanctuary Place",
+  "management_company" : "Interfaith Housing Corp.",
+  "x_coordinate" : "1181578.0672018046",
+  "units" : "84",
+  "property_type" : "Supportive Housing",
+  "address" : "642 N. Kedzie Ave.",
+  "y_coordinate" : "1876691.9354204505",
+  "longitude" : "-87.6094366505",
+  "community_area" : "Humboldt Park",
+  "latitude" : "41.8168782136",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-276-5338 ext. 225",
+  "zip_code" : "60647",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.540123166",
+    "latitude" : "41.6484574114",
+    "human_address" : "{\"address\":\"1152 N. Christiana Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Humboldt Park Residences ",
+  "management_company" : "LUCHA",
+  "x_coordinate" : "1201038.0588749289",
+  "units" : "69",
+  "property_type" : "Supportive Housing",
+  "address" : "1152 N. Christiana Ave.",
+  "y_coordinate" : "1815487.7333030126",
+  "longitude" : "-87.540123166",
+  "community_area" : "Humboldt Park",
+  "latitude" : "41.6484574114",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-276-2965",
+  "zip_code" : "60639",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7066312185",
+    "latitude" : "41.8931766425",
+    "human_address" : "{\"address\":\"1745 N. Keystone Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Bloomingdale Apartments",
+  "management_company" : "Village Green Management Co.",
+  "x_coordinate" : "1154880.6034761437",
+  "units" : "48",
+  "property_type" : "Multifamily",
+  "address" : "1745 N. Keystone Ave.",
+  "y_coordinate" : "1904286.6392746218",
+  "longitude" : "-87.7066312185",
+  "community_area" : "Humboldt Park",
+  "latitude" : "41.8931766425",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-381-7400",
+  "zip_code" : "60647",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7107605283",
+    "latitude" : "41.9025857989",
+    "human_address" : "{\"address\":\"1750 N. Spaulding Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Spaulding Apartments",
+  "management_company" : "G&A Management",
+  "x_coordinate" : "1153731.4411072168",
+  "units" : "111",
+  "property_type" : "Multifamily",
+  "address" : "1750 N. Spaulding Ave.",
+  "y_coordinate" : "1907707.148117049",
+  "longitude" : "-87.7107605283",
+  "community_area" : "Humboldt Park",
+  "latitude" : "41.9025857989",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-276-4900",
+  "zip_code" : "60647",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7275039055",
+    "latitude" : "41.9129903623",
+    "human_address" : "{\"address\":\"3507 W. North Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Solid Ground Supportive Housing Program ",
+  "management_company" : "La Casa Norte, Inc.",
+  "x_coordinate" : "1149146.6362585528",
+  "units" : "35",
+  "property_type" : "Supportive/Males 18-24yrs.",
+  "address" : "3507 W. North Ave.",
+  "y_coordinate" : "1911465.9388707278",
+  "longitude" : "-87.7275039055",
+  "community_area" : "Humboldt Park",
+  "latitude" : "41.9129903623",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-276-5338 ext. 225",
+  "zip_code" : "60647",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7086160992",
+    "latitude" : "41.902923708",
+    "human_address" : "{\"address\":\"3541 W. North Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Madres Unidas scattered",
+  "management_company" : "LUCHA",
+  "x_coordinate" : "1154314.3195338387",
+  "units" : "80",
+  "property_type" : "Multifamily",
+  "address" : "3541 W. North Ave.",
+  "y_coordinate" : "1907834.5260998942",
+  "longitude" : "-87.7086160992",
+  "community_area" : "Humboldt Park",
+  "latitude" : "41.902923708",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "312-276-5338",
+  "zip_code" : "60647",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7036867659",
+    "latitude" : "41.8899923467",
+    "human_address" : "{\"address\":\"3541 W. North Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "LUCHA Affordable Units",
+  "management_company" : "LUCHA",
+  "x_coordinate" : "1152271.5245463105",
+  "units" : "69",
+  "property_type" : "Senior",
+  "address" : "3541 W. North Ave.",
+  "y_coordinate" : "1903132.1533014546",
+  "longitude" : "-87.7036867659",
+  "community_area" : "Humboldt Park",
+  "latitude" : "41.8899923467",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60651",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7103171384",
+    "latitude" : "41.9133256466",
+    "human_address" : "{\"address\":\"3220 W. Division St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "La Estancia",
+  "management_company" : "Bickerdike Apartments",
+  "x_coordinate" : "1153823.719226805",
+  "units" : "18",
+  "property_type" : "Multifamily",
+  "address" : "3220 W. Division St.",
+  "y_coordinate" : "1911621.6283910712",
+  "longitude" : "-87.7103171384",
+  "community_area" : "Humboldt Park",
+  "latitude" : "41.9133256466",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60651",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7146950394",
+    "latitude" : "41.9099064976",
+    "human_address" : "{\"address\":\"3248 W. Division St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "La Estancia",
+  "management_company" : "Bickerdike Apartments",
+  "x_coordinate" : "1152641.1153722291",
+  "units" : "9",
+  "property_type" : "Multifamily",
+  "address" : "3248 W. Division St.",
+  "y_coordinate" : "1910367.063442813",
+  "longitude" : "-87.7146950394",
+  "community_area" : "Humboldt Park",
+  "latitude" : "41.9099064976",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60624",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7160529794",
+    "latitude" : "41.9098923382",
+    "human_address" : "{\"address\":\"3215 W. Huron St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Rosa Parks Apartments",
+  "management_company" : "Bickerdike Apartments",
+  "units" : "6",
+  "property_type" : "Multifamily",
+  "address" : "3215 W. Huron St.",
+  "y_coordinate" : "1910359.2407422592",
+  "longitude" : "-87.7160529794",
+  "community_area" : "Humboldt Park",
+  "latitude" : "41.9098923382",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60624",
+  "property_name" : "Rosa Parks Apartments",
+  "management_company" : "Bickerdike Apartments",
+  "units" : "6",
+  "property_type" : "Multifamily",
+  "address" : "649 N. Sawyer Ave.",
+  "community_area" : "Humboldt Park",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60624",
+  "property_name" : "Rosa Parks Apartments",
+  "management_company" : "Bickerdike Apartments",
+  "units" : "6",
+  "property_type" : "Multifamily",
+  "address" : "601 N. Drake Ave",
+  "community_area" : "Humboldt Park",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60624",
+  "property_name" : "Rosa Parks Apartments",
+  "management_company" : "Bickerdike Apartments",
+  "units" : "6",
+  "property_type" : "Multifamily",
+  "address" : "521 N. St. Louis Ave.",
+  "community_area" : "Humboldt Park",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60624",
+  "property_name" : "Rosa Parks Apartments",
+  "management_company" : "Bickerdike Apartments",
+  "units" : "12",
+  "property_type" : "Multifamily",
+  "address" : "526 N. St. Louis Ave.",
+  "community_area" : "Humboldt Park",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60624",
+  "property_name" : "Rosa Parks Apartments",
+  "management_company" : "Bickerdike Apartments",
+  "units" : "15",
+  "property_type" : "Multifamily",
+  "address" : "532 N. Trumbull Ave.",
+  "community_area" : "Humboldt Park",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60624",
+  "property_name" : "Rosa Parks Apartments",
+  "management_company" : "Bickerdike Apartments",
+  "units" : "27",
+  "property_type" : "Multifamily",
+  "address" : "541 N. Homan Ave.",
+  "community_area" : "Humboldt Park",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60624",
+  "property_name" : "Rosa Parks Apartments",
+  "management_company" : "Bickerdike Apartments",
+  "units" : "16",
+  "property_type" : "Multifamily",
+  "address" : "3341 W. Ohio St.",
+  "community_area" : "Humboldt Park",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-475-6703",
+  "zip_code" : "60612",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7076229238",
+    "latitude" : "41.9029334898",
+    "human_address" : "{\"address\":\"3053 W. Franklin Blvd.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Hope Manor Apartments",
+  "management_company" : "Volunteers of America Illinois",
+  "x_coordinate" : "1154584.6629430514",
+  "units" : "50",
+  "property_type" : "Supportive/Veterans",
+  "address" : "3053 W. Franklin Blvd.",
+  "y_coordinate" : "1907840.061069645",
+  "longitude" : "-87.7076229238",
+  "community_area" : "Humboldt Park",
+  "latitude" : "41.9029334898",
+  "community_area_number" : "23"
+}
+, {
+  "phone_number" : "773-955-2610",
+  "zip_code" : "60615",
+  "property_name" : "Hyde Park Apartments",
+  "management_company" : "DRE, Inc.",
+  "units" : "36",
+  "property_type" : "Multifamily",
+  "address" : "5330 S. Harper Ave.",
+  "community_area" : "Hyde Park",
+  "community_area_number" : "41"
+}
+, {
+  "phone_number" : "773-775-7333",
+  "zip_code" : "60630",
+  "property_name" : "Senior Suites of Jefferson Park",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1152271.5245463105",
+  "units" : "73",
+  "property_type" : "Senior",
+  "address" : "5400 N. Northwest Hwy.",
+  "community_area" : "Jefferson Park",
+  "community_area_number" : "11"
+}
+, {
+  "phone_number" : "312-660-1300",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7160529794",
+    "latitude" : "41.9098923382",
+    "human_address" : "{\"address\":\"4657 S. Drexel Blvd\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Jazz on the Boulevard (scattered sites) .",
+  "management_company" : "Heartland Housing",
+  "x_coordinate" : "1187148.2339917526",
+  "units" : "81",
+  "property_type" : "Multifamily",
+  "address" : "4657 S. Drexel Blvd",
+  "y_coordinate" : "1910359.2407422592",
+  "longitude" : "-87.7160529794",
+  "community_area" : "Kenwood",
+  "latitude" : "41.9098923382",
+  "community_area_number" : "39"
+}
+, {
+  "phone_number" : "773-624-4901",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5892145402",
+    "latitude" : "41.7985717841",
+    "human_address" : "{\"address\":\"837 E. 47th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Drexel Preservation",
+  "management_company" : "MLG Management",
+  "x_coordinate" : "1136226.971295093",
+  "units" : "39",
+  "property_type" : "Multifamily",
+  "address" : "837 E. 47th St.",
+  "y_coordinate" : "1870068.2507340526",
+  "longitude" : "-87.5892145402",
+  "community_area" : "Kenwood",
+  "latitude" : "41.7985717841",
+  "community_area_number" : "39"
+}
+, {
+  "phone_number" : "773-525-1501",
+  "zip_code" : "60657",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7743995653",
+    "latitude" : "41.9783903918",
+    "human_address" : "{\"address\":\"1501 W. Melrose St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Renaissance St. Luke Greenview Place",
+  "management_company" : "RRG Development, Inc.",
+  "x_coordinate" : "1183149.4551670926",
+  "units" : "155",
+  "property_type" : "Senior",
+  "address" : "1501 W. Melrose St.",
+  "y_coordinate" : "1935211.1854214636",
+  "longitude" : "-87.7743995653",
+  "community_area" : "Lakeview ",
+  "latitude" : "41.9783903918",
+  "community_area_number" : "6"
+}
+, {
+  "phone_number" : "312-572-5272",
+  "zip_code" : "60657",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6037533683",
+    "latitude" : "41.8097139386",
+    "human_address" : "{\"address\":\"3208 N. Shefield Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Buffet Place",
+  "management_company" : "Thresholds",
+  "x_coordinate" : "1182801.3254214067",
+  "units" : "51",
+  "property_type" : "Supportive",
+  "address" : "3208 N. Shefield Ave.",
+  "y_coordinate" : "1874094.4100914083",
+  "longitude" : "-87.6037533683",
+  "community_area" : "Lakeview ",
+  "latitude" : "41.8097139386",
+  "community_area_number" : "6"
+}
+, {
+  "phone_number" : "773-472-6463",
+  "zip_code" : "60613",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6050334227",
+    "latitude" : "41.8094408765",
+    "human_address" : "{\"address\":\"3600 N. Halsted St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Town Hall Apartments",
+  "management_company" : "Heartland Houing Inc.",
+  "units" : "79",
+  "property_type" : "Senior LGBTQ",
+  "address" : "3600 N. Halsted St.",
+  "y_coordinate" : "1873991.9476500086",
+  "longitude" : "-87.6050334227",
+  "community_area" : "Lakeview ",
+  "latitude" : "41.8094408765",
+  "community_area_number" : "6"
+}
+, {
+  "phone_number" : "773-772-4063",
+  "zip_code" : "60612",
+  "property_name" : "Rev. Daniel Alvarez Apts.",
+  "management_company" : "Hispanic Housing Dev. Corp.",
+  "units" : "96",
+  "property_type" : "Multifamily",
+  "address" : "2451-57 N. Sacramento Ave.",
+  "community_area" : "Logan Square",
+  "community_area_number" : "22"
+}
+, {
+  "phone_number" : "773-862-2500",
+  "zip_code" : "60647",
+  "property_name" : "Renaissance West",
+  "management_company" : "Renaissance Realty Group Inc.",
+  "x_coordinate" : "1165704.8480373912",
+  "units" : "41",
+  "property_type" : "Senior",
+  "address" : "2517 W. Fullerton Ave.",
+  "community_area" : "Logan Square",
+  "community_area_number" : "22"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60647",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6663826053",
+    "latitude" : "41.9405311557",
+    "human_address" : "{\"address\":\"3230 W. Armitage Ave\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Zapata Apartments",
+  "management_company" : "Bickerdike Apartments",
+  "x_coordinate" : "1155995.815179278",
+  "units" : "100",
+  "property_type" : "Multifamily",
+  "address" : "3230 W. Armitage Ave",
+  "y_coordinate" : "1921625.293870648",
+  "longitude" : "-87.6663826053",
+  "community_area" : "Logan Square",
+  "latitude" : "41.9405311557",
+  "community_area_number" : "22"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60647",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7022092387",
+    "latitude" : "41.926278629",
+    "human_address" : "{\"address\":\"3503 W. Armitage Ave\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Zapata Apartments",
+  "management_company" : "Bickerdike Apartments",
+  "x_coordinate" : "1159142.5632841722",
+  "units" : "12",
+  "property_type" : "Multifamily",
+  "address" : "3503 W. Armitage Ave",
+  "y_coordinate" : "1916357.8444731145",
+  "longitude" : "-87.7022092387",
+  "community_area" : "Logan Square",
+  "latitude" : "41.926278629",
+  "community_area_number" : "22"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60647",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6906609777",
+    "latitude" : "41.9247620985",
+    "human_address" : "{\"address\":\"1955 N. St. Louis Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Zapata Apartments",
+  "management_company" : "Bickerdike Apartments",
+  "x_coordinate" : "1154370.984515238",
+  "units" : "3",
+  "property_type" : "Multifamily",
+  "address" : "1955 N. St. Louis Ave.",
+  "y_coordinate" : "1915828.5607318971",
+  "longitude" : "-87.6906609777",
+  "community_area" : "Logan Square",
+  "latitude" : "41.9247620985",
+  "community_area_number" : "22"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60647",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7082658078",
+    "latitude" : "41.9174946519",
+    "human_address" : "{\"address\":\"3734 W. Cortland St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Zapata Apartments",
+  "management_company" : "Bickerdike Apartments",
+  "x_coordinate" : "1152897.6344778591",
+  "units" : "30",
+  "property_type" : "Multifamily",
+  "address" : "3734 W. Cortland St.",
+  "y_coordinate" : "1913144.8796982756",
+  "longitude" : "-87.7082658078",
+  "community_area" : "Logan Square",
+  "latitude" : "41.9174946519",
+  "community_area_number" : "22"
+}
+, {
+  "phone_number" : "312-291-8679",
+  "zip_code" : "60601",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.713682006",
+    "latitude" : "41.9172092811",
+    "human_address" : "{\"address\":\"188 W. Randolph St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Randolph Tower City Apartments (studios only)",
+  "management_company" : "Village Green Management Co.",
+  "x_coordinate" : "1152978.3561575606",
+  "units" : "16",
+  "property_type" : "Multifamily",
+  "address" : "188 W. Randolph St.",
+  "y_coordinate" : "1913030.1929008735",
+  "longitude" : "-87.713682006",
+  "community_area" : "Loop",
+  "latitude" : "41.9172092811",
+  "community_area_number" : "32"
+}
+, {
+  "phone_number" : "312-666-1323",
+  "zip_code" : "60608",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7133858481",
+    "latitude" : "41.9171647082",
+    "human_address" : "{\"address\":\"2014 S. Racine Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Casa Puebla",
+  "management_company" : "The Resurrection Project",
+  "x_coordinate" : "1151016.2570625048",
+  "units" : "63",
+  "property_type" : "Multifamily",
+  "address" : "2014 S. Racine Ave.",
+  "y_coordinate" : "1913014.533058195",
+  "longitude" : "-87.7133858481",
+  "community_area" : "Lower West Side",
+  "latitude" : "41.9171647082",
+  "community_area_number" : "31"
+}
+, {
+  "phone_number" : "312-666-1323",
+  "zip_code" : "60608",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.720610728",
+    "latitude" : "41.9155235348",
+    "human_address" : "{\"address\":\"963 W Cullerton St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Casa Guerrero",
+  "management_company" : "The Resurrection Project",
+  "x_coordinate" : "1174747.57210376",
+  "units" : "52",
+  "property_type" : "Multifamily",
+  "address" : "963 W Cullerton St.",
+  "y_coordinate" : "1912402.356670404",
+  "longitude" : "-87.720610728",
+  "community_area" : "Lower West Side",
+  "latitude" : "41.9155235348",
+  "community_area_number" : "31"
+}
+, {
+  "phone_number" : "312-666-1323",
+  "zip_code" : "60608",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6337568335",
+    "latitude" : "41.884579663",
+    "human_address" : "{\"address\":\"1714 W. 19th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Casa Oaxaca",
+  "management_company" : "The Resurrection Project",
+  "x_coordinate" : "1168646.2965818448",
+  "units" : "25",
+  "property_type" : "Multifamily",
+  "address" : "1714 W. 19th St.",
+  "y_coordinate" : "1901307.2524319694",
+  "longitude" : "-87.6337568335",
+  "community_area" : "Lower West Side",
+  "latitude" : "41.884579663",
+  "community_area_number" : "31"
+}
+, {
+  "phone_number" : "312-666-1323",
+  "zip_code" : "60608",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6564782084",
+    "latitude" : "41.8546902787",
+    "human_address" : "{\"address\":\"2021 S. Morgan St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Casa Maravilla",
+  "management_company" : "The Resurrection Project",
+  "x_coordinate" : "1170238.8058330964",
+  "units" : "5",
+  "property_type" : "Senior",
+  "address" : "2021 S. Morgan St.",
+  "y_coordinate" : "1890365.9909551519",
+  "longitude" : "-87.6564782084",
+  "community_area" : "Lower West Side",
+  "latitude" : "41.8546902787",
+  "community_area_number" : "31"
+}
+, {
+  "phone_number" : "312-666-1323",
+  "zip_code" : "60608",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6506275348",
+    "latitude" : "41.8551748018",
+    "human_address" : "{\"address\":\"1712 W. 17th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Casa Chiapas",
+  "management_company" : "The Resurrection Project",
+  "x_coordinate" : "1165132.942698977",
+  "units" : "72",
+  "property_type" : "Multifamily",
+  "address" : "1712 W. 17th St.",
+  "y_coordinate" : "1890555.1686823391",
+  "longitude" : "-87.6506275348",
+  "community_area" : "Lower West Side",
+  "latitude" : "41.8551748018",
+  "community_area_number" : "31"
+}
+, {
+  "phone_number" : "312-666-1323",
+  "zip_code" : "60608",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6693605655",
+    "latitude" : "41.8560328733",
+    "human_address" : "{\"address\":\"2015 S. Morgan St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Casa Morelos",
+  "management_company" : "The Resurrection Project",
+  "x_coordinate" : "1170051.208277346",
+  "units" : "4",
+  "property_type" : "Multifamily",
+  "address" : "2015 S. Morgan St.",
+  "y_coordinate" : "1890827.8270715745",
+  "longitude" : "-87.6693605655",
+  "community_area" : "Lower West Side",
+  "latitude" : "41.8560328733",
+  "community_area_number" : "31"
+}
+, {
+  "phone_number" : "312-850-1935",
+  "zip_code" : "60608",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6513220922",
+    "latitude" : "41.8546147585",
+    "human_address" : "{\"address\":\"2014 S. Racine Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Casa Tabasco ",
+  "management_company" : "The Resurrection Project",
+  "x_coordinate" : "1165119.3725775955",
+  "units" : "45",
+  "property_type" : "Multifamily",
+  "address" : "2014 S. Racine Ave.",
+  "y_coordinate" : "1890349.586619211",
+  "longitude" : "-87.6513220922",
+  "community_area" : "Lower West Side",
+  "latitude" : "41.8546147585",
+  "community_area_number" : "31"
+}
+, {
+  "phone_number" : "312-666-1323",
+  "zip_code" : "60608",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6513269744",
+    "latitude" : "41.8548019389",
+    "human_address" : "{\"address\":\"967 W. 19th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Casa Monterrey",
+  "management_company" : "The Resurrection Project",
+  "x_coordinate" : "1168646.2965818448",
+  "units" : "4",
+  "property_type" : "Multifamily",
+  "address" : "967 W. 19th St.",
+  "y_coordinate" : "1890417.7841083359",
+  "longitude" : "-87.6513269744",
+  "community_area" : "Lower West Side",
+  "latitude" : "41.8548019389",
+  "community_area_number" : "31"
+}
+, {
+  "phone_number" : "773-237-3831",
+  "zip_code" : "60707",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6564782084",
+    "latitude" : "41.8546902787",
+    "human_address" : "{\"address\":\"6650 W. Belden Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "The Montclare Senior Residences ",
+  "management_company" : "Pacific Management Inc.",
+  "x_coordinate" : "1168646.2965818448",
+  "units" : "7",
+  "property_type" : "Senior",
+  "address" : "6650 W. Belden Ave.",
+  "y_coordinate" : "1890365.9909551519",
+  "longitude" : "-87.6564782084",
+  "community_area" : "Montclare",
+  "latitude" : "41.8546902787",
+  "community_area_number" : "18"
+}
+, {
+  "phone_number" : "708-867-3799",
+  "zip_code" : "60707",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6564782084",
+    "latitude" : "41.8546902787",
+    "human_address" : "{\"address\":\"6602,6614 W. Diversey Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "TBD",
+  "management_company" : "Zitella Development ",
+  "x_coordinate" : "1170202.3560892306",
+  "units" : "3",
+  "property_type" : "ARO",
+  "address" : "6602,6614 W. Diversey Ave.",
+  "y_coordinate" : "1890365.9909551519",
+  "longitude" : "-87.6564782084",
+  "community_area" : "Montclare",
+  "latitude" : "41.8546902787",
+  "community_area_number" : "18"
+}
+, {
+  "phone_number" : "312-944-9488",
+  "zip_code" : "60610",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6507465232",
+    "latitude" : "41.8565672424",
+    "human_address" : "{\"address\":\"1311 N. Halsted St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "North Town Village",
+  "management_company" : "Holsten Real Estate Dev. Corp.",
+  "units" : "317",
+  "property_type" : "Multifamily",
+  "address" : "1311 N. Halsted St.",
+  "y_coordinate" : "1891062.3128613762",
+  "longitude" : "-87.6507465232",
+  "community_area" : "Near North Side",
+  "latitude" : "41.8565672424",
+  "community_area_number" : "8"
+}
+, {
+  "phone_number" : "312-944-8500",
+  "zip_code" : "60610",
+  "property_name" : "Parkside-I Rental",
+  "management_company" : "Holsten Management Corp.",
+  "x_coordinate" : "1131547.9315415001",
+  "units" : "116",
+  "property_type" : "Multifamily",
+  "address" : "545 W. Division St.",
+  "community_area" : "Near North Side",
+  "community_area_number" : "8"
+}
+, {
+  "phone_number" : "312-640-6032",
+  "zip_code" : "60610",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.792090958",
+    "latitude" : "41.9213082228",
+    "human_address" : "{\"address\":\"544 W. Oak St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Parkside of Old Town Phase IIA",
+  "management_company" : "Holsten Real Estate Dev. Corp.",
+  "x_coordinate" : "1170813.0619101573",
+  "units" : "111",
+  "property_type" : "Multifamily",
+  "address" : "544 W. Oak St.",
+  "y_coordinate" : "1914379.4156676917",
+  "longitude" : "-87.792090958",
+  "community_area" : "Near North Side",
+  "latitude" : "41.9213082228",
+  "community_area_number" : "8"
+}
+, {
+  "phone_number" : "312-944-9488",
+  "zip_code" : "60642",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6479827434",
+    "latitude" : "41.9054382467",
+    "human_address" : "{\"address\":\"1311 N. Halsted St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "North Town Village II",
+  "management_company" : "Holsten Real Estate Dev. Corp.",
+  "x_coordinate" : "1172154.2889429512",
+  "units" : "112",
+  "property_type" : "Multifamily",
+  "address" : "1311 N. Halsted St.",
+  "y_coordinate" : "1908876.8619034237",
+  "longitude" : "-87.6479827434",
+  "community_area" : "Near North Side",
+  "latitude" : "41.9054382467",
+  "community_area_number" : "8"
+}
+, {
+  "phone_number" : "312-337-5339",
+  "zip_code" : "60622",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6430753954",
+    "latitude" : "41.9036090085",
+    "human_address" : "{\"address\":\"1333 N. Kingsbury St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "The Midwest/Carroll Park Apartments",
+  "management_company" : "Holsten Real Estate Dev. Corp.",
+  "x_coordinate" : "1172196.0320095103",
+  "units" : "40",
+  "property_type" : "Supportive Housing",
+  "address" : "1333 N. Kingsbury St.",
+  "y_coordinate" : "1908220.9975412255",
+  "longitude" : "-87.6430753954",
+  "community_area" : "Near North Side",
+  "latitude" : "41.9036090085",
+  "community_area_number" : "8"
+}
+, {
+  "phone_number" : "312-913-9333",
+  "zip_code" : "60605",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6429552753",
+    "latitude" : "41.9005252379",
+    "human_address" : "{\"address\":\"1400 S. Indiana Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of Central Station",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1170813.0619101573",
+  "units" : "276",
+  "property_type" : "Senior",
+  "address" : "1400 S. Indiana Ave.",
+  "y_coordinate" : "1907097.5331471777",
+  "longitude" : "-87.6429552753",
+  "community_area" : "Near South Side",
+  "latitude" : "41.9005252379",
+  "community_area_number" : "33"
+}
+, {
+  "phone_number" : "312-326-5200",
+  "zip_code" : "60616",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6479827434",
+    "latitude" : "41.9054382467",
+    "human_address" : "{\"address\":\"1801 S. Wabash St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "The Studios",
+  "management_company" : "East Lake Management Co.",
+  "x_coordinate" : "1170359.4541896505",
+  "units" : "96",
+  "property_type" : "Supportive Housing",
+  "address" : "1801 S. Wabash St.",
+  "y_coordinate" : "1908876.8619034237",
+  "longitude" : "-87.6479827434",
+  "community_area" : "Near South Side",
+  "latitude" : "41.9054382467",
+  "community_area_number" : "33"
+}
+, {
+  "phone_number" : "312-225-7610",
+  "zip_code" : "60616",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6496459664",
+    "latitude" : "41.9057310023",
+    "human_address" : "{\"address\":\"2030 S. State St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Hillard Homes Phase I",
+  "management_company" : "Holsten Real Estate Dev. Corp.",
+  "x_coordinate" : "1177842.0936783925",
+  "units" : "170",
+  "property_type" : "Multifamily",
+  "address" : "2030 S. State St.",
+  "y_coordinate" : "1908979.9292605727",
+  "longitude" : "-87.6496459664",
+  "community_area" : "Near South Side",
+  "latitude" : "41.9057310023",
+  "community_area_number" : "33"
+}
+, {
+  "phone_number" : "312-326-1455",
+  "zip_code" : "60616",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.622620427",
+    "latitude" : "41.8640266649",
+    "human_address" : "{\"address\":\"30 W. Cermak Road\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Hilliard Homes Phase I",
+  "management_company" : "Holsten Real Estate Dev. Corp.",
+  "x_coordinate" : "1177086.6977832485",
+  "units" : "151",
+  "property_type" : "Senior",
+  "address" : "30 W. Cermak Road",
+  "y_coordinate" : "1893842.680241957",
+  "longitude" : "-87.622620427",
+  "community_area" : "Near South Side",
+  "latitude" : "41.8640266649",
+  "community_area_number" : "33"
+}
+, {
+  "phone_number" : "312-326-1455",
+  "zip_code" : "60616",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6254623688",
+    "latitude" : "41.857792921",
+    "human_address" : "{\"address\":\"2031 S. Clark St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Hilliard Homes Phase II",
+  "management_company" : "Holsten Management Corp.",
+  "x_coordinate" : "1176604.642296739",
+  "units" : "176",
+  "property_type" : "Multifamily",
+  "address" : "2031 S. Clark St.",
+  "y_coordinate" : "1891564.720194449",
+  "longitude" : "-87.6254623688",
+  "community_area" : "Near South Side",
+  "latitude" : "41.857792921",
+  "community_area_number" : "33"
+}
+, {
+  "phone_number" : "312-326-1466",
+  "zip_code" : "60616",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6272677388",
+    "latitude" : "41.854535033",
+    "human_address" : "{\"address\":\"30 W. Cermak Road\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Hilliard Homes Phase II",
+  "management_company" : "Holsten Management Corp.",
+  "x_coordinate" : "1176346.441206223",
+  "units" : "151",
+  "property_type" : "Senior",
+  "address" : "30 W. Cermak Road",
+  "y_coordinate" : "1890373.5034965982",
+  "longitude" : "-87.6272677388",
+  "community_area" : "Near South Side",
+  "latitude" : "41.854535033",
+  "community_area_number" : "33"
+}
+, {
+  "phone_number" : "773-381-7400",
+  "zip_code" : "60616",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.628232211",
+    "latitude" : "41.8530133902",
+    "human_address" : "{\"address\":\"300 E. 26th Street\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "G&A Senior Residences at Eastgate Village",
+  "management_company" : "Eastgate Village Partners LP",
+  "x_coordinate" : "1161390.3474516731",
+  "units" : "127",
+  "property_type" : "Senior",
+  "address" : "300 E. 26th Street",
+  "y_coordinate" : "1889816.861403971",
+  "longitude" : "-87.628232211",
+  "community_area" : "Near South Side",
+  "latitude" : "41.8530133902",
+  "community_area_number" : "33"
+}
+, {
+  "phone_number" : "312-455-0009",
+  "zip_code" : "60612",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6828170157",
+    "latitude" : "41.8838079875",
+    "human_address" : "{\"address\":\"2237 W. Maypole Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Westhaven Park Phase IIA",
+  "management_company" : "Interstate Realty Management Co.",
+  "x_coordinate" : "1175862.8657496881",
+  "units" : "92",
+  "property_type" : "Multifamily",
+  "address" : "2237 W. Maypole Ave.",
+  "y_coordinate" : "1900920.9664023356",
+  "longitude" : "-87.6828170157",
+  "community_area" : "Near West Side",
+  "latitude" : "41.8838079875",
+  "community_area_number" : "28"
+}
+, {
+  "phone_number" : "312-491-1117",
+  "zip_code" : "60612",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6299918764",
+    "latitude" : "41.8544114001",
+    "human_address" : "{\"address\":\"110 N. Wood St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Westhaven Park Phase IIB",
+  "management_company" : "Interstate Realty Management Co.",
+  "x_coordinate" : "1163284.2573568304",
+  "units" : "176",
+  "property_type" : "Multifamily",
+  "address" : "110 N. Wood St.",
+  "y_coordinate" : "1890322.361118107",
+  "longitude" : "-87.6299918764",
+  "community_area" : "Near West Side",
+  "latitude" : "41.8544114001",
+  "community_area_number" : "28"
+}
+, {
+  "phone_number" : "312-455-0009",
+  "zip_code" : "60612",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6758507682",
+    "latitude" : "41.8849038015",
+    "human_address" : "{\"address\":\"1939 W. Lake St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Westhaven Park IIC ",
+  "management_company" : "Interstate Realty Management Co.",
+  "x_coordinate" : "1176346.441206223",
+  "units" : "42",
+  "property_type" : "Multifamily",
+  "address" : "1939 W. Lake St.",
+  "y_coordinate" : "1901334.7365981778",
+  "longitude" : "-87.6758507682",
+  "community_area" : "Near West Side",
+  "latitude" : "41.8849038015",
+  "community_area_number" : "28"
+}
+, {
+  "phone_number" : "312-948-0116",
+  "zip_code" : "60607",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.628232211",
+    "latitude" : "41.8530133902",
+    "human_address" : "{\"address\":\"1222 W. Roosevelt Road\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Roosevelt Square Phase I /ABLA Rental",
+  "management_company" : "Related Management Co. LP",
+  "x_coordinate" : "1164349.325312463",
+  "units" : "105",
+  "property_type" : "Multifamily",
+  "address" : "1222 W. Roosevelt Road",
+  "y_coordinate" : "1889816.861403971",
+  "longitude" : "-87.628232211",
+  "community_area" : "Near West Side",
+  "latitude" : "41.8530133902",
+  "community_area_number" : "28"
+}
+, {
+  "phone_number" : "312-733-2436",
+  "zip_code" : "60608",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6719533672",
+    "latitude" : "41.8835542602",
+    "human_address" : "{\"address\":\"1401 W. Roosevelt Road\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Roosevelt Place",
+  "management_company" : "East Lake Management Group, Inc.",
+  "x_coordinate" : "1178501.1617860266",
+  "units" : "181",
+  "property_type" : "Senior",
+  "address" : "1401 W. Roosevelt Road",
+  "y_coordinate" : "1900851.1201508911",
+  "longitude" : "-87.6719533672",
+  "community_area" : "Near West Side",
+  "latitude" : "41.8835542602",
+  "community_area_number" : "28"
+}
+, {
+  "phone_number" : "312-850-4128",
+  "zip_code" : "60608",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6204033747",
+    "latitude" : "41.8457959044",
+    "human_address" : "{\"address\":\"1314 W. 15th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Loomis Court",
+  "management_company" : "CHA",
+  "x_coordinate" : "1168285.1327187584",
+  "units" : "68",
+  "property_type" : "Senior",
+  "address" : "1314 W. 15th St.",
+  "y_coordinate" : "1887204.439847358",
+  "longitude" : "-87.6204033747",
+  "community_area" : "Near West Side",
+  "latitude" : "41.8457959044",
+  "community_area_number" : "28"
+}
+, {
+  "phone_number" : "312-563-0099",
+  "zip_code" : "60608",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6576733813",
+    "latitude" : "41.8670903488",
+    "human_address" : "{\"address\":\"1355 S. Blue Island Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Newberry Park Apartments",
+  "management_company" : "AIMCO",
+  "x_coordinate" : "1167191.3960007455",
+  "units" : "124",
+  "property_type" : "Multifamily",
+  "address" : "1355 S. Blue Island Ave.",
+  "y_coordinate" : "1894881.9846013894",
+  "longitude" : "-87.6576733813",
+  "community_area" : "Near West Side",
+  "latitude" : "41.8670903488",
+  "community_area_number" : "28"
+}
+, {
+  "phone_number" : "312-738-2280",
+  "zip_code" : "60612",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6616918421",
+    "latitude" : "41.866806049",
+    "human_address" : "{\"address\":\"216 S. Hoyne Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Near West Side Apartments",
+  "management_company" : "Baker-Simmons Apartments",
+  "x_coordinate" : "1167767.3949669574",
+  "units" : "84",
+  "property_type" : "Multifamily",
+  "address" : "216 S. Hoyne Ave.",
+  "y_coordinate" : "1894769.7970191787",
+  "longitude" : "-87.6616918421",
+  "community_area" : "Near West Side",
+  "latitude" : "41.866806049",
+  "community_area_number" : "28"
+}
+, {
+  "phone_number" : "312-226-7620",
+  "zip_code" : "60612",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.659631083",
+    "latitude" : "41.8616698673",
+    "human_address" : "{\"address\":\"50 N. Hoyne Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "St. Andrew's Court",
+  "management_company" : "St. Andrew's Court LP",
+  "x_coordinate" : "1168817.2778686853",
+  "units" : "15",
+  "property_type" : "Multifamily",
+  "address" : "50 N. Hoyne Ave.",
+  "y_coordinate" : "1892902.5811651663",
+  "longitude" : "-87.659631083",
+  "community_area" : "Near West Side",
+  "latitude" : "41.8616698673",
+  "community_area_number" : "28"
+}
+, {
+  "phone_number" : "312-492-6645",
+  "zip_code" : "60612",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6557523872",
+    "latitude" : "41.8639940988",
+    "human_address" : "{\"address\":\"2425 W. Adams St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Jackson Square West End",
+  "management_company" : "East Lake Management Co.",
+  "x_coordinate" : "1162403.5672647401",
+  "units" : "115",
+  "property_type" : "Multifamily",
+  "address" : "2425 W. Adams St.",
+  "y_coordinate" : "1893757.841159408",
+  "longitude" : "-87.6557523872",
+  "community_area" : "Near West Side",
+  "latitude" : "41.8639940988",
+  "community_area_number" : "28"
+}
+, {
+  "phone_number" : "312-660-1354",
+  "zip_code" : "60607",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6791541271",
+    "latitude" : "41.8781255904",
+    "human_address" : "{\"address\":\"1519 W. Warren Blvd.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Harvest Commons",
+  "management_company" : "Heartland Houisng Inc.",
+  "units" : "89",
+  "property_type" : "Supportive",
+  "address" : "1519 W. Warren Blvd.",
+  "y_coordinate" : "1898857.8894641905",
+  "longitude" : "-87.6791541271",
+  "community_area" : "Near West Side",
+  "latitude" : "41.8781255904",
+  "community_area_number" : "28"
+}
+, {
+  "phone_number" : "773-523-9333",
+  "zip_code" : "60609",
+  "property_name" : "Senior Suites of New City",
+  "management_company" : "Senior Lifestyle Corp.",
+  "units" : "115",
+  "property_type" : "Multifamily",
+  "address" : "4845 S. Western Blvd.",
+  "community_area" : "New City",
+  "community_area_number" : "61"
+}
+, {
+  "phone_number" : "773-536-3057",
+  "zip_code" : "60609",
+  "property_name" : "West Haven Homes",
+  "management_company" : "Universal Management Service, Inc.",
+  "units" : "110",
+  "property_type" : "Senior",
+  "address" : "850 W. Garfield Blvd.",
+  "community_area" : "New City",
+  "community_area_number" : "61"
+}
+, {
+  "phone_number" : "877-882-1495",
+  "zip_code" : "60609",
+  "property_name" : "Goldblatt's Senior Living",
+  "management_company" : "BMA Management Ltd.",
+  "units" : "101",
+  "property_type" : "Senior",
+  "address" : "1615 W. 47th St.",
+  "community_area" : "New City",
+  "community_area_number" : "61"
+}
+, {
+  "phone_number" : "773-478-8900",
+  "zip_code" : "60618",
+  "property_name" : "North Center Senior Apartments",
+  "management_company" : "Metroplex, Inc.",
+  "x_coordinate" : "1161385.3739578223",
+  "units" : "60",
+  "property_type" : "Senior",
+  "address" : "2324 W. Irving Park Road",
+  "community_area" : "North Center",
+  "community_area_number" : "5"
+}
+, {
+  "phone_number" : "773-265-6961",
+  "zip_code" : "60624",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6836299382",
+    "latitude" : "41.8053101773",
+    "human_address" : "{\"address\":\"3440 W. Roosevelt Road\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Roosevelt Towers",
+  "management_company" : "East Lake Management Group, Inc.",
+  "x_coordinate" : "1171337.269424133",
+  "units" : "104",
+  "property_type" : "Senior",
+  "address" : "3440 W. Roosevelt Road",
+  "y_coordinate" : "1872314.958613434",
+  "longitude" : "-87.6836299382",
+  "community_area" : "North Lawndale",
+  "latitude" : "41.8053101773",
+  "community_area_number" : "29"
+}
+, {
+  "phone_number" : "773-762-3389",
+  "zip_code" : "60623",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6472446717",
+    "latitude" : "41.7943936951",
+    "human_address" : "{\"address\":\"3836 W. Cermak Road\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Tabernacle Apartments",
+  "management_company" : "Lawndale Christian Residential Svcs.",
+  "x_coordinate" : "1160064.9005808276",
+  "units" : "126",
+  "property_type" : "Senior",
+  "address" : "3836 W. Cermak Road",
+  "y_coordinate" : "1868414.146219006",
+  "longitude" : "-87.6472446717",
+  "community_area" : "North Lawndale",
+  "latitude" : "41.7943936951",
+  "community_area_number" : "29"
+}
+, {
+  "phone_number" : "773-762-3389",
+  "zip_code" : "60623",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6869750499",
+    "latitude" : "41.9541446663",
+    "human_address" : "{\"address\":\"1859 S. Pulaski Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Lazarus Apartments",
+  "management_company" : "Lawndale Christian Residential Svcs.",
+  "x_coordinate" : "1153440.1241936614",
+  "units" : "26",
+  "property_type" : "Multifamily",
+  "address" : "1859 S. Pulaski Ave.",
+  "y_coordinate" : "1926543.1808314822",
+  "longitude" : "-87.6869750499",
+  "community_area" : "North Lawndale",
+  "latitude" : "41.9541446663",
+  "community_area_number" : "29"
+}
+, {
+  "phone_number" : "773-638-0386",
+  "zip_code" : "60612",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7121808603",
+    "latitude" : "41.8664397713",
+    "human_address" : "{\"address\":\"1129 S. Sacramento Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Dicksons Estates Apartments",
+  "management_company" : "Dickson Estates Apartments",
+  "x_coordinate" : "1150987.190267074",
+  "units" : "48",
+  "property_type" : "Multifamily",
+  "address" : "1129 S. Sacramento Ave.",
+  "y_coordinate" : "1894532.7749594802",
+  "longitude" : "-87.7121808603",
+  "community_area" : "North Lawndale",
+  "latitude" : "41.8664397713",
+  "community_area_number" : "29"
+}
+, {
+  "phone_number" : "773-762-3389",
+  "zip_code" : "60623",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7213268803",
+    "latitude" : "41.8517027368",
+    "human_address" : "{\"address\":\"1859 S. Pulaski Road\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Praise Apartments",
+  "management_company" : "Lawndale Christian Residential Svcs.",
+  "x_coordinate" : "1150056.0629614652",
+  "units" : "11",
+  "property_type" : "Multifamily",
+  "address" : "1859 S. Pulaski Road",
+  "y_coordinate" : "1889144.7486111482",
+  "longitude" : "-87.7213268803",
+  "community_area" : "North Lawndale",
+  "latitude" : "41.8517027368",
+  "community_area_number" : "29"
+}
+, {
+  "phone_number" : "773-762-3389",
+  "zip_code" : "60623",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7247100763",
+    "latitude" : "41.8553397217",
+    "human_address" : "{\"address\":\"1331 S. Independence Blvd.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Fountain View Apartments",
+  "management_company" : "Lawndale Christian Residential Svcs.",
+  "x_coordinate" : "1156574.0087372132",
+  "units" : "32",
+  "property_type" : "Multifamily",
+  "address" : "1331 S. Independence Blvd.",
+  "y_coordinate" : "1890463.503159668",
+  "longitude" : "-87.7247100763",
+  "community_area" : "North Lawndale",
+  "latitude" : "41.8553397217",
+  "community_area_number" : "29"
+}
+, {
+  "phone_number" : "312-337-5339",
+  "zip_code" : "60613",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7006662254",
+    "latitude" : "41.8673696101",
+    "human_address" : "{\"address\":\"3200 block of West Douglas Blvd.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Lawndale Restoration II Apartments",
+  "management_company" : "Holsten Management Corp.",
+  "x_coordinate" : "1150056.0629614652",
+  "units" : "45",
+  "property_type" : "Multifamily",
+  "address" : "3200 block of West Douglas Blvd.",
+  "y_coordinate" : "1894894.5102467015",
+  "longitude" : "-87.7006662254",
+  "community_area" : "North Lawndale",
+  "latitude" : "41.8673696101",
+  "community_area_number" : "29"
+}
+, {
+  "phone_number" : "773-776-7233",
+  "zip_code" : "60623",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7247100763",
+    "latitude" : "41.8553397217",
+    "human_address" : "{\"address\":\"1550 S. Hamlin Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Dr. King Apartments",
+  "management_company" : "Lawndale Christian Residential Svcs.",
+  "x_coordinate" : "1151511.1578080195",
+  "units" : "170",
+  "property_type" : "Multifamily",
+  "address" : "1550 S. Hamlin Ave.",
+  "y_coordinate" : "1890463.503159668",
+  "longitude" : "-87.7247100763",
+  "community_area" : "North Lawndale",
+  "latitude" : "41.8553397217",
+  "community_area_number" : "29"
+}
+, {
+  "phone_number" : "773-935-4663",
+  "zip_code" : "60623",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7192916814",
+    "latitude" : "41.8634109156",
+    "human_address" : "{\"address\":\"1251 S. Sawyer Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Hope House",
+  "management_company" : "AIDSCare, Inc.",
+  "units" : "80",
+  "property_type" : "Supportive/HIV/AIDS",
+  "address" : "1251 S. Sawyer Ave.",
+  "y_coordinate" : "1893415.133168019",
+  "longitude" : "-87.7192916814",
+  "community_area" : "North Lawndale",
+  "latitude" : "41.8634109156",
+  "community_area_number" : "29"
+}
+, {
+  "phone_number" : "773-257-8800",
+  "zip_code" : "60624",
+  "property_name" : "Sankofa House",
+  "management_company" : "Interfaith Housing Corp.",
+  "x_coordinate" : "1151263.6234547235",
+  "units" : "32",
+  "property_type" : "Supportive/Youth/Kinship Families",
+  "address" : "4041 W. Roosevelt Road",
+  "community_area" : "North Lawndale",
+  "community_area_number" : "29"
+}
+, {
+  "phone_number" : "773-549-8300",
+  "zip_code" : "60624",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.720240298",
+    "latitude" : "41.8592359223",
+    "human_address" : "{\"address\":\"927 S. Independence Blvd.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Independence Apartments",
+  "management_company" : "Realty & Mortgage Co.",
+  "x_coordinate" : "1154939.0234203928",
+  "units" : "58",
+  "property_type" : "Supportive Housing",
+  "address" : "927 S. Independence Blvd.",
+  "y_coordinate" : "1891891.9301081835",
+  "longitude" : "-87.720240298",
+  "community_area" : "North Lawndale",
+  "latitude" : "41.8592359223",
+  "community_area_number" : "29"
+}
+, {
+  "phone_number" : "773-638-0386",
+  "zip_code" : "60612",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7066936632",
+    "latitude" : "41.8648290106",
+    "human_address" : "{\"address\":\"1129 S. Sacramento Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Dicksons Estates Apartments",
+  "management_company" : "Dickson Estates Apartments",
+  "x_coordinate" : "1149479.8229627917",
+  "units" : "42",
+  "property_type" : "Multifamily",
+  "address" : "1129 S. Sacramento Ave.",
+  "y_coordinate" : "1893956.6797284372",
+  "longitude" : "-87.7066936632",
+  "community_area" : "North Lawndale",
+  "latitude" : "41.8648290106",
+  "community_area_number" : "29"
+}
+, {
+  "phone_number" : "773-762-3389",
+  "zip_code" : "60623",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7267241437",
+    "latitude" : "41.8660400256",
+    "human_address" : "{\"address\":\"3128 W. Douglas Blvd.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Renaissance Place Apartments",
+  "management_company" : "Lawndale Christian Residential Svcs.",
+  "x_coordinate" : "1151446.0748254498",
+  "units" : "11",
+  "property_type" : "Multifamily",
+  "address" : "3128 W. Douglas Blvd.",
+  "y_coordinate" : "1894358.7814178746",
+  "longitude" : "-87.7267241437",
+  "community_area" : "North Lawndale",
+  "latitude" : "41.8660400256",
+  "community_area_number" : "29"
+}
+, {
+  "phone_number" : "773-893-4800",
+  "zip_code" : "60608",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7194750917",
+    "latitude" : "41.8692147569",
+    "human_address" : "{\"address\":\"Ogden/California/Talman\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Park Douglas",
+  "management_company" : "Interstate Realty Management Co.",
+  "x_coordinate" : "1156574.0087372132",
+  "units" : "54",
+  "property_type" : "Multifamily",
+  "address" : "Ogden/California/Talman",
+  "y_coordinate" : "1895529.681933545",
+  "longitude" : "-87.7194750917",
+  "community_area" : "North Lawndale",
+  "latitude" : "41.8692147569",
+  "community_area_number" : "29"
+}
+, {
+  "phone_number" : "773-478-6890",
+  "zip_code" : "60646",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7006662254",
+    "latitude" : "41.8673696101",
+    "human_address" : "{\"address\":\"5801 N. Pulaski Road\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "North Park Village Apartments",
+  "management_company" : "EHDOC",
+  "x_coordinate" : "1155600.259703129",
+  "units" : "137",
+  "property_type" : "Senior",
+  "address" : "5801 N. Pulaski Road",
+  "y_coordinate" : "1894894.5102467015",
+  "longitude" : "-87.7006662254",
+  "community_area" : "North Park",
+  "latitude" : "41.8673696101",
+  "community_area_number" : "13"
+}
+, {
+  "phone_number" : "773-583-4182",
+  "zip_code" : "60646",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7042831894",
+    "latitude" : "41.8630876114",
+    "human_address" : "{\"address\":\"5801 N. Pulaski Road\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Edward M. Marx Apartments",
+  "management_company" : "EHDOC",
+  "units" : "180",
+  "property_type" : "Senior",
+  "address" : "5801 N. Pulaski Road",
+  "y_coordinate" : "1893326.919926386",
+  "longitude" : "-87.7042831894",
+  "community_area" : "North Park",
+  "latitude" : "41.8630876114",
+  "community_area_number" : "13"
+}
+, {
+  "phone_number" : "888-339-2315",
+  "zip_code" : "60631",
+  "property_name" : "Senior Suites of Norwood Park",
+  "management_company" : "Senior Lifestyle ",
+  "units" : "84",
+  "property_type" : "Senior",
+  "address" : "5700 N. Harlem Ave.",
+  "community_area" : "Norwood Park"
+}
+, {
+  "phone_number" : "773-373-1300",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.72836921",
+    "latitude" : "41.9859315142",
+    "human_address" : "{\"address\":\"37th/Ellis\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Oakwood Shores 1A",
+  "management_company" : "The Community Builders, Inc.",
+  "x_coordinate" : "1184161.775787701",
+  "units" : "40",
+  "property_type" : "Multifamily",
+  "address" : "37th/Ellis",
+  "y_coordinate" : "1938044.2365664502",
+  "longitude" : "-87.72836921",
+  "community_area" : "Oakland",
+  "latitude" : "41.9859315142",
+  "community_area_number" : "36"
+}
+, {
+  "phone_number" : "773-373-1300",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5999252673",
+    "latitude" : "41.8197812878",
+    "human_address" : "{\"address\":\"37th/Cottage\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Oakwood Shores 1B",
+  "management_company" : "The Community Builders, Inc.",
+  "x_coordinate" : "1181955.520136621",
+  "units" : "163",
+  "property_type" : "Multifamily",
+  "address" : "37th/Cottage",
+  "y_coordinate" : "1877771.78885836",
+  "longitude" : "-87.5999252673",
+  "community_area" : "Oakland",
+  "latitude" : "41.8197812878",
+  "community_area_number" : "36"
+}
+, {
+  "phone_number" : "773-373-1300",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6079454471",
+    "latitude" : "41.826317314",
+    "human_address" : "{\"address\":\"37th/Langley\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Oakwood Shores 2A",
+  "management_company" : "The Community Builders, Inc.",
+  "units" : "162",
+  "property_type" : "Multifamily",
+  "address" : "37th/Langley",
+  "y_coordinate" : "1880134.9315073378",
+  "longitude" : "-87.6079454471",
+  "community_area" : "Oakland",
+  "latitude" : "41.826317314",
+  "community_area_number" : "36"
+}
+, {
+  "phone_number" : "773-373-1300",
+  "zip_code" : "60653",
+  "property_name" : "Oakwood Shores 2B 1",
+  "management_company" : "The Community Builders, Inc.",
+  "units" : "199",
+  "property_type" : "Multifamily",
+  "address" : "38th/Vincennes",
+  "community_area" : "Oakland",
+  "community_area_number" : "36"
+}
+, {
+  "phone_number" : "773-373-1300",
+  "zip_code" : "60653",
+  "property_name" : "Oakwood Shores Senior Apartments",
+  "management_company" : "The Community Builders, Inc.",
+  "units" : "75",
+  "property_type" : "Multifamily",
+  "address" : "3750 S. Cottage Grove Ave.",
+  "community_area" : "Oakland",
+  "community_area_number" : "36"
+}
+, {
+  "phone_number" : "773-268-0200",
+  "zip_code" : "60653",
+  "property_name" : "Lake Park Crescent",
+  "management_company" : "Draper and Kramer, Inc.",
+  "x_coordinate" : "1148723.5010362945",
+  "units" : "32",
+  "property_type" : "Multifamily",
+  "address" : "1061 E. 41st Place",
+  "community_area" : "Oakland",
+  "community_area_number" : "36"
+}
+, {
+  "phone_number" : "773-373-1300",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.72836921",
+    "latitude" : "41.9859315142",
+    "human_address" : "{\"address\":\"3755 S. Cottage Grove Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Oakwood Shores Terrace",
+  "management_company" : "The Community Builders, Inc.",
+  "x_coordinate" : "1148723.5010362945",
+  "units" : "148",
+  "property_type" : "Senior",
+  "address" : "3755 S. Cottage Grove Ave.",
+  "y_coordinate" : "1938044.2365664502",
+  "longitude" : "-87.72836921",
+  "community_area" : "Oakland",
+  "latitude" : "41.9859315142",
+  "community_area_number" : "36"
+}
+, {
+  "phone_number" : "773-785-1300",
+  "zip_code" : "60628",
+  "property_name" : "Pullman Wheelworks",
+  "management_company" : "Mercy Housing",
+  "units" : "210",
+  "property_type" : "Multifamily",
+  "address" : "901 E. 104th St.",
+  "community_area" : "Pullman",
+  "community_area_number" : "50"
+}
+, {
+  "phone_number" : "773-840-3993",
+  "zip_code" : "60628",
+  "property_name" : "Pullman Suites",
+  "management_company" : "Triangle & Assoc.",
+  "units" : "60",
+  "property_type" : "Senior",
+  "address" : "15 E. 112th Place",
+  "community_area" : "Pullman",
+  "community_area_number" : "50"
+}
+, {
+  "phone_number" : "773-995-5200",
+  "zip_code" : "60627",
+  "property_name" : "Concordia Apartments",
+  "management_company" : "DRE, Inc.",
+  "units" : "75",
+  "property_type" : "Senior",
+  "address" : "13037 S. Daniel Dr.",
+  "community_area" : "Riverdale",
+  "community_area_number" : "54"
+}
+, {
+  "phone_number" : "773-572-5272",
+  "zip_code" : "60626",
+  "property_name" : "Wayne Street Apartments",
+  "management_company" : "The Thresholds",
+  "x_coordinate" : "1181862.3293714053",
+  "units" : "297",
+  "property_type" : "Supportive Housing",
+  "address" : "6808 N. Wayne Ave.",
+  "community_area" : "Rogers Park",
+  "community_area_number" : "1"
+}
+, {
+  "phone_number" : "312-602-6207",
+  "zip_code" : "60626",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6082867641",
+    "latitude" : "41.8263705668",
+    "human_address" : "{\"address\":\"6928 N. Wayne Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Morse Senior Apartments",
+  "management_company" : "Morse Urban Dev.",
+  "x_coordinate" : "1180294.2738928266",
+  "units" : "44",
+  "property_type" : "Senior",
+  "address" : "6928 N. Wayne Ave.",
+  "y_coordinate" : "1880153.551343028",
+  "longitude" : "-87.6082867641",
+  "community_area" : "Rogers Park",
+  "latitude" : "41.8263705668",
+  "community_area_number" : "1"
+}
+, {
+  "phone_number" : "773-743-3699",
+  "zip_code" : "60626",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6159174009",
+    "latitude" : "41.6579312533",
+    "human_address" : "{\"address\":\"7450 N. Rogers Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "James Sneider Apartments",
+  "management_company" : "Hispanic Housing Dev. Corp.",
+  "x_coordinate" : "1165865.3477642245",
+  "units" : "57",
+  "property_type" : "Senior",
+  "address" : "7450 N. Rogers Ave.",
+  "y_coordinate" : "1818758.3719629094",
+  "longitude" : "-87.6159174009",
+  "community_area" : "Rogers Park",
+  "latitude" : "41.6579312533",
+  "community_area_number" : "1"
+}
+, {
+  "phone_number" : "773-274-0177",
+  "zip_code" : "60626",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6651110904",
+    "latitude" : "42.0057709728",
+    "human_address" : "{\"address\":\"6928 N. Wayne Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Wayne Senior Housing",
+  "management_company" : "CIG Management",
+  "x_coordinate" : "1165843.8983617804",
+  "units" : "119",
+  "property_type" : "Senior",
+  "address" : "6928 N. Wayne Ave.",
+  "y_coordinate" : "1945401.688805442",
+  "longitude" : "-87.6651110904",
+  "community_area" : "Rogers Park",
+  "latitude" : "42.0057709728",
+  "community_area_number" : "1"
+}
+, {
+  "phone_number" : "773-568-7804",
+  "zip_code" : "60628",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6651711448",
+    "latitude" : "42.0075737709",
+    "human_address" : "{\"address\":\"11045 S. Wentworth Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Wentworth Commons",
+  "management_company" : "Mercy Housing Lakefront",
+  "x_coordinate" : "1163640.7090683652",
+  "units" : "50",
+  "property_type" : "Supportive Housing",
+  "address" : "11045 S. Wentworth Ave.",
+  "y_coordinate" : "1946058.5134415056",
+  "longitude" : "-87.6651711448",
+  "community_area" : "Roseland",
+  "latitude" : "42.0075737709",
+  "community_area_number" : "49"
+}
+, {
+  "phone_number" : "773-341-3158",
+  "zip_code" : "60628",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6731785733",
+    "latitude" : "42.0171497111",
+    "human_address" : "{\"address\":\"10513 S. Michigan Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Roseland Ridge Apartments",
+  "management_company" : "NHS Redevelopment Corp.",
+  "x_coordinate" : "1165843.8983617804",
+  "units" : "51",
+  "property_type" : "Multifamily",
+  "address" : "10513 S. Michigan Ave.",
+  "y_coordinate" : "1949531.1714154778",
+  "longitude" : "-87.6731785733",
+  "community_area" : "Roseland",
+  "latitude" : "42.0171497111",
+  "community_area_number" : "49"
+}
+, {
+  "phone_number" : "773-568-3031",
+  "zip_code" : "60628",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6651711448",
+    "latitude" : "42.0075737709",
+    "human_address" : "{\"address\":\"240 W. 107th Place\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Holland Apartments",
+  "management_company" : "Mercy Housing",
+  "x_coordinate" : "1176951.4016152027",
+  "units" : "40",
+  "property_type" : "Supportive Housing",
+  "address" : "240 W. 107th Place",
+  "y_coordinate" : "1946058.5134415056",
+  "longitude" : "-87.6651711448",
+  "community_area" : "Roseland",
+  "latitude" : "42.0075737709",
+  "community_area_number" : "49"
+}
+, {
+  "phone_number" : "773-468-6400",
+  "zip_code" : "60628",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6277673462",
+    "latitude" : "41.6930159121",
+    "human_address" : "{\"address\":\"10450 S. Michigan Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Victory Center of Roseland",
+  "management_company" : "Pathway Senior Living ",
+  "x_coordinate" : "1178893.6986119405",
+  "units" : "81",
+  "property_type" : "Senior",
+  "address" : "10450 S. Michigan Ave.",
+  "y_coordinate" : "1831516.0158972335",
+  "longitude" : "-87.6277673462",
+  "community_area" : "Roseland",
+  "latitude" : "41.6930159121",
+  "community_area_number" : "49"
+}
+, {
+  "phone_number" : "773-548-8301",
+  "zip_code" : "60628",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6205446771",
+    "latitude" : "41.7030773785",
+    "human_address" : "{\"address\":\"10400-30 S. Michigan Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Roseland Ridge Senior Apartments",
+  "management_company" : "Neighborhood Housing Services",
+  "x_coordinate" : "1176448.51184587",
+  "units" : "124",
+  "property_type" : "Senior",
+  "address" : "10400-30 S. Michigan Ave.",
+  "y_coordinate" : "1835198.53356157",
+  "longitude" : "-87.6205446771",
+  "community_area" : "Roseland",
+  "latitude" : "41.7030773785",
+  "community_area_number" : "49"
+}
+, {
+  "phone_number" : "773-468-1901",
+  "zip_code" : "60628",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6295434504",
+    "latitude" : "41.698995638",
+    "human_address" : "{\"address\":\"63 E. 104th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Roseland Village Grand-Family Apartments",
+  "management_company" : "Mercy Housing",
+  "x_coordinate" : "1178829.4007118938",
+  "units" : "10",
+  "property_type" : "Inter-generational",
+  "address" : "63 E. 104th St.",
+  "y_coordinate" : "1833690.9859369479",
+  "longitude" : "-87.6295434504",
+  "community_area" : "Roseland",
+  "latitude" : "41.698995638"
+}
+, {
+  "phone_number" : "773-449-2600",
+  "zip_code" : "60617",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6207711553",
+    "latitude" : "41.7038907515",
+    "human_address" : "{\"address\":\"3251 E. 92nd St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Victory Center of South Chicago",
+  "management_company" : "Pathway Senior Living ",
+  "units" : "60",
+  "property_type" : "Senior",
+  "address" : "3251 E. 92nd St.",
+  "y_coordinate" : "1835494.4053217333",
+  "longitude" : "-87.6207711553",
+  "community_area" : "South Chicago",
+  "latitude" : "41.7038907515",
+  "community_area_number" : "46"
+}
+, {
+  "phone_number" : "773-359-4902",
+  "zip_code" : "60617",
+  "property_name" : "Bettendorf Place SRO",
+  "management_company" : "Alexian Brothers Bonaventure House",
+  "x_coordinate" : "1178859.4647864362",
+  "units" : "112",
+  "property_type" : "Supportive Housing",
+  "address" : "8425 S. Saginaw Ave.",
+  "community_area" : "South Chicago",
+  "community_area_number" : "46"
+}
+, {
+  "phone_number" : "773-449-2600",
+  "zip_code" : "60617",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6206450334",
+    "latitude" : "41.7053419518",
+    "human_address" : "{\"address\":\"9200 S. Burley Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Victory Center of South Chicago",
+  "management_company" : "Pathway Senior Living ",
+  "x_coordinate" : "1199523.085420141",
+  "units" : "23",
+  "property_type" : "Senior",
+  "address" : "9200 S. Burley Ave.",
+  "y_coordinate" : "1836023.490738764",
+  "longitude" : "-87.6206450334",
+  "community_area" : "South Chicago",
+  "latitude" : "41.7053419518",
+  "community_area_number" : "46"
+}
+, {
+  "phone_number" : "773-734-2884",
+  "zip_code" : "60617",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5446927939",
+    "latitude" : "41.7282135464",
+    "human_address" : "{\"address\":\"3200 E. 92nd St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Casa Kirk",
+  "management_company" : "Interfaith Housing Corp.",
+  "x_coordinate" : "1195337.9188801304",
+  "units" : "112",
+  "property_type" : "Multifamily",
+  "address" : "3200 E. 92nd St.",
+  "y_coordinate" : "1844538.4563788343",
+  "longitude" : "-87.5446927939",
+  "community_area" : "South Chicago",
+  "latitude" : "41.7282135464",
+  "community_area_number" : "46"
+}
+, {
+  "phone_number" : "312-850-1935",
+  "zip_code" : "60608",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5598598952",
+    "latitude" : "41.7419591238",
+    "human_address" : "{\"address\":\"2700 S. Drake Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Casa Sor Juana",
+  "management_company" : "The Resurrection Project",
+  "x_coordinate" : "1199232.9011781784",
+  "units" : "29",
+  "property_type" : "Multifamily",
+  "address" : "2700 S. Drake Ave.",
+  "y_coordinate" : "1849509.6505140746",
+  "longitude" : "-87.5598598952",
+  "community_area" : "South Lawndale",
+  "latitude" : "41.7419591238",
+  "community_area_number" : "30"
+}
+, {
+  "phone_number" : "773-667-1940",
+  "zip_code" : "60649",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5457557823",
+    "latitude" : "41.7282198588",
+    "human_address" : "{\"address\":\"7018 S. Cregier Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Highlands Tudor Manor",
+  "management_company" : "Related Management Co. LP",
+  "x_coordinate" : "1198941.1027295904",
+  "units" : "18",
+  "property_type" : "Multifamily",
+  "address" : "7018 S. Cregier Ave.",
+  "y_coordinate" : "1844538.0998224837",
+  "longitude" : "-87.5457557823",
+  "community_area" : "South Shore",
+  "latitude" : "41.7282198588",
+  "community_area_number" : "43"
+}
+, {
+  "phone_number" : "773-374-5333",
+  "zip_code" : "60649",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.546822457",
+    "latitude" : "41.7284087757",
+    "human_address" : "{\"address\":\"2804 E. 77th Place\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of Rainbow Beach",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1153098.3021828188",
+  "units" : "87",
+  "property_type" : "Senior",
+  "address" : "2804 E. 77th Place",
+  "y_coordinate" : "1844604.277047114",
+  "longitude" : "-87.546822457",
+  "community_area" : "South Shore",
+  "latitude" : "41.7284087757",
+  "community_area_number" : "43"
+}
+, {
+  "phone_number" : "773-768-5402",
+  "zip_code" : "60649",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.713667149",
+    "latitude" : "41.842476558",
+    "human_address" : "{\"address\":\"7538 S. Kingston Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Rainbow's End",
+  "management_company" : "Urban Property Advisors, LLC",
+  "x_coordinate" : "1189376.953607129",
+  "units" : "84",
+  "property_type" : "Senior",
+  "address" : "7538 S. Kingston Ave.",
+  "y_coordinate" : "1885797.7278244356",
+  "longitude" : "-87.713667149",
+  "community_area" : "South Shore",
+  "latitude" : "41.842476558",
+  "community_area_number" : "43"
+}
+, {
+  "phone_number" : "773-324-2333",
+  "zip_code" : "60649",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5814053802",
+    "latitude" : "41.7673820796",
+    "human_address" : "{\"address\":\"2355 E. 67th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of South Shore",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1196631.9120805236",
+  "units" : "55",
+  "property_type" : "Senior",
+  "address" : "2355 E. 67th St.",
+  "y_coordinate" : "1858721.452356422",
+  "longitude" : "-87.5814053802",
+  "community_area" : "South Shore",
+  "latitude" : "41.7673820796",
+  "community_area_number" : "43"
+}
+, {
+  "phone_number" : "773-506-3486",
+  "zip_code" : "60640",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5549647165",
+    "latitude" : "41.7546866025",
+    "human_address" : "{\"address\":\"5012 N. Winthrop Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Major Jenkins Apartments",
+  "management_company" : "Mercy Housing",
+  "x_coordinate" : "1194467.2799732804",
+  "units" : "96",
+  "property_type" : "Supportive Housing",
+  "address" : "5012 N. Winthrop Ave.",
+  "y_coordinate" : "1854159.4837005038",
+  "longitude" : "-87.5549647165",
+  "community_area" : "Uptown",
+  "latitude" : "41.7546866025",
+  "community_area_number" : "3"
+}
+, {
+  "phone_number" : "773-286-5400",
+  "zip_code" : "60640",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5628598349",
+    "latitude" : "41.7578712724",
+    "human_address" : "{\"address\":\"900 W. Windsor Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Uptown Preservation Apartments",
+  "management_company" : "Leasing & Management Co. Inc.",
+  "x_coordinate" : "1193073.3229901514",
+  "units" : "160",
+  "property_type" : "Multifamily",
+  "address" : "900 W. Windsor Ave.",
+  "y_coordinate" : "1855300.5607110243",
+  "longitude" : "-87.5628598349",
+  "community_area" : "Uptown",
+  "latitude" : "41.7578712724",
+  "community_area_number" : "3"
+}
+, {
+  "phone_number" : "773-286-5400",
+  "zip_code" : "60640",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.567783821",
+    "latitude" : "41.7734357917",
+    "human_address" : "{\"address\":\"4431 N. Clifton Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Uptown Preservation Apartments",
+  "management_company" : "Leasing & Management Co. Inc.",
+  "x_coordinate" : "1167919.6152384933",
+  "units" : "18",
+  "property_type" : "Multifamily",
+  "address" : "4431 N. Clifton Ave.",
+  "y_coordinate" : "1860960.1627823284",
+  "longitude" : "-87.567783821",
+  "community_area" : "Uptown",
+  "latitude" : "41.7734357917",
+  "community_area_number" : "3"
+}
+, {
+  "phone_number" : "773-286-5400",
+  "zip_code" : "60640",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6578919355",
+    "latitude" : "41.9737005572",
+    "human_address" : "{\"address\":\"927 W. Wilson Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Uptown Preservation Apartments",
+  "management_company" : "Leasing & Management Co. Inc.",
+  "x_coordinate" : "1169410.7238433592",
+  "units" : "18",
+  "property_type" : "Multifamily",
+  "address" : "927 W. Wilson Ave.",
+  "y_coordinate" : "1933730.4380171197",
+  "longitude" : "-87.6578919355",
+  "community_area" : "Uptown",
+  "latitude" : "41.9737005572",
+  "community_area_number" : "3"
+}
+, {
+  "phone_number" : "773-334-2164",
+  "zip_code" : "60640",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6525054366",
+    "latitude" : "41.9645923009",
+    "human_address" : "{\"address\":\"4727 N. Malden St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Malden Arms Apartments",
+  "management_company" : "Mercy Housing",
+  "x_coordinate" : "1167869.5114808967",
+  "units" : "41",
+  "property_type" : "Multifamily",
+  "address" : "4727 N. Malden St.",
+  "y_coordinate" : "1930422.9420342208",
+  "longitude" : "-87.6525054366",
+  "community_area" : "Uptown",
+  "latitude" : "41.9645923009",
+  "community_area_number" : "3"
+}
+, {
+  "phone_number" : "773-769-3116",
+  "zip_code" : "60640",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6581928459",
+    "latitude" : "41.9626536881",
+    "human_address" : "{\"address\":\"847-49 W. Sunnyside Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Sunnyside Kenmore Apartments",
+  "management_company" : "Metroplex, Inc.",
+  "x_coordinate" : "1169143.7726304997",
+  "units" : "83",
+  "property_type" : "Multifamily",
+  "address" : "847-49 W. Sunnyside Ave.",
+  "y_coordinate" : "1929704.2639931454",
+  "longitude" : "-87.6581928459",
+  "community_area" : "Uptown",
+  "latitude" : "41.9626536881",
+  "community_area_number" : "3"
+}
+, {
+  "phone_number" : "773-769-3116",
+  "zip_code" : "60640",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.653479057",
+    "latitude" : "41.9653393681",
+    "human_address" : "{\"address\":\"4130 N. Kenmore Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Sunnyside Kenmore Apartments",
+  "management_company" : "Metroplex, Inc.",
+  "x_coordinate" : "1166646.8377223643",
+  "units" : "13",
+  "property_type" : "Multifamily",
+  "address" : "4130 N. Kenmore Ave.",
+  "y_coordinate" : "1930693.0740830055",
+  "longitude" : "-87.653479057",
+  "community_area" : "Uptown",
+  "latitude" : "41.9653393681",
+  "community_area_number" : "3"
+}
+, {
+  "phone_number" : "866-227-0438",
+  "zip_code" : "60613",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6626324087",
+    "latitude" : "41.967992713",
+    "human_address" : "{\"address\":\"1032 W. Montrose Ave\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Wilson Yard Senior Apartments",
+  "management_company" : "Holsten Real Estate Dev. Corp.",
+  "x_coordinate" : "1169606.6776593295",
+  "units" : "13",
+  "property_type" : "Senior",
+  "address" : "1032 W. Montrose Ave",
+  "y_coordinate" : "1931640.3450981718",
+  "longitude" : "-87.6626324087",
+  "community_area" : "Uptown",
+  "latitude" : "41.967992713",
+  "community_area_number" : "3"
+}
+, {
+  "phone_number" : "773-769-3006",
+  "zip_code" : "60640",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6517961908",
+    "latitude" : "41.9635353994",
+    "human_address" : "{\"address\":\"5040 N. Kenmore Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Kenmore Senior Housing",
+  "management_company" : "The Habitat Co.",
+  "x_coordinate" : "1168380.0304702325",
+  "units" : "98",
+  "property_type" : "Senior",
+  "address" : "5040 N. Kenmore Ave.",
+  "y_coordinate" : "1930039.3360946288",
+  "longitude" : "-87.6517961908",
+  "community_area" : "Uptown",
+  "latitude" : "41.9635353994",
+  "community_area_number" : "3"
+}
+, {
+  "phone_number" : "312-447-4621",
+  "zip_code" : "60640",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6563694357",
+    "latitude" : "41.9575824413",
+    "human_address" : "{\"address\":\"4946 N. Sheridan Road\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Harold Washington Apartments",
+  "management_company" : "Mercy Housing",
+  "x_coordinate" : "1168438.959159473",
+  "units" : "100",
+  "property_type" : "Supportive Housing",
+  "address" : "4946 N. Sheridan Road ",
+  "y_coordinate" : "1927860.1940091166",
+  "longitude" : "-87.6563694357",
+  "community_area" : "Uptown",
+  "latitude" : "41.9575824413",
+  "community_area_number" : "3"
+}
+, {
+  "phone_number" : "773-275-6877",
+  "zip_code" : "60640",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6561074284",
+    "latitude" : "41.9618658533",
+    "human_address" : "{\"address\":\"850 W. Eastwood Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "850 Eastwood",
+  "management_company" : "Mercy Housing",
+  "x_coordinate" : "1168292.8321203333",
+  "units" : "69",
+  "property_type" : "Multifamily",
+  "address" : "850 W. Eastwood Ave.",
+  "y_coordinate" : "1929421.6495916455",
+  "longitude" : "-87.6561074284",
+  "community_area" : "Uptown",
+  "latitude" : "41.9618658533",
+  "community_area_number" : "3"
+}
+, {
+  "phone_number" : "773-665-2210",
+  "zip_code" : "60613",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6565110221",
+    "latitude" : "41.9744960685",
+    "human_address" : "{\"address\":\"4040 N. Sheridan Road\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Ruth Shriman House",
+  "management_company" : "Interfaith Housing Corp.",
+  "x_coordinate" : "1168689.9333343573",
+  "units" : "231",
+  "property_type" : "Senior",
+  "address" : "4040 N. Sheridan Road",
+  "y_coordinate" : "1934023.2899432692",
+  "longitude" : "-87.6565110221",
+  "community_area" : "Uptown",
+  "latitude" : "41.9744960685",
+  "community_area_number" : "3"
+}
+, {
+  "phone_number" : "317-596-2168",
+  "zip_code" : "60640",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6550671247",
+    "latitude" : "41.9729461221",
+    "human_address" : "{\"address\":\"5009 N. Sheridan Road\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Somerset Place Apartments",
+  "management_company" : "Zidan Management Group",
+  "units" : "16",
+  "property_type" : "ARO",
+  "address" : "5009 N. Sheridan Road",
+  "y_coordinate" : "1933461.5872546497",
+  "longitude" : "-87.6550671247",
+  "community_area" : "Uptown",
+  "latitude" : "41.9729461221"
+}
+, {
+  "phone_number" : "773-233-1333",
+  "zip_code" : "60643",
+  "property_name" : "Senior Suites of Washington Heights",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1169619.1131885468",
+  "units" : "82",
+  "property_type" : "Senior",
+  "address" : "848 W. 103rd St.",
+  "community_area" : "Washington Heights",
+  "community_area_number" : "73"
+}
+, {
+  "phone_number" : "773-429-1501",
+  "zip_code" : "60620",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6517185639",
+    "latitude" : "41.9665284532",
+    "human_address" : "{\"address\":\"8915 S. Loomis St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Brainerd Senior Center",
+  "management_company" : "Realty & Mortgage Co.",
+  "x_coordinate" : "1172263.7266894968",
+  "units" : "60",
+  "property_type" : "Senior",
+  "address" : "8915 S. Loomis St.",
+  "y_coordinate" : "1931130.1859241405",
+  "longitude" : "-87.6517185639",
+  "community_area" : "Washington Heights",
+  "latitude" : "41.9665284532",
+  "community_area_number" : "73"
+}
+, {
+  "phone_number" : "773-285-3341",
+  "zip_code" : "60615",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6447816603",
+    "latitude" : "41.7070094274",
+    "human_address" : "{\"address\":\"5441 S. Michigan Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Urbanite Apartments",
+  "management_company" : "Assoc. of Chicago Day School",
+  "x_coordinate" : "1168832.7496225224",
+  "units" : "85",
+  "property_type" : "People with Disabilities",
+  "address" : "5441 S. Michigan Ave.",
+  "y_coordinate" : "1836577.477182002",
+  "longitude" : "-87.6447816603",
+  "community_area" : "Washington Park",
+  "latitude" : "41.7070094274",
+  "community_area_number" : "40"
+}
+, {
+  "phone_number" : "773-955-5780",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6547251281",
+    "latitude" : "41.9556850173",
+    "human_address" : "{\"address\":\"5801 S. Michigan Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Brand New Beginnings, Inc.",
+  "management_company" : "Harriet Tubman NFP",
+  "x_coordinate" : "1168602.533575851",
+  "units" : "25",
+  "property_type" : "People with Disabilities",
+  "address" : "5801 S. Michigan Ave.",
+  "y_coordinate" : "1927172.3028950733",
+  "longitude" : "-87.6547251281",
+  "community_area" : "Washington Park",
+  "latitude" : "41.9556850173",
+  "community_area_number" : "40"
+}
+, {
+  "phone_number" : "773-548-8924",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6579318552",
+    "latitude" : "41.7316445313",
+    "human_address" : "{\"address\":\"5947 S. Indiana Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "St. Edmund's Manor",
+  "management_company" : "St. Edmund's Manor Ltd.",
+  "x_coordinate" : "1178127.357872784",
+  "units" : "24",
+  "property_type" : "Multifamily",
+  "address" : "5947 S. Indiana Ave.",
+  "y_coordinate" : "1845525.7983164364",
+  "longitude" : "-87.6579318552",
+  "community_area" : "Washington Park",
+  "latitude" : "41.7316445313",
+  "community_area_number" : "40"
+}
+, {
+  "phone_number" : "773-493-2411",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6223343775",
+    "latitude" : "41.7952753031",
+    "human_address" : "{\"address\":\"6253 S. Michigan Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "St. Edmund's Village",
+  "management_company" : "St. Edmund's Village LP",
+  "x_coordinate" : "1178188.1637615676",
+  "units" : "31",
+  "property_type" : "Multifamily",
+  "address" : "6253 S. Michigan Ave.",
+  "y_coordinate" : "1868790.5953475153",
+  "longitude" : "-87.6223343775",
+  "community_area" : "Washington Park",
+  "latitude" : "41.7952753031",
+  "community_area_number" : "40"
+}
+, {
+  "phone_number" : "773-548-8924",
+  "zip_code" : "60653",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6221790762",
+    "latitude" : "41.7891520073",
+    "human_address" : "{\"address\":\"5701 S. Michigan Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Michigan Plaza (St. Edmund's Plaza)",
+  "management_company" : "Michigan Plaza LP",
+  "x_coordinate" : "1178662.0563776551",
+  "units" : "230",
+  "property_type" : "Multifamily",
+  "address" : "5701 S. Michigan Ave.",
+  "y_coordinate" : "1866559.6547361617",
+  "longitude" : "-87.6221790762",
+  "community_area" : "Washington Park",
+  "latitude" : "41.7891520073",
+  "community_area_number" : "40"
+}
+, {
+  "phone_number" : "773-752-9760",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6204757369",
+    "latitude" : "41.7860493567",
+    "human_address" : "{\"address\":\"5751-59 S. Michigan Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Harriett Tubman Apartments",
+  "management_company" : "Brand New Beginnings Inc.",
+  "x_coordinate" : "1178307.6971999898",
+  "units" : "65",
+  "property_type" : "Multifamily",
+  "address" : "5751-59 S. Michigan Ave.",
+  "y_coordinate" : "1865432.9159510299",
+  "longitude" : "-87.6204757369",
+  "community_area" : "Washington Park",
+  "latitude" : "41.7860493567",
+  "community_area_number" : "40"
+}
+, {
+  "phone_number" : "773-752-2331",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6218374892",
+    "latitude" : "41.7804036945",
+    "human_address" : "{\"address\":\"325-43 E. 55th Place\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Coppin House",
+  "management_company" : "Interfaith Housing Corp.",
+  "x_coordinate" : "1178170.3707827867",
+  "units" : "28",
+  "property_type" : "Supportive/Kinship Families",
+  "address" : "325-43 E. 55th Place",
+  "y_coordinate" : "1863372.5987250379",
+  "longitude" : "-87.6218374892",
+  "community_area" : "Washington Park",
+  "latitude" : "41.7804036945",
+  "community_area_number" : "40"
+}
+, {
+  "phone_number" : "773-420-3328",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6222241137",
+    "latitude" : "41.7909803898",
+    "human_address" : "{\"address\":\"110 E. 60th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "St. Edmund's Commons",
+  "management_company" : "St. Edmund's Redevelopment Corp.",
+  "x_coordinate" : "1178184.0504477206",
+  "units" : "54",
+  "property_type" : "Multifamily",
+  "address" : "110 E. 60th St.",
+  "y_coordinate" : "1867225.8041226729",
+  "longitude" : "-87.6222241137",
+  "community_area" : "Washington Park",
+  "latitude" : "41.7909803898",
+  "community_area_number" : "40"
+}
+, {
+  "phone_number" : "773-667-7583",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6221896343",
+    "latitude" : "41.7895614137",
+    "human_address" : "{\"address\":\"5556 S. Michigan Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "St. Edmund's Corners",
+  "management_company" : "St. Edmund's Redevelopment Corp.",
+  "x_coordinate" : "1179276.0774989587",
+  "units" : "53",
+  "property_type" : "Senior HUD 202",
+  "address" : "5556 S. Michigan Ave.",
+  "y_coordinate" : "1866708.8159741443",
+  "longitude" : "-87.6221896343",
+  "community_area" : "Washington Park",
+  "latitude" : "41.7895614137",
+  "community_area_number" : "40"
+}
+, {
+  "phone_number" : "773-924-9270",
+  "zip_code" : "60615",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6181384856",
+    "latitude" : "41.7937697184",
+    "human_address" : "{\"address\":\"346 E. 53rd St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "TRC Senior Village I",
+  "management_company" : "The Renaissance Collaborative",
+  "units" : "35",
+  "property_type" : "Senior",
+  "address" : "346 E. 53rd St.",
+  "y_coordinate" : "1868251.4604524123",
+  "longitude" : "-87.6181384856",
+  "community_area" : "Washington Park",
+  "latitude" : "41.7937697184",
+  "community_area_number" : "40"
+}
+, {
+  "phone_number" : "773-778-2884",
+  "zip_code" : "60636",
+  "property_name" : "Clara Temple Hampton Residence",
+  "management_company" : "West Englewood Dev. Org.",
+  "x_coordinate" : "1178070.4429785577",
+  "units" : "71",
+  "property_type" : "Multifamily",
+  "address" : "1656 W. 63rd St.",
+  "community_area" : "West Englewood",
+  "community_area_number" : "67"
+}
+, {
+  "phone_number" : "773-434-4929",
+  "zip_code" : "60636",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6225685185",
+    "latitude" : "41.7929745219",
+    "human_address" : "{\"address\":\"2115 W. 63rd St\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Clara's Village",
+  "management_company" : "Interfaith Housing Corp.",
+  "x_coordinate" : "1179447.490115856",
+  "units" : "13",
+  "property_type" : "Multifamily",
+  "address" : "2115 W. 63rd St",
+  "y_coordinate" : "1867951.6767417216",
+  "longitude" : "-87.6225685185",
+  "community_area" : "West Englewood",
+  "latitude" : "41.7929745219",
+  "community_area_number" : "67"
+}
+, {
+  "phone_number" : "773-638-6393",
+  "zip_code" : "60612",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6174566934",
+    "latitude" : "41.7985499558",
+    "human_address" : "{\"address\":\"2822 W. Jackson Blvd.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "The Rebecca Johnson Apartments",
+  "management_company" : "Deborah's Place Ltd.",
+  "x_coordinate" : "1166121.3452266525",
+  "units" : "52",
+  "property_type" : "Supportive Housing",
+  "address" : "2822 W. Jackson Blvd.",
+  "y_coordinate" : "1869994.8980902864",
+  "longitude" : "-87.6174566934",
+  "community_area" : "West Garfield Park",
+  "latitude" : "41.7985499558",
+  "community_area_number" : "27"
+}
+, {
+  "phone_number" : "888-339-2315",
+  "zip_code" : "60629",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6665265092",
+    "latitude" : "41.779530386",
+    "human_address" : "{\"address\":\"6800 S. Keating Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Senior Suites of Midway Village",
+  "management_company" : "Senior Lifestyle Corp.",
+  "x_coordinate" : "1163257.2027996134",
+  "units" : "89",
+  "property_type" : "Seniors",
+  "address" : "6800 S. Keating Ave.",
+  "y_coordinate" : "1862956.6860697763",
+  "longitude" : "-87.6665265092",
+  "community_area" : "West Lawn",
+  "latitude" : "41.779530386",
+  "community_area_number" : "65"
+}
+, {
+  "phone_number" : "773-568-3000",
+  "zip_code" : "60628",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6770311971",
+    "latitude" : "41.7791628235",
+    "human_address" : "{\"address\":\"12045 S. Emerald Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Hancock House",
+  "management_company" : "Source Works Development",
+  "units" : "90",
+  "property_type" : "Supportive Housing",
+  "address" : "12045 S. Emerald Ave.",
+  "y_coordinate" : "1862800.706640397",
+  "longitude" : "-87.6770311971",
+  "community_area" : "West Pullman ",
+  "latitude" : "41.7791628235",
+  "community_area_number" : "53"
+}
+, {
+  "phone_number" : "312-655-7440",
+  "zip_code" : "60628",
+  "property_name" : "All Saints Senior Residence",
+  "management_company" : "Catholic Charities Housing Devp.",
+  "x_coordinate" : "1157527.9754137222",
+  "units" : "42",
+  "property_type" : "Senior",
+  "address" : "11701 S. State St.",
+  "community_area" : "West Pullman ",
+  "community_area_number" : "53"
+}
+, {
+  "phone_number" : "773-381-7400",
+  "zip_code" : "60660",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6970630483",
+    "latitude" : "41.8775358858",
+    "human_address" : "{\"address\":\"1818 W. Peterson Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "G & A Senior Residences at Ravenswood",
+  "management_company" : "Eastgate Village Senior Corp.",
+  "units" : "89",
+  "property_type" : "Senior",
+  "address" : "1818 W. Peterson Ave.",
+  "y_coordinate" : "1898606.336367213",
+  "longitude" : "-87.6970630483",
+  "community_area" : "West Ridge",
+  "latitude" : "41.8775358858",
+  "community_area_number" : "2"
+}
+, {
+  "phone_number" : "773-381-7400",
+  "zip_code" : "60659",
+  "property_name" : "West Ridge Senior Apartments",
+  "management_company" : "West Ridge Senior Corp.",
+  "x_coordinate" : "1173523.536248522",
+  "units" : "117",
+  "property_type" : "Senior",
+  "address" : "6142 N. California Ave.",
+  "community_area" : "West Ridge",
+  "community_area_number" : "2"
+}
+, {
+  "phone_number" : "773-338-5900",
+  "zip_code" : "60659",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6405148423",
+    "latitude" : "41.6746900779",
+    "human_address" : "{\"address\":\"6057 N. Lincoln Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Lincoln Village Senior Apartments",
+  "management_company" : "Perlmark Realty Management",
+  "x_coordinate" : "1162949.471947985",
+  "units" : "99",
+  "property_type" : "Senior",
+  "address" : "6057 N. Lincoln Ave.",
+  "y_coordinate" : "1824810.0626359796",
+  "longitude" : "-87.6405148423",
+  "community_area" : "West Ridge",
+  "latitude" : "41.6746900779",
+  "community_area_number" : "2"
+}
+, {
+  "phone_number" : "773-572-2755",
+  "zip_code" : "60659",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6759930884",
+    "latitude" : "41.9908491577",
+    "human_address" : "{\"address\":\"5822 N. Western Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "5822 North Western, LLC",
+  "management_company" : "Chicago Apartment Finders",
+  "units" : "2",
+  "property_type" : "ARO",
+  "address" : "5822 N. Western Ave.",
+  "y_coordinate" : "1939941.1893128548",
+  "longitude" : "-87.6759930884",
+  "community_area" : "West Ridge",
+  "latitude" : "41.9908491577",
+  "community_area_number" : "2"
+}
+, {
+  "phone_number" : "773-278-8602",
+  "zip_code" : "60622",
+  "property_name" : "Wicker Park Renaissance",
+  "management_company" : "RRG Development, Inc.",
+  "x_coordinate" : "1156512.510358117",
+  "units" : "102",
+  "property_type" : "Supportive Housing",
+  "address" : "1527-31 N. Wicker Park Ave.",
+  "community_area" : "West Town",
+  "community_area_number" : "24"
+}
+, {
+  "phone_number" : "312-602-6500",
+  "zip_code" : "60622",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6996454249",
+    "latitude" : "41.9934415657",
+    "human_address" : "{\"address\":\"1154 N. Campbell St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Paseo Boricua Apartments",
+  "management_company" : "Hispanic Housing Dev. Corp.",
+  "x_coordinate" : "1153825.546749503",
+  "units" : "61",
+  "property_type" : "Multifamily",
+  "address" : "1154 N. Campbell St.",
+  "y_coordinate" : "1940837.410770179",
+  "longitude" : "-87.6996454249",
+  "community_area" : "West Town",
+  "latitude" : "41.9934415657",
+  "community_area_number" : "24"
+}
+, {
+  "phone_number" : "773-227-6332",
+  "zip_code" : "60622",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.7095450826",
+    "latitude" : "41.9918656495",
+    "human_address" : "{\"address\":\"2753 W. Division St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "La Estancia",
+  "management_company" : "Bickerdike Redevelopment Corp.",
+  "x_coordinate" : "1162934.3186359087",
+  "units" : "59",
+  "property_type" : "Multifamily",
+  "address" : "2753 W. Division St.",
+  "y_coordinate" : "1940243.3793156522",
+  "longitude" : "-87.7095450826",
+  "community_area" : "West Town",
+  "latitude" : "41.9918656495",
+  "community_area_number" : "24"
+}
+, {
+  "phone_number" : "773-486-7410",
+  "zip_code" : "60647",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6768915182",
+    "latitude" : "41.9087687359",
+    "human_address" : "{\"address\":\"2654 W. North Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "North and Talman Family Apts.",
+  "management_company" : "Hispanic Housing Dev. Corp.",
+  "x_coordinate" : "1159482.2925512826",
+  "units" : "30",
+  "property_type" : "Multifamily",
+  "address" : "2654 W. North Ave.",
+  "y_coordinate" : "1910028.9463462443",
+  "longitude" : "-87.6768915182",
+  "community_area" : "West Town",
+  "latitude" : "41.9087687359",
+  "community_area_number" : "24"
+}
+, {
+  "phone_number" : "773-486-7410",
+  "zip_code" : "60647",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6896325219",
+    "latitude" : "41.902878079",
+    "human_address" : "{\"address\":\"1600 N. Talman Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "North & Talman Elderly Apts.",
+  "management_company" : "Hispanic Housing Dev. Corp.",
+  "x_coordinate" : "1157605.9794619114",
+  "units" : "24",
+  "property_type" : "Senior",
+  "address" : "1600 N. Talman Ave.",
+  "y_coordinate" : "1907856.1047262773",
+  "longitude" : "-87.6896325219",
+  "community_area" : "West Town",
+  "latitude" : "41.902878079",
+  "community_area_number" : "24"
+}
+, {
+  "phone_number" : "773-486-7410",
+  "zip_code" : "60647",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6965255554",
+    "latitude" : "41.902818751",
+    "human_address" : "{\"address\":\"1723-33 N. Humboldt Blvd.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Boulevard Court Family Housing",
+  "management_company" : "Hispanic Housing Dev. Corp.",
+  "x_coordinate" : "1158184.4012101176",
+  "units" : "52",
+  "property_type" : "Multifamily",
+  "address" : "1723-33 N. Humboldt Blvd.",
+  "y_coordinate" : "1907820.4806240404",
+  "longitude" : "-87.6965255554",
+  "community_area" : "West Town",
+  "latitude" : "41.902818751",
+  "community_area_number" : "24"
+}
+, {
+  "phone_number" : "773-602-2888",
+  "zip_code" : "60647",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6943256397",
+    "latitude" : "41.9103544922",
+    "human_address" : "{\"address\":\"2656 W. North Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "North & Talman Phase III",
+  "management_company" : "Hispanic Housing Dev. Corp.",
+  "x_coordinate" : "1158416.9732462608",
+  "units" : "18",
+  "property_type" : "Multifamily",
+  "address" : "2656 W. North Ave.",
+  "y_coordinate" : "1910570.9607547983",
+  "longitude" : "-87.6943256397",
+  "community_area" : "West Town ",
+  "latitude" : "41.9103544922",
+  "community_area_number" : "24"
+}
+, {
+  "phone_number" : "773-276-5338, ext. 225",
+  "zip_code" : "60622",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6934713169",
+    "latitude" : "41.9103438337",
+    "human_address" : "{\"address\":\"1414,1451 N. Washtenaw Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Borinquen Bella Apartments",
+  "management_company" : "LUCHA",
+  "x_coordinate" : "1156143.3102157223",
+  "units" : "23",
+  "property_type" : "Multifamily",
+  "address" : "1414,1451 N. Washtenaw Ave.",
+  "y_coordinate" : "1910568.8103786097",
+  "longitude" : "-87.6934713169",
+  "community_area" : "West Town",
+  "latitude" : "41.9103438337",
+  "community_area_number" : "24"
+}
+, {
+  "phone_number" : "773-276-5338, ext. 225",
+  "zip_code" : "60622",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.701800063",
+    "latitude" : "41.9128086528",
+    "human_address" : "{\"address\":\"1318,1456 N. Rockwell Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Borinquen Bella Apartments",
+  "management_company" : "LUCHA",
+  "units" : "24",
+  "property_type" : "Multifamily",
+  "address" : "1318,1456 N. Rockwell Ave.",
+  "y_coordinate" : "1911450.1899551263",
+  "longitude" : "-87.701800063",
+  "community_area" : "West Town",
+  "latitude" : "41.9128086528",
+  "community_area_number" : "24"
+}
+, {
+  "phone_number" : "773-661-5500",
+  "zip_code" : "60622",
+  "property_name" : "1611 West Division",
+  "management_company" : "M. Fishman & Co.",
+  "units" : "10",
+  "property_type" : "ARO",
+  "address" : "1611 W. Division St.",
+  "community_area" : "West Town",
+  "community_area_number" : "24"
+}
+, {
+  "phone_number" : "312-226-2200",
+  "zip_code" : "60637",
+  "property_name" : "Woodlawn-Michigan Development",
+  "management_company" : "Wolcott Real Property LLC",
+  "units" : "33",
+  "property_type" : "Multifamily",
+  "address" : "6446 S. Kenwood Ave.",
+  "community_area" : "Woodlawn",
+  "community_area_number" : "42"
+}
+, {
+  "phone_number" : "773-288-4202",
+  "zip_code" : "60637",
+  "property_name" : "Eddie Mae & Alex Johnson Apartments",
+  "management_company" : "Woodlawn East Community",
+  "x_coordinate" : "1158163.0704036378",
+  "units" : "84",
+  "property_type" : "Multifamily",
+  "address" : "6230 S. Dorchester Ave.",
+  "community_area" : "Woodlawn",
+  "community_area_number" : "42"
+}
+, {
+  "phone_number" : "773-752-9400",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.694404013",
+    "latitude" : "41.9103537221",
+    "human_address" : "{\"address\":\"6200 S. University Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Renaissance Apartments",
+  "management_company" : "AIMCO",
+  "x_coordinate" : "1186141.3660938477",
+  "units" : "64",
+  "property_type" : "Multifamily",
+  "address" : "6200 S. University Ave.",
+  "y_coordinate" : "1910570.5211780062",
+  "longitude" : "-87.694404013",
+  "community_area" : "Woodlawn",
+  "latitude" : "41.9103537221",
+  "community_area_number" : "42"
+}
+, {
+  "phone_number" : "773-288-3000",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5931497136",
+    "latitude" : "41.7774890264",
+    "human_address" : "{\"address\":\"6450 S. Stony Island Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "WECAN",
+  "management_company" : "WECAN",
+  "x_coordinate" : "1186573.2624279982",
+  "units" : "117",
+  "property_type" : "Multifamily",
+  "address" : "6450 S. Stony Island Ave.",
+  "y_coordinate" : "1862376.5606601068",
+  "longitude" : "-87.5931497136",
+  "community_area" : "Woodlawn",
+  "latitude" : "41.7774890264",
+  "community_area_number" : "42"
+}
+, {
+  "phone_number" : "773-684-2056",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5915208532",
+    "latitude" : "41.7814311307",
+    "human_address" : "{\"address\":\"6600 S. Greenwood Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "65th Street Apartments",
+  "management_company" : "Urban Property Advisors, LLC",
+  "x_coordinate" : "1184799.335314034",
+  "units" : "42",
+  "property_type" : "Multifamily",
+  "address" : "6600 S. Greenwood Ave.",
+  "y_coordinate" : "1863816.8653135095",
+  "longitude" : "-87.5915208532",
+  "community_area" : "Woodlawn",
+  "latitude" : "41.7814311307",
+  "community_area_number" : "42"
+}
+, {
+  "phone_number" : "773-684-2056",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.598015727",
+    "latitude" : "41.7822309985",
+    "human_address" : "{\"address\":\"6522 S. Ingleside Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "65th Street Apartments",
+  "management_company" : "Urban Property Advisors, LLC",
+  "x_coordinate" : "1187957.5964530848",
+  "units" : "18",
+  "property_type" : "Multifamily",
+  "address" : "6522 S. Ingleside Ave.",
+  "y_coordinate" : "1864093.1165452064",
+  "longitude" : "-87.598015727",
+  "community_area" : "Woodlawn",
+  "latitude" : "41.7822309985",
+  "community_area_number" : "42"
+}
+, {
+  "phone_number" : "773-684-2056",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5864933515",
+    "latitude" : "41.7772869881",
+    "human_address" : "{\"address\":\"6400 S. Maryland Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "65th Street Apartments",
+  "management_company" : "Urban Property Advisors, LLC",
+  "x_coordinate" : "1184316.0378951721",
+  "units" : "15",
+  "property_type" : "Multifamily",
+  "address" : "6400 S. Maryland Ave.",
+  "y_coordinate" : "1862318.6370591703",
+  "longitude" : "-87.5864933515",
+  "community_area" : "Woodlawn",
+  "latitude" : "41.7772869881",
+  "community_area_number" : "42"
+}
+, {
+  "phone_number" : "773-684-2056",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5998709117",
+    "latitude" : "41.7749319632",
+    "human_address" : "{\"address\":\"848-58 E. 65th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "65th Street Apartments",
+  "management_company" : "Urban Property Advisors, LLC",
+  "x_coordinate" : "1183642.0293026692",
+  "units" : "6",
+  "property_type" : "Multifamily",
+  "address" : "848-58 E. 65th St.",
+  "y_coordinate" : "1861429.0767049037",
+  "longitude" : "-87.5998709117",
+  "community_area" : "Woodlawn",
+  "latitude" : "41.7749319632",
+  "community_area_number" : "42"
+}
+, {
+  "phone_number" : "773-684-2056",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6023285746",
+    "latitude" : "41.7761037074",
+    "human_address" : "{\"address\":\"817 E. 64th St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "65th Street Apartments",
+  "management_company" : "Urban Property Advisors, LLC",
+  "x_coordinate" : "1182961.6084218968",
+  "units" : "6",
+  "property_type" : "Multifamily",
+  "address" : "817 E. 64th St.",
+  "y_coordinate" : "1861850.3440547157",
+  "longitude" : "-87.6023285746",
+  "community_area" : "Woodlawn",
+  "latitude" : "41.7761037074",
+  "community_area_number" : "42"
+}
+, {
+  "phone_number" : "773-572-5500",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6047947203",
+    "latitude" : "41.7786109444",
+    "human_address" : "{\"address\":\"1410 E. 62nd St.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Dorchester Apartments",
+  "management_company" : "The Thresholds",
+  "x_coordinate" : "1183196.2396570912",
+  "units" : "67",
+  "property_type" : "Multifamily",
+  "address" : "1410 E. 62nd St.",
+  "y_coordinate" : "1862758.2552538288",
+  "longitude" : "-87.6047947203",
+  "community_area" : "Woodlawn",
+  "latitude" : "41.7786109444",
+  "community_area_number" : "42"
+}
+, {
+  "phone_number" : "773-955-9290",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.603953777",
+    "latitude" : "41.7769092523",
+    "human_address" : "{\"address\":\"6146 S. Kenwood Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "Butler Apartments",
+  "management_company" : "Woodlawn Comm. Dev. Corp.",
+  "x_coordinate" : "1182676.8468949487",
+  "units" : "17",
+  "property_type" : "Senior",
+  "address" : "6146 S. Kenwood Ave.",
+  "y_coordinate" : "1862140.1148931726",
+  "longitude" : "-87.603953777",
+  "community_area" : "Woodlawn",
+  "latitude" : "41.7769092523",
+  "community_area_number" : "42"
+}
+, {
+  "phone_number" : "312-283-0030",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.6058071228",
+    "latitude" : "41.7814080037",
+    "human_address" : "{\"address\":\"6227-29 S. Cottage Grove Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "The Grant at Woodlawn Pk Phase I",
+  "management_company" : "Preservation Housing Management LLC",
+  "x_coordinate" : "1186722.4042227406",
+  "units" : "67",
+  "property_type" : "Multifamily",
+  "address" : "6227-29 S. Cottage Grove Ave.",
+  "y_coordinate" : "1863775.1466971007",
+  "longitude" : "-87.6058071228",
+  "community_area" : "Woodlawn ",
+  "latitude" : "41.7814080037",
+  "community_area_number" : "42"
+}
+, {
+  "phone_number" : "312-283-0030",
+  "zip_code" : "60637",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5909616433",
+    "latitude" : "41.7825052194",
+    "human_address" : "{\"address\":\"6129 S. Cottage Grove Ave.\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "property_name" : "The Grant at Woodlawn Pk Phase II",
+  "management_company" : "Preservation Housing Management LLC",
+  "x_coordinate" : "1186094.2588179822",
+  "units" : "33",
+  "property_type" : "Multifamily",
+  "address" : "6129 S. Cottage Grove Ave.",
+  "y_coordinate" : "1864209.5724381572",
+  "longitude" : "-87.5909616433",
+  "community_area" : "Woodlawn",
+  "latitude" : "41.7825052194",
+  "community_area_number" : "42"
+}
+, {
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-87.5932613147",
+    "latitude" : "41.7828034603",
+    "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "y_coordinate" : "1864312.8427305536",
+  "longitude" : "-87.5932613147",
+  "latitude" : "41.7828034603"
+}
+ ]
