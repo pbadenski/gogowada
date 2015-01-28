@@ -30,6 +30,11 @@ module.exports = class Chart
   dimension: (dimension) ->
     if dimension is undefined
       @_dimension
+    else if _.isArray dimension
+      @_dimension =
+        name: dimension
+        f: (d) -> _.map(dimension, (each) -> d[each])
+      this
     else
       @_dimension =
         name: dimension

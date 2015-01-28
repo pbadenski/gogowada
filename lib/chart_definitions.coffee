@@ -68,10 +68,18 @@ module.exports =
           .geojson(geojson)
           .featureKeyAccessor(extras.featureKeyAccessor)
         onSuccess(chart)
-#  "markers on the map":
-#    type: "leafletMarkerChart"
-#    customize: (chart, fieldGroup, onSuccess, extras) ->
-#      chart
-#        .center([41.83, -87.68])
-#        .zoom(10)
-#      onSuccess(chart)
+  "markers on the map":
+    type: "leafletMarkerChart"
+    customize: (chart, fieldGroup, onSuccess, extras) ->
+      chart
+        .center([41.83, -87.68])
+        .zoom(10)
+      onSuccess(chart)
+  "clustered markers on the map":
+    type: "leafletMarkerChart"
+    customize: (chart, fieldGroup, onSuccess, extras) ->
+      chart
+        .center([41.83, -87.68])
+        .cluster(true)
+        .zoom(10)
+      onSuccess(chart)
