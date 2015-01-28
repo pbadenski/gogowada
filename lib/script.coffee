@@ -16,7 +16,6 @@ $ ->
 
   afterJsonFileSet = () ->
     $("#set-json-file-button, #set-json-file-input").attr('disabled', true)
-    $("#add-graph").removeClass('hidden')
 
   if dashboard
     d3.json dashboard.src, (data) ->
@@ -24,9 +23,13 @@ $ ->
         .loadCharts dashboard.charts
     $("#set-json-file-input").val(dashboard.src)
     afterJsonFileSet()
+    $("#add-graph").removeClass('hidden')
 
   $("#set-json-file-button").click () ->
     afterJsonFileSet()
+    $("#while-json-is-loaded").removeClass("hidden")
     d3.json $("#set-json-file-input").val(), (data) ->
       new Dashboard(data, gridster)
+      $("#while-json-is-loaded").addClass("hidden")
+      $("#add-graph").removeClass('hidden')
 
