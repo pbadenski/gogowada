@@ -8,7 +8,7 @@ module.exports = class GraphConfiguration
       "</select>"
 
     charts = _.reject(_.keys(ChartDefinitions), (d) -> _.contains(["choropleth"], d)).sort()
-    properties = _.keys(_.sample(data, 1)[0]).sort()
+    properties = _.union.apply(_, _.map(data, _.keys)).sort()
 
     @components = $(
       "<select id='chartTypeSelect' class='form-control' style='width: 100px; display: inline'><option selected>-- Select chart</option>" +
