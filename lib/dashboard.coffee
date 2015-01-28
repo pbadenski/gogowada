@@ -44,10 +44,11 @@ module.exports = class Dashboard
   normalize: (data) ->
     data = _.map data, (d) ->
       for prop, val of d
-        dateValue = moment(val, ["YYYY-MM-DD", "YYYY-MM-DDThh:mm:ss"], true)
-        if dateValue.isValid()
-          d[prop] = dateValue.toDate()
-        else if `parseFloat(val) == val`
+        if `parseFloat(val) == val`
           d[prop] = parseFloat(val)
+        else if _.contains(val, "-")
+          dateValue = moment(val, ["YYYY-MM-DD", "YYYY-MM-DDThh:mm:ss"], true)
+          if dateValue.isValid()
+            d[prop] = dateValue.toDate()
       d
     data
