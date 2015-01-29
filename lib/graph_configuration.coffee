@@ -8,19 +8,19 @@ module.exports = class GraphConfiguration
       "</select>"
 
     charts = _.reject(_.keys(ChartDefinitions), (d) -> _.contains(["choropleth"], d)).sort()
-    properties = _.union.apply(_, _.map(data, _.keys)).sort()
+    properties = _.uniq(_.flatten(_.map(data, _.keys))).sort()
 
     @components = $(
       "<select id='chartTypeSelect' class='form-control' style='width: 100px; display: inline'><option selected>-- Select chart</option>" +
       _.map(charts, (each) ->  "<option value='#{each}'>#{S(each).humanize()}</option>") +
       "</select><span>&nbsp;chart</span>" +
       "<span id='mapConfiguration'>" +
-      createSelect(",&nbsp; latitude of &nbsp;", "latitude", properties, pluralize) +
-      createSelect("&nbsp;and longitude of &nbsp;", "longitude", properties, pluralize) +
+      createSelect(",&nbsp; latitude of &nbsp;", "latitude", properties, (d) -> pluralize(S(d).stripPunctuation())) +
+      createSelect("&nbsp;and longitude of &nbsp;", "longitude", properties, (d) -> pluralize(S(d).stripPunctuation())) +
       "</span>" +
-      createSelect("&nbsp;of&nbsp;", "property", properties, pluralize) +
+      createSelect("&nbsp;of&nbsp;", "property", properties, (d) -> pluralize(S(d).stripPunctuation())) +
       createSelect("&nbsp;grouped by&nbsp;", "group by function", ["count", "average", "sum"], _.identity, 100) +
-      createSelect(" of ", "group by property", properties, pluralize)
+      createSelect(" of ", "group by property", properties, (d) -> pluralize(S(d).stripPunctuation()))
     )
 
   createMetadata: (data) ->
