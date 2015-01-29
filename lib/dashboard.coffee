@@ -25,7 +25,7 @@ module.exports = class Dashboard
         $("##{chart.chartId} .graph-configure").click()
     dc.dataCount(".dc-data-count").dimension(@csData).group(@csData.groupAll()).html
       some: "<strong>%filter-count</strong> selected out of <strong>%total-count</strong> records" + " | <a href='javascript:dc.filterAll(); dc.renderAll();''>Reset All</a>"
-      all: "All records selected. Please click on the graph to apply filters."
+      all: ""
     .render()
 
   loadCharts: (charts) ->

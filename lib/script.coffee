@@ -27,9 +27,20 @@ $ ->
 
   $("#set-json-file-button").click () ->
     afterJsonFileSet()
-    $("#while-json-is-loaded").removeClass("hidden")
+    $("#while-file-is-loaded").removeClass("hidden")
     d3.json $("#set-json-file-input").val(), (data) ->
       new Dashboard(data, gridster)
-      $("#while-json-is-loaded").addClass("hidden")
+      $("#while-file-is-loaded").addClass("hidden")
       $("#add-graph").removeClass('hidden')
+
+  $("#set-csv-file-button").click () ->
+    afterJsonFileSet()
+    $("#while-file-is-loaded").removeClass("hidden")
+    reader = new FileReader()
+    reader.onloadend = (e) ->
+      contents = e.target.result
+      new Dashboard(d3.csv.parse(contents), gridster)
+      $("#while-file-is-loaded").addClass("hidden")
+      $("#add-graph").removeClass('hidden')
+    reader.readAsText($("#set-csv-file-input")[0].files[0])
 

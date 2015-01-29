@@ -39,21 +39,42 @@
         height: 400px;
         width: 600px;
       }
+      .nav-tabs {
+        margin-bottom: 10px;
+      }
     </style>
   </head>
 
   <body class="container" style="padding: 10px">
     <div class="row">
-      <div class="input-group">
-        <input id="set-json-file-input" type="text" class="form-control" placeholder="Link to your JSON file..." autofocus></input>
-        <span class="input-group-btn">
-          <button id="set-json-file-button" class="btn btn-default" type="button">Go!</button>
-        </span>
+      <div role="tabpanel">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#json" aria-controls="json" role="tab" data-toggle="tab">JSON URL</a></li>
+          <li role="presentation"><a href="#csv" aria-controls="csv" role="tab" data-toggle="tab">CSV upload</a></li>
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="json">
+            <div class="input-group">
+              <input id="set-json-file-input" type="text" class="form-control" placeholder="Paste your JSON URL..." autofocus></input>
+              <span class="input-group-btn">
+                <button id="set-json-file-button" class="btn btn-default" type="button">Go!</button>
+              </span>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="csv">
+            <div class="input-group">
+              <input id="set-csv-file-input" type="file" class="form-control" autofocus></input>
+              <span class="input-group-btn">
+                <button id="set-csv-file-button" class="btn btn-default" type="button">Go!</button>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <br style="clear: both"/>
     <div class="row">
-      <progress id="while-json-is-loaded" class="hidden" style="width: 100%"></progress>
+      <progress id="while-file-is-loaded" class="hidden" style="width: 100%"></progress>
       <a id="add-graph" href="#" class="hidden">Add graph</a>
     </div>
     <div class="row">
