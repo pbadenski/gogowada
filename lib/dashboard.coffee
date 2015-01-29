@@ -46,8 +46,8 @@ module.exports = class Dashboard
       for prop, val of d
         if `parseFloat(val) == val`
           d[prop] = parseFloat(val)
-        else if _.contains(val, "-")
-          dateValue = moment(val, ["YYYY-MM-DD", "YYYY-MM-DDThh:mm:ss"], true)
+        else if _.contains(val, "-") or _.contains(val, "/")
+          dateValue = moment(val, ["YYYY-MM-DD", "YYYY-MM-DDThh:mm:ss", "MM/DD/YYYY"], true)
           if dateValue.isValid()
             d[prop] = dateValue.toDate()
       d
