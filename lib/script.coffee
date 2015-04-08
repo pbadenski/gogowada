@@ -16,6 +16,7 @@ $ ->
 
   afterJsonFileSet = () ->
     $("#set-json-file-button, #set-json-file-input").attr('disabled', true)
+    $("#examples").addClass('hidden')
 
   if dashboard
     d3.json dashboard.src, (data) ->
