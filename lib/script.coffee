@@ -1,9 +1,6 @@
 Dashboard = require './dashboard'
 dashboards = require './dashboards'
 
-dashboard = null
-# dashboard = dashboards.chicago_employees
-# dashboard = dashboards.chicago_affordable_housing
 $ ->
   gridster = $(".gridster > ul").gridster
     widget_margins: [10, 10]
@@ -18,7 +15,9 @@ $ ->
     $("#set-json-file-button, #set-json-file-input").attr('disabled', true)
     $("#examples").addClass('hidden')
 
-  if dashboard
+  project = $.url(window.location).param('project')
+  if project
+    dashboard = dashboards[project]
     d3.json dashboard.src, (data) ->
       new Dashboard(data, gridster)
         .loadCharts dashboard.charts
