@@ -27,18 +27,20 @@ module.exports = class Chart
       @_groupByFunction = groupByFunction
       this
 
-  dimension: (dimension) ->
-    if dimension is undefined
+  dimension: (dimensionKeyOrKeys) ->
+    if dimensionKeyOrKeys is undefined
       @_dimension
-    else if _.isArray dimension
+    else if _.isArray dimensionKeyOrKeys
+      multipleDimensionKeys = dimensionKeyOrKeys
       @_dimension =
-        name: dimension
-        f: (d) -> _.map(dimension, (each) -> d[each])
+        name: multipleDimensionKeys
+        extractFunction: (d) -> _.map(multipleDimensionKeys, (each) -> d[each])
       this
     else
+      singleDimensionKey = dimensionKeyOrKeys
       @_dimension =
-        name: dimension
-        f: (d) -> d[dimension]
+        name: singleDimensionKey
+        extractFunction: (d) -> d[singleDimensionKey]
       this
 
   dimensionName: () ->
@@ -97,7 +99,7 @@ module.exports = class Chart
     chart = dc[chartDefinition.type]("##{@chartId}")
     @dcInstance = chart
 
-    fieldDimension = @csData.dimension(@dimension().f)
+    fieldDimension = @csData.dimension(@dimension().extractFunction)
     [reduceAdd, reduceRemove, reduceInit] = @createReducers()
     fieldGroup = fieldDimension.group().reduce(reduceAdd(@groupByProperty()), reduceRemove(@groupByProperty()), reduceInit)
     chart
@@ -107,7 +109,7 @@ module.exports = class Chart
         all: () ->
           fieldGroup.all().filter (d) ->
             if _.isArray d.key
-              not _.contains(d.key, undefined)
+              not _.contains(d.key, undefined) && not _.contains(d.key, "")
             else
               d.key? and (d.value.count > 0)
       .turnOnControls(true)
