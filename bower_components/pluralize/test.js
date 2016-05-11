@@ -1,5 +1,6 @@
 /* global describe, it */
-var expect    = require('chai').expect;
+
+var expect = require('chai').expect;
 var pluralize = require('./');
 
 /**
@@ -22,11 +23,15 @@ var BASIC_TESTS = [
   ['smallpox', 'smallpox'],
   ['chickenpox', 'chickenpox'],
   ['shambles', 'shambles'],
+  ['garbage', 'garbage'],
+  ['you', 'you'],
+  ['wildlife', 'wildlife'],
   // Latin.
   ['veniam', 'veniam'],
   // Pluralization.
   ['this', 'these'],
   ['that', 'those'],
+  ['is', 'are'],
   ['man', 'men'],
   ['superman', 'supermen'],
   ['ox', 'oxen'],
@@ -296,7 +301,6 @@ var BASIC_TESTS = [
   ['analysis', 'analyses'],
   ['locus', 'loci'],
   ['uterus', 'uteri'],
-  ['automatum', 'automata'],
   ['curriculum', 'curricula'],
   ['quorum', 'quora'],
   ['genie', 'genies'],
@@ -513,6 +517,38 @@ var BASIC_TESTS = [
   ['cherub', 'cherubim'],
   ['memo', 'memos'],
   ['cello', 'cellos'],
+  ['automaton', 'automata'],
+  ['button', 'buttons'],
+  ['crayon', 'crayons'],
+  ['captive', 'captives'],
+  ['abrasive', 'abrasives'],
+  ['archive', 'archives'],
+  ['additive', 'additives'],
+  ['hive', 'hives'],
+  ['beehive', 'beehives'],
+  ['olive', 'olives'],
+  ['black olive', 'black olives'],
+  ['chive', 'chives'],
+  ['adjective', 'adjectives'],
+  ['cattle drive', 'cattle drives'],
+  ['explosive', 'explosives'],
+  ['executive', 'executives'],
+  ['negative', 'negatives'],
+  ['fugitive', 'fugitives'],
+  ['progressive', 'progressives'],
+  ['laxative', 'laxatives'],
+  ['incentive', 'incentives'],
+  ['relative', 'relatives'],
+  ['positive', 'positives'],
+  ['perspective', 'perspectives'],
+  ['superlative', 'superlatives'],
+  ['afterlife', 'afterlives'],
+  ['native', 'natives'],
+  ['detective', 'detectives'],
+  ['collective', 'collectives'],
+  ['lowlife', 'lowlives'],
+  ['low-life', 'low-lives'],
+  ['strife', 'strifes'],
   // Prototype inheritance.
   ['constructor', 'constructors'],
   // Non-standard case.
@@ -529,7 +565,7 @@ var BASIC_TESTS = [
  * @type {Array}
  */
 var SINGULAR_TESTS = [
-  ['dingo', 'dingoes'],
+  ['dingo', 'dingos'],
   ['mango', 'mangoes'],
   ['echo', 'echos'],
   ['ghetto', 'ghettoes'],
@@ -544,9 +580,11 @@ var SINGULAR_TESTS = [
  * @type {Array}
  */
 var PLURAL_TESTS = [
-  ['whisky',  'whiskies'],
+  ['whisky', 'whiskies'],
   ['plateaux', 'plateaux'],
-  ['axis', 'axes']
+  ['axis', 'axes'],
+  ['automatum', 'automata'],
+  ['thou', 'you']
 ];
 
 /**

@@ -1,3 +1,5 @@
+/* global define */
+
 (function (root, pluralize) {
   /* istanbul ignore else */
   if (typeof require === 'function' && typeof exports === 'object' && typeof module === 'object') {
@@ -15,9 +17,9 @@
 })(this, function () {
   // Rule storage - pluralize and singularize need to be run sequentially,
   // while other rules can be optimized using an object for instant lookups.
-  var pluralRules      = [];
-  var singularRules    = [];
-  var uncountables     = {};
+  var pluralRules = [];
+  var singularRules = [];
+  var uncountables = {};
   var irregularPlurals = {};
   var irregularSingles = {};
 
@@ -71,9 +73,9 @@
   /**
    * Interpolate a regexp string.
    *
-   * @param  {[type]} str  [description]
-   * @param  {[type]} args [description]
-   * @return {[type]}      [description]
+   * @param  {string} str
+   * @param  {Array}  args
+   * @return {string}
    */
   function interpolate (str, args) {
     return str.replace(/\$(\d{1,2})/g, function (match, index) {
@@ -154,8 +156,8 @@
    * @return {String}
    */
   function pluralize (word, count, inclusive) {
-    var pluralized = count === 1 ?
-      pluralize.singular(word) : pluralize.plural(word);
+    var pluralized = count === 1
+      ? pluralize.singular(word) : pluralize.plural(word);
 
     return (inclusive ? count + ' ' : '') + pluralized;
   }
@@ -205,7 +207,8 @@
    */
   pluralize.addUncountableRule = function (word) {
     if (typeof word === 'string') {
-      return uncountables[word.toLowerCase()] = true;
+      uncountables[word.toLowerCase()] = true;
+      return;
     }
 
     // Set singular and plural references for the word.
@@ -232,19 +235,20 @@
    */
   [
     // Pronouns.
-    ['I',        'we'],
-    ['me',       'us'],
-    ['he',       'they'],
-    ['she',      'they'],
-    ['them',     'them'],
-    ['myself',   'ourselves'],
+    ['I', 'we'],
+    ['me', 'us'],
+    ['he', 'they'],
+    ['she', 'they'],
+    ['them', 'them'],
+    ['myself', 'ourselves'],
     ['yourself', 'yourselves'],
-    ['itself',   'themselves'],
-    ['herself',  'themselves'],
-    ['himself',  'themselves'],
+    ['itself', 'themselves'],
+    ['herself', 'themselves'],
+    ['himself', 'themselves'],
     ['themself', 'themselves'],
-    ['this',     'these'],
-    ['that',     'those'],
+    ['is', 'are'],
+    ['this', 'these'],
+    ['that', 'those'],
     // Words ending in with a consonant and `o`.
     ['echo', 'echoes'],
     ['dingo', 'dingoes'],
@@ -252,32 +256,32 @@
     ['tornado', 'tornadoes'],
     ['torpedo', 'torpedoes'],
     // Ends with `us`.
-    ['genus',  'genera'],
+    ['genus', 'genera'],
     ['viscus', 'viscera'],
     // Ends with `ma`.
-    ['stigma',   'stigmata'],
-    ['stoma',    'stomata'],
-    ['dogma',    'dogmata'],
-    ['lemma',    'lemmata'],
-    ['schema',   'schemata'],
+    ['stigma', 'stigmata'],
+    ['stoma', 'stomata'],
+    ['dogma', 'dogmata'],
+    ['lemma', 'lemmata'],
+    ['schema', 'schemata'],
     ['anathema', 'anathemata'],
     // Other irregular rules.
-    ['ox',      'oxen'],
-    ['axe',     'axes'],
-    ['die',     'dice'],
-    ['yes',     'yeses'],
-    ['foot',    'feet'],
-    ['eave',    'eaves'],
-    ['goose',   'geese'],
-    ['tooth',   'teeth'],
-    ['quiz',    'quizzes'],
-    ['human',   'humans'],
-    ['proof',   'proofs'],
-    ['carve',   'carves'],
-    ['valve',   'valves'],
-    ['thief',   'thieves'],
-    ['genie',   'genies'],
-    ['groove',  'grooves'],
+    ['ox', 'oxen'],
+    ['axe', 'axes'],
+    ['die', 'dice'],
+    ['yes', 'yeses'],
+    ['foot', 'feet'],
+    ['eave', 'eaves'],
+    ['goose', 'geese'],
+    ['tooth', 'teeth'],
+    ['quiz', 'quizzes'],
+    ['human', 'humans'],
+    ['proof', 'proofs'],
+    ['carve', 'carves'],
+    ['valve', 'valves'],
+    ['thief', 'thieves'],
+    ['genie', 'genies'],
+    ['groove', 'grooves'],
     ['pickaxe', 'pickaxes'],
     ['whiskey', 'whiskies']
   ].forEach(function (rule) {
@@ -299,9 +303,9 @@
     [/(seraph|cherub)(?:im)?$/i, '$1im'],
     [/(her|at|gr)o$/i, '$1oes'],
     [/(agend|addend|millenni|dat|extrem|bacteri|desiderat|strat|candelabr|errat|ov|symposi|curricul|automat|quor)(?:a|um)$/i, '$1a'],
-    [/(apheli|hyperbat|periheli|asyndet|noumen|phenomen|criteri|organ|prolegomen|\w+hedr)(?:a|on)$/i, '$1a'],
+    [/(apheli|hyperbat|periheli|asyndet|noumen|phenomen|criteri|organ|prolegomen|hedr|automat)(?:a|on)$/i, '$1a'],
     [/sis$/i, 'ses'],
-    [/(?:(i)fe|(ar|l|ea|eo|oa|hoo)f)$/i, '$1$2ves'],
+    [/(?:(kni|wi|li)fe|(ar|l|ea|eo|oa|hoo)f)$/i, '$1$2ves'],
     [/([^aeiouy]|qu)y$/i, '$1ies'],
     [/([^ch][ieo][ln])ey$/i, '$1ies'],
     [/(x|ch|ss|sh|zz)$/i, '$1es'],
@@ -310,7 +314,8 @@
     [/(pe)(?:rson|ople)$/i, '$1ople'],
     [/(child)(?:ren)?$/i, '$1ren'],
     [/eaux$/i, '$0'],
-    [/m[ae]n$/i, 'men']
+    [/m[ae]n$/i, 'men'],
+    ['thou', 'you']
   ].forEach(function (rule) {
     return pluralize.addPluralRule(rule[0], rule[1]);
   });
@@ -323,8 +328,7 @@
     [/(ss)$/i, '$1'],
     [/((a)naly|(b)a|(d)iagno|(p)arenthe|(p)rogno|(s)ynop|(t)he)(?:sis|ses)$/i, '$1sis'],
     [/(^analy)(?:sis|ses)$/i, '$1sis'],
-    [/([^aeflor])ves$/i, '$1fe'],
-    [/(hive|tive|dr?ive)s$/i, '$1'],
+    [/(wi|kni|(?:after|half|high|low|mid|non|night|[^\w]|^)li)ves$/i, '$1fe'],
     [/(ar|(?:wo|[ae])l|[eo][ao])ves$/i, '$1f'],
     [/([^aeiouy]|qu)ies$/i, '$1y'],
     [/(^[pl]|zomb|^(?:neck)?t|[aeo][lt]|cut)ies$/i, '$1ie'],
@@ -336,8 +340,8 @@
     [/(movie|twelve)s$/i, '$1'],
     [/(cris|test|diagnos)(?:is|es)$/i, '$1is'],
     [/(alumn|syllab|octop|vir|radi|nucle|fung|cact|stimul|termin|bacill|foc|uter|loc|strat)(?:us|i)$/i, '$1us'],
-    [/(agend|addend|millenni|dat|extrem|bacteri|desiderat|strat|candelabr|errat|ov|symposi|curricul|automat|quor)a$/i, '$1um'],
-    [/(apheli|hyperbat|periheli|asyndet|noumen|phenomen|criteri|organ|prolegomen|\w+hedr)a$/i, '$1on'],
+    [/(agend|addend|millenni|dat|extrem|bacteri|desiderat|strat|candelabr|errat|ov|symposi|curricul|quor)a$/i, '$1um'],
+    [/(apheli|hyperbat|periheli|asyndet|noumen|phenomen|criteri|organ|prolegomen|hedr|automat)a$/i, '$1on'],
     [/(alumn|alg|vertebr)ae$/i, '$1a'],
     [/(cod|mur|sil|vert|ind)ices$/i, '$1ex'],
     [/(matr|append)ices$/i, '$1ix'],
@@ -374,6 +378,7 @@
     'expertise',
     'flounder',
     'gallows',
+    'garbage',
     'graffiti',
     'headquarters',
     'health',
@@ -412,6 +417,7 @@
     'whiting',
     'wildebeest',
     'wildlife',
+    'you',
     // Regexes.
     /pox$/i, // "chickpox", "smallpox"
     /ois$/i,
