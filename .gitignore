@@ -1,4 +1,4 @@
-/dist
-fonts/
-source/
+/public/dist
+/public/fonts
+/source
 *.swp

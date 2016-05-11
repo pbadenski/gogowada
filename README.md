@@ -1,4 +1,4 @@
-Try it: http://production.gogowada.divshot.io/
+Try it: https://gogowada.firebaseapp.com
 
 Installation
 ------------
@@ -12,7 +12,7 @@ Installation
 Running
 -------
 
-	$ python -m SimpleHTTPServer
+	$ pushd public; python -m SimpleHTTPServer; popd
 
 -------
 

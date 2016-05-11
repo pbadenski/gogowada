@@ -19,7 +19,7 @@ gulp.task('ext-js', function() {
     .pipe(concat('vendor.js'))
     .pipe(uglify()).on('error', gutil.log)
     .pipe(sourcemaps.write("./"))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('public/dist'))
 });
 
 gulp.task('ext-css', function() {
@@ -29,13 +29,13 @@ gulp.task('ext-css', function() {
     .pipe(sourcemaps.init())
     .pipe(sourcemaps.write())
     .pipe(concat('vendor.css'))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('public/dist'))
 });
 
 gulp.task('icons', function() { 
   gulp.src(bowerFiles())
     .pipe(filter("**/*.{eot,svg,ttf,woff,woff2}"))
-    .pipe(gulp.dest('./fonts')); 
+    .pipe(gulp.dest('public/fonts')); 
 });
 
 gulp.task('coffee', function() {
@@ -52,7 +52,7 @@ gulp.task('coffee', function() {
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(uglify()).on('error', gutil.log)
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('public/dist'))
 });
 
 gulp.task('watch', function() {

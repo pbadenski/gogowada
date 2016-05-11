@@ -1,4 +1,4 @@
-describe('angularjs homepage todo list', function() {
+describe('high level integration test', function() {
   beforeEach(function() {
     var matchers = {
       toBeEmpty: function() {
@@ -17,7 +17,7 @@ describe('angularjs homepage todo list', function() {
         expect(browserLog).toBeEmpty();
       });
   });
-  it('should add a todo', function() {
+  it('should succeed', function() {
     browser.get('http://localhost:8000');
 
     element(by.id('set-json-file-input')).sendKeys('http://localhost:8000/test.json');
